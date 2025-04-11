@@ -11,7 +11,7 @@ This utility connects to the DOGE API at https://api.doge.gov/ and retrieves dat
 - `/savings/leases` - Leases that have been cancelled
 - `/payments` - Payments made by the US Government
 
-The utility handles pagination automatically and saves the complete dataset to a JSON file.
+The utility handles pagination automatically and saves the complete dataset to a file in the specified format (JSON or CSV).
 
 ## Requirements
 
@@ -35,6 +35,12 @@ python doge-report.py payments
 # Specify a custom output filename
 python doge-report.py grants --output my_grants_data.json
 
+# Export data in CSV format
+python doge-report.py grants --format csv
+
+# Export data in CSV format with custom filename
+python doge-report.py grants --format csv --output my_grants_data.csv
+
 # Using with an API key (if required)
 python doge-report.py grants --api-key YOUR_API_KEY
 
@@ -48,6 +54,7 @@ python doge-report.py grants --proxy http://proxy.example.com:8080
 ## Options
 
 - `--output`, `-o`: Specify custom output filename
+- `--format`, `-f`: Specify output format (`json` or `csv`, default is `json`)
 - `--api-key`, `-k`: Provide an API key for authentication (if required)
 - `--timeout`, `-t`: Set connection timeout in seconds (default: 30)
 - `--retries`, `-r`: Maximum number of retry attempts for failed requests (default: 3)
@@ -67,9 +74,21 @@ For users behind corporate firewalls, the utility supports proxy servers:
 - Automatically uses HTTP_PROXY/HTTPS_PROXY environment variables if set
 - Alternatively, specify a proxy with the `--proxy` option
 
+## Output Formats
+
+The utility supports the following output formats:
+
+### JSON (Default)
+Data is saved in JSON format with proper indentation, preserving all data types and nested structures.
+
+### CSV
+Data is exported to a CSV file with headers. Nested objects or arrays are converted to JSON strings in the CSV. This format is suitable for importing into spreadsheet applications or data analysis tools.
+
 ## Output
 
-By default, the data is saved to a file named `doge_<endpoint>_data.json` in the current directory. You can specify a custom output file using the `--output` option.
+By default, the data is saved to a file named `doge_<endpoint>_data.json` or `doge_<endpoint>_data.csv` depending on the selected format.
+
+You can specify a custom output file using the `--output` option. Make sure to use an appropriate file extension for the selected format.
 
 ## Error Handling
 
@@ -85,5 +104,5 @@ The utility includes robust error handling:
 
 - The utility will automatically handle the API's rate limiting by pausing and retrying when necessary.
 - The maximum number of records retrieved per page is set to 500 (the maximum allowed by the API).
-- All data is retrieved and saved as JSON, maintaining the original structure provided by the API.
+- All data is retrieved and saved in the specified format, maintaining the original structure provided by the API.
 - If you encounter 403 Forbidden errors, you may need to obtain an API key from the service provider.

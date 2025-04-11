@@ -8,10 +8,21 @@ This script retrieves data from the DOGE API endpoints:
 - /savings/leases
 - /payments
 
-Data is paginated through completely and saved to a JSON file.
+Data is paginated through completely and saved to a file in the specified format.
+
+Supported formats:
+- JSON (default): Full data with nested structures preserved
+- CSV: Tabular format suitable for spreadsheets with nested data serialized
+
+Examples:
+    python doge-report.py grants
+    python doge-report.py contracts --format csv
+    python doge-report.py leases --format json --output lease_data.json
+    python doge-report.py payments --format csv --output payment_data.csv
 """
 
 import argparse
+import csv
 import json
 import os
 import sys
@@ -20,6 +31,7 @@ import urllib.request
 import urllib.error
 from urllib.parse import urlencode
 from typing import Dict, List, Any, Optional
+import os.path
 
 
 BASE_URL = "https://api.doge.gov"
@@ -34,6 +46,7 @@ API_KEY = None  # Will be set from command line args
 MAX_RETRIES = 3  # Maximum number of retries for failed requests
 TIMEOUT = 30    # Connection timeout in seconds
 PROXY_URL = None  # Will be set from command line args or environment
+FORMAT = "json"  # Output format, will be set from command line args
 
 
 def make_request(url: str, retry_count: int = 0) -> Dict[str, Any]:
@@ -165,26 +178,94 @@ def get_all_data(endpoint: str) -> List[Dict[str, Any]]:
     return all_data
 
 
-def save_data(data: List[Dict[str, Any]], endpoint_type: str) -> None:
-    """Save the retrieved data to a JSON file."""
-    filename = f"doge_{endpoint_type}_data.json"
-    with open(filename, 'w') as f:
-        json.dump(data, f, indent=2)
-    print(f"Data saved to {filename}")
+def save_data(data: List[Dict[str, Any]], endpoint_type: str, output_format: str = None, output_file: str = None) -> None:
+    """Save the retrieved data to a file in the specified format."""
+    # Use the provided format or the global format
+    fmt = output_format or FORMAT
+    
+    # Generate default filename if not provided
+    if not output_file:
+        extension = "json" if fmt.lower() == "json" else "csv"
+        output_file = f"doge_{endpoint_type}_data.{extension}"
+    
+    print(f"Saving data to: {output_file}")
+    
+    if fmt.lower() == "json":
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+    elif fmt.lower() == "csv":
+        if not data:
+            print("No data to save")
+            return
+            
+        # Get fieldnames from the first record
+        fieldnames = list(data[0].keys())
+        
+        try:
+            with open(output_file, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                
+                # Handle nested data and None values
+                for row in data:
+                    # Convert any nested dict/list to JSON string and None to empty string
+                    row_copy = {}
+                    for key, value in row.items():
+                        if isinstance(value, (dict, list)):
+                            row_copy[key] = json.dumps(value)
+                        elif value is None:
+                            row_copy[key] = ""
+                        elif isinstance(value, str):
+                            # Clean problematic characters for CSV
+                            row_copy[key] = value.replace('\u200b', '').replace('\r', ' ').replace('\n', ' ')
+                        else:
+                            row_copy[key] = value
+                    writer.writerow(row_copy)
+        except UnicodeEncodeError as e:
+            print(f"Error encoding Unicode characters: {e}")
+            print("Trying to save with fallback encoding and character replacement...")
+            
+            # Fallback approach with explicit character replacement
+            with open(output_file, 'w', newline='', encoding='utf-8', errors='replace') as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                
+                for row in data:
+                    row_copy = {}
+                    for key, value in row.items():
+                        if isinstance(value, (dict, list)):
+                            cleaned_value = json.dumps(value)
+                        elif value is None:
+                            cleaned_value = ""
+                        elif isinstance(value, str):
+                            # More aggressive character cleaning
+                            cleaned_value = ''.join(c if c.isprintable() or c in (' ', '\t') else ' ' for c in value)
+                        else:
+                            cleaned_value = value
+                        row_copy[key] = cleaned_value
+                    writer.writerow(row_copy)
+    else:
+        print(f"Unsupported format: {fmt}")
+        sys.exit(1)
+        
+    print(f"Data saved to {output_file}")
 
 
 def main() -> None:
     """Main function to parse arguments and execute the data retrieval."""
-    global API_KEY, MAX_RETRIES, TIMEOUT, PROXY_URL
+    global API_KEY, MAX_RETRIES, TIMEOUT, PROXY_URL, FORMAT
     
     # Check for proxy in environment variables
     env_proxy = os.environ.get('HTTP_PROXY') or os.environ.get('HTTPS_PROXY')
     
-    parser = argparse.ArgumentParser(description='Retrieve data from DOGE API')
+    parser = argparse.ArgumentParser(
+        description='Retrieve data from DOGE API and save in specified format',
+        epilog='Example: python doge-report.py grants --format csv'
+    )
     parser.add_argument('endpoint', choices=list(ENDPOINTS.keys()),
                         help='API endpoint to retrieve data from')
     parser.add_argument('--output', '-o', type=str,
-                        help='Output file name (default: doge_<endpoint>_data.json)')
+                        help='Output file name (default: doge_<endpoint>_data.<format>)')
     parser.add_argument('--api-key', '-k', type=str,
                         help='API key for authentication (if required)')
     parser.add_argument('--retries', '-r', type=int, default=MAX_RETRIES,
@@ -193,6 +274,8 @@ def main() -> None:
                         help=f'Connection timeout in seconds (default: {TIMEOUT})')
     parser.add_argument('--proxy', '-p', type=str, default=env_proxy,
                         help='Proxy URL (default: uses HTTP_PROXY/HTTPS_PROXY environment variables if set)')
+    parser.add_argument('--format', '-f', type=str, choices=['json', 'csv'], default='json',
+                        help='Output format: json or csv (default: json)')
     
     args = parser.parse_args()
     
@@ -201,17 +284,13 @@ def main() -> None:
     MAX_RETRIES = args.retries
     TIMEOUT = args.timeout
     PROXY_URL = args.proxy
+    FORMAT = args.format
     
     endpoint_path = ENDPOINTS[args.endpoint]
     data = get_all_data(endpoint_path)
     
-    if args.output:
-        filename = args.output
-        with open(filename, 'w') as f:
-            json.dump(data, f, indent=2)
-        print(f"Data saved to {filename}")
-    else:
-        save_data(data, args.endpoint)
+    # Save data in the requested format
+    save_data(data, args.endpoint, args.format, args.output)
 
 
 if __name__ == "__main__":
