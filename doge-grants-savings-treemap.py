@@ -47,7 +47,7 @@ fig.update_layout(
 )
 
 # Save to HTML
-fig.write_html("doge_grant_savings_treemap.html")
+fig.write_html("doge_grants_savings_treemap.html")
 
 print("✅ Treemap saved with cleaned data")
 
