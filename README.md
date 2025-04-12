@@ -105,4 +105,3 @@ The utility includes robust error handling:
 - The utility will automatically handle the API's rate limiting by pausing and retrying when necessary.
 - The maximum number of records retrieved per page is set to 500 (the maximum allowed by the API).
 - All data is retrieved and saved in the specified format, maintaining the original structure provided by the API.
-- If you encounter 403 Forbidden errors, you may need to obtain an API key from the service provider.
