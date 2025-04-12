@@ -182,6 +182,8 @@ const loadGrantsData = async () => {
         
         grantsTable = $('#grants-table').DataTable({
             data: grantsData,
+            autoWidth: true,
+            scrollX: true,
             columns: [
                 { data: 'date' },
                 { data: 'agency' },
@@ -270,6 +272,8 @@ const loadContractsData = async () => {
         
         contractsTable = $('#contracts-table').DataTable({
             data: contractsData,
+            autoWidth: true,
+            scrollX: true,
             columns: [
                 { data: 'piid' },
                 { data: 'agency' },
@@ -363,6 +367,8 @@ const loadLeasesData = async () => {
         
         leasesTable = $('#leases-table').DataTable({
             data: leasesData,
+            autoWidth: true,
+            scrollX: true,
             columns: [
                 { data: 'date' },
                 { data: 'agency' },
