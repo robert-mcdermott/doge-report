@@ -198,7 +198,7 @@ const loadGrantsData = async () => {
                 },
                 { 
                     data: 'link',
-                    render: (data) => `<a href="${data}" target="_blank" class="btn btn-sm btn-outline-primary">View</a>`
+                    render: (data) => data ? `<a href="${data}" target="_blank" class="btn btn-sm btn-outline-primary">View</a>` : ''
                 },
                 { 
                     data: 'description',
@@ -294,7 +294,7 @@ const loadContractsData = async () => {
                 { data: 'fpds_status' },
                 { 
                     data: 'fpds_link',
-                    render: (data) => `<a href="${data}" target="_blank" class="btn btn-sm btn-outline-success">View</a>`
+                    render: (data) => data ? `<a href="${data}" target="_blank" class="btn btn-sm btn-outline-success">View</a>` : ''
                 }
             ],
             order: [[3, 'desc']],
@@ -422,28 +422,76 @@ const updateOverviewStats = () => {
     let totalSavings = 0;
     let totalItems = 0;
     const agencies = new Set();
+    const loadedDatasets = [];
     
+    // Update grants stats in overview
     if (grantsData) {
-        totalSavings += grantsData.reduce((sum, item) => sum + item.savings, 0);
+        loadedDatasets.push('Grants');
+        const grantsValue = grantsData.reduce((sum, item) => sum + item.value, 0);
+        const grantsSavings = grantsData.reduce((sum, item) => sum + item.savings, 0);
+        
+        document.getElementById('grants-overview-count').textContent = formatNumber(grantsData.length);
+        document.getElementById('grants-overview-value').textContent = formatCurrency(grantsValue);
+        document.getElementById('grants-overview-savings').textContent = formatCurrency(grantsSavings);
+        document.getElementById('grants-stats-section').style.display = 'block';
+        
+        totalSavings += grantsSavings;
         totalItems += grantsData.length;
         grantsData.forEach(item => agencies.add(item.agency));
+    } else {
+        document.getElementById('grants-stats-section').style.display = 'none';
     }
     
+    // Update contracts stats in overview
     if (contractsData) {
-        totalSavings += contractsData.reduce((sum, item) => sum + item.savings, 0);
+        loadedDatasets.push('Contracts');
+        const contractsValue = contractsData.reduce((sum, item) => sum + item.value, 0);
+        const contractsSavings = contractsData.reduce((sum, item) => sum + item.savings, 0);
+        
+        document.getElementById('contracts-overview-count').textContent = formatNumber(contractsData.length);
+        document.getElementById('contracts-overview-value').textContent = formatCurrency(contractsValue);
+        document.getElementById('contracts-overview-savings').textContent = formatCurrency(contractsSavings);
+        document.getElementById('contracts-stats-section').style.display = 'block';
+        
+        totalSavings += contractsSavings;
         totalItems += contractsData.length;
         contractsData.forEach(item => agencies.add(item.agency));
+    } else {
+        document.getElementById('contracts-stats-section').style.display = 'none';
     }
     
+    // Update leases stats in overview
     if (leasesData) {
-        totalSavings += leasesData.reduce((sum, item) => sum + item.savings, 0);
+        loadedDatasets.push('Leases');
+        const leasesValue = leasesData.reduce((sum, item) => sum + item.value, 0);
+        const leasesSavings = leasesData.reduce((sum, item) => sum + item.savings, 0);
+        
+        document.getElementById('leases-overview-count').textContent = formatNumber(leasesData.length);
+        document.getElementById('leases-overview-value').textContent = formatCurrency(leasesValue);
+        document.getElementById('leases-overview-savings').textContent = formatCurrency(leasesSavings);
+        document.getElementById('leases-stats-section').style.display = 'block';
+        
+        totalSavings += leasesSavings;
         totalItems += leasesData.length;
         leasesData.forEach(item => agencies.add(item.agency));
+    } else {
+        document.getElementById('leases-stats-section').style.display = 'none';
     }
     
+    // Update overall stats
     document.getElementById('total-savings').textContent = formatCurrency(totalSavings);
     document.getElementById('total-items').textContent = formatNumber(totalItems);
     document.getElementById('total-agencies').textContent = formatNumber(agencies.size);
+    
+    // Update datasets loaded info
+    const datasetsLoadedInfo = document.getElementById('datasets-loaded-info');
+    if (loadedDatasets.length === 0) {
+        datasetsLoadedInfo.textContent = 'No datasets loaded yet';
+        datasetsLoadedInfo.parentElement.className = 'alert alert-warning';
+    } else {
+        datasetsLoadedInfo.textContent = `Datasets loaded: ${loadedDatasets.join(', ')} (${loadedDatasets.length} of 3)`;
+        datasetsLoadedInfo.parentElement.className = 'alert alert-success';
+    }
 };
 
 // Event listeners
@@ -497,4 +545,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('total-savings').textContent = 'Not loaded';
     document.getElementById('total-items').textContent = 'Not loaded';
     document.getElementById('total-agencies').textContent = 'Not loaded';
+    
+    // Initialize dataset stats sections
+    document.getElementById('grants-stats-section').style.display = 'none';
+    document.getElementById('contracts-stats-section').style.display = 'none';
+    document.getElementById('leases-stats-section').style.display = 'none';
+    document.getElementById('datasets-loaded-info').textContent = 'No datasets loaded yet';
 });
