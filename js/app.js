@@ -225,6 +225,13 @@ const loadGrantsData = async () => {
         
         document.getElementById('grants-loading').classList.add('d-none');
         document.getElementById('grants-content').classList.remove('d-none');
+        
+        // Fix column alignment issues by adjusting columns after the table becomes visible
+        setTimeout(() => {
+            if (grantsTable) {
+                grantsTable.columns.adjust().draw();
+            }
+        }, 10);
     } catch (error) {
         console.error('Error loading grants data:', error);
         document.getElementById('grants-loading').classList.add('d-none');
@@ -317,6 +324,13 @@ const loadContractsData = async () => {
         
         document.getElementById('contracts-loading').classList.add('d-none');
         document.getElementById('contracts-content').classList.remove('d-none');
+        
+        // Fix column alignment issues by adjusting columns after the table becomes visible
+        setTimeout(() => {
+            if (contractsTable) {
+                contractsTable.columns.adjust().draw();
+            }
+        }, 10);
     } catch (error) {
         console.error('Error loading contracts data:', error);
         document.getElementById('contracts-loading').classList.add('d-none');
@@ -410,6 +424,13 @@ const loadLeasesData = async () => {
         
         document.getElementById('leases-loading').classList.add('d-none');
         document.getElementById('leases-content').classList.remove('d-none');
+        
+        // Fix column alignment issues by adjusting columns after the table becomes visible
+        setTimeout(() => {
+            if (leasesTable) {
+                leasesTable.columns.adjust().draw();
+            }
+        }, 10);
     } catch (error) {
         console.error('Error loading leases data:', error);
         document.getElementById('leases-loading').classList.add('d-none');

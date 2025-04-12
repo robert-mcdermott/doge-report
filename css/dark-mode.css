@@ -1,0 +1,295 @@
+/* Dark Mode - Synthwave 84 Theme for DOGE Report Dashboard */
+
+:root {
+    --synthwave-bg: #262335;
+    --synthwave-bg-darker: #1a1625;
+    --synthwave-text: #ff8aec;
+    --synthwave-text-secondary: #b893ce;
+    --synthwave-highlight: #fe4450;
+    --synthwave-purple: #9d8cff;
+    --synthwave-blue: #36f9f6;
+    --synthwave-pink: #ff7edb;
+    --synthwave-yellow: #ffcc00;
+    --synthwave-green: #72f1b8;
+    --synthwave-card-bg: #2d2b42;
+    --synthwave-card-header: #34294f;
+    --synthwave-border: #483c6c;
+    --synthwave-glow: 0 0 2px #ff8aec, 0 0 5px rgba(255, 138, 236, 0.5);
+}
+
+/* Dark mode toggle switch */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background: linear-gradient(to right, var(--synthwave-purple), var(--synthwave-pink));
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.theme-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--synthwave-bg);
+    color: var(--synthwave-text-secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background: linear-gradient(to right, #2b213a, #171520) !important;
+    border-bottom: 1px solid var(--synthwave-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .navbar-brand {
+    color: var(--synthwave-pink) !important;
+    text-shadow: var(--synthwave-glow);
+}
+
+body.dark-mode .navbar-dark .navbar-nav .nav-link {
+    color: var(--synthwave-text-secondary);
+}
+
+body.dark-mode .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--synthwave-pink);
+    text-shadow: var(--synthwave-glow);
+}
+
+/* Cards */
+body.dark-mode .card {
+    background-color: var(--synthwave-card-bg);
+    border: 1px solid var(--synthwave-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .card-header {
+    background-color: var(--synthwave-card-header);
+    border-bottom: 1px solid var(--synthwave-border);
+}
+
+body.dark-mode .card-header h2,
+body.dark-mode .card-header h4,
+body.dark-mode .card-header h5 {
+    color: var(--synthwave-text);
+    text-shadow: var(--synthwave-glow);
+}
+
+/* Overview cards */
+body.dark-mode .bg-primary {
+    background: linear-gradient(135deg, #614385, #516395) !important;
+}
+
+body.dark-mode .bg-success {
+    background: linear-gradient(135deg, #1d976c, #93f9b9) !important;
+}
+
+body.dark-mode .bg-info {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed) !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: var(--synthwave-card-bg) !important;
+    color: var(--synthwave-text-secondary);
+}
+
+/* Buttons */
+body.dark-mode .btn-primary {
+    background: linear-gradient(to right, var(--synthwave-purple), var(--synthwave-pink));
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 126, 219, 0.5);
+}
+
+body.dark-mode .btn-success {
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    border: none;
+    box-shadow: 0 0 10px rgba(147, 249, 185, 0.5);
+}
+
+body.dark-mode .btn-info {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    border: none;
+    box-shadow: 0 0 10px rgba(109, 213, 237, 0.5);
+}
+
+body.dark-mode .btn-light {
+    background-color: var(--synthwave-bg-darker);
+    color: var(--synthwave-text);
+    border: 1px solid var(--synthwave-border);
+}
+
+body.dark-mode .btn-outline-primary {
+    color: var(--synthwave-pink);
+    border-color: var(--synthwave-pink);
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--synthwave-pink);
+    color: var(--synthwave-bg-darker);
+}
+
+body.dark-mode .btn-outline-success {
+    color: var(--synthwave-green);
+    border-color: var(--synthwave-green);
+}
+
+body.dark-mode .btn-outline-success:hover {
+    background-color: var(--synthwave-green);
+    color: var(--synthwave-bg-darker);
+}
+
+body.dark-mode .btn-link {
+    color: var(--synthwave-blue);
+}
+
+/* Tables */
+body.dark-mode .table {
+    color: var(--synthwave-text-secondary);
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(45, 43, 66, 0.5);
+}
+
+body.dark-mode .table-hover > tbody > tr:hover {
+    background-color: rgba(72, 60, 108, 0.3);
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_length,
+body.dark-mode .dataTables_wrapper .dataTables_filter,
+body.dark-mode .dataTables_wrapper .dataTables_info,
+body.dark-mode .dataTables_wrapper .dataTables_processing,
+body.dark-mode .dataTables_wrapper .dataTables_paginate {
+    color: var(--synthwave-text-secondary);
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: var(--synthwave-text-secondary) !important;
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: linear-gradient(to right, var(--synthwave-purple), var(--synthwave-pink));
+    color: white !important;
+    border: 1px solid var(--synthwave-border);
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: rgba(255, 126, 219, 0.2);
+    color: var(--synthwave-pink) !important;
+    border: 1px solid var(--synthwave-border);
+}
+
+/* Inputs */
+body.dark-mode .form-control {
+    background-color: var(--synthwave-bg-darker);
+    border: 1px solid var(--synthwave-border);
+    color: var(--synthwave-text-secondary);
+}
+
+body.dark-mode .form-control:focus {
+    background-color: var(--synthwave-bg-darker);
+    border-color: var(--synthwave-pink);
+    box-shadow: 0 0 0 0.25rem rgba(255, 126, 219, 0.25);
+    color: var(--synthwave-text);
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: var(--synthwave-bg-darker) !important;
+    border-top: 1px solid var(--synthwave-border);
+    color: var(--synthwave-text-secondary);
+}
+
+body.dark-mode .github-link {
+    color: var(--synthwave-pink);
+}
+
+body.dark-mode .github-link svg path {
+    fill: var(--synthwave-pink);
+}
+
+/* Alerts */
+body.dark-mode .alert-info {
+    background-color: rgba(54, 249, 246, 0.1);
+    border-color: rgba(54, 249, 246, 0.2);
+    color: var(--synthwave-blue);
+}
+
+body.dark-mode .alert-success {
+    background-color: rgba(114, 241, 184, 0.1);
+    border-color: rgba(114, 241, 184, 0.2);
+    color: var(--synthwave-green);
+}
+
+body.dark-mode .alert-warning {
+    background-color: rgba(255, 204, 0, 0.1);
+    border-color: rgba(255, 204, 0, 0.2);
+    color: var(--synthwave-yellow);
+}
+
+/* Charts */
+body.dark-mode canvas {
+    filter: hue-rotate(180deg) brightness(1.2);
+}
+
+/* Description cells */
+body.dark-mode .full-description {
+    background-color: var(--synthwave-bg-darker);
+    border-left: 3px solid var(--synthwave-pink);
+}
+
+body.dark-mode .show-full-description {
+    color: var(--synthwave-blue);
+}
+
+/* Summary stats */
+body.dark-mode .summary-stat h3,
+body.dark-mode .summary-stat h4 {
+    color: var(--synthwave-pink);
+    text-shadow: var(--synthwave-glow);
+}
