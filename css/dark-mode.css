@@ -206,15 +206,36 @@ body.dark-mode .btn-link {
 
 /* Tables */
 body.dark-mode .table {
-    color: #ffffff;
+    color: #ffffff !important;
+    background-color: var(--synthwave-bg-darker) !important;
+}
+
+body.dark-mode .dataTables_wrapper {
+    background-color: var(--synthwave-bg-darker) !important;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: rgba(45, 43, 66, 0.5);
+    background-color: var(--synthwave-bg-darker) !important;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: var(--synthwave-card-bg) !important;
 }
 
 body.dark-mode .table-hover > tbody > tr:hover {
-    background-color: rgba(72, 60, 108, 0.3);
+    background-color: rgba(72, 60, 108, 0.8);
+}
+
+body.dark-mode .table thead th {
+    background-color: var(--synthwave-card-header) !important;
+    color: var(--synthwave-pink) !important;
+    border-bottom: 2px solid var(--synthwave-border) !important;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(255, 126, 219, 0.5);
+    padding: 12px 8px;
 }
 
 body.dark-mode .dataTables_wrapper .dataTables_length,
@@ -223,6 +244,25 @@ body.dark-mode .dataTables_wrapper .dataTables_info,
 body.dark-mode .dataTables_wrapper .dataTables_processing,
 body.dark-mode .dataTables_wrapper .dataTables_paginate {
     color: #ffffff;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_filter input {
+    background-color: var(--synthwave-bg-darker);
+    color: #ffffff;
+    border: 1px solid var(--synthwave-border);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-left: 8px;
+}
+
+body.dark-mode .dataTables_wrapper .dataTables_length select {
+    background-color: var(--synthwave-bg-darker);
+    color: #ffffff;
+    border: 1px solid var(--synthwave-border);
+    border-radius: 4px;
+    padding: 6px 10px;
 }
 
 body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -299,10 +339,50 @@ body.dark-mode canvas {
 body.dark-mode .full-description {
     background-color: var(--synthwave-bg-darker);
     border-left: 3px solid var(--synthwave-pink);
+    color: #ffffff;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode .show-full-description {
-    color: var(--synthwave-blue);
+    color: var(--synthwave-blue) !important;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(54, 249, 246, 0.5);
+    padding: 5px 10px;
+    background-color: rgba(54, 249, 246, 0.1);
+    border-radius: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    border: 1px solid rgba(54, 249, 246, 0.3);
+}
+
+body.dark-mode .show-full-description:hover {
+    background-color: rgba(54, 249, 246, 0.2);
+    text-shadow: 0 0 8px rgba(54, 249, 246, 0.8);
+}
+
+body.dark-mode .description-preview {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+body.dark-mode td {
+    color: #ffffff !important;
+    font-weight: 500;
+    border-color: var(--synthwave-border) !important;
+    padding: 12px 8px;
+    background-color: transparent !important;
+}
+
+/* Force all table cells to have dark background */
+body.dark-mode table.dataTable tbody tr {
+    background-color: var(--synthwave-card-bg) !important;
+}
+
+body.dark-mode table.dataTable tbody tr:nth-child(odd) {
+    background-color: var(--synthwave-bg-darker) !important;
 }
 
 /* Summary stats */
