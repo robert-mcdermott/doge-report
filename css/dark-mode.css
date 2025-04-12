@@ -4,7 +4,7 @@
     --synthwave-bg: #262335;
     --synthwave-bg-darker: #1a1625;
     --synthwave-text: #ff8aec;
-    --synthwave-text-secondary: #b893ce;
+    --synthwave-text-secondary: #e0d1f0; /* Brightened for better readability */
     --synthwave-highlight: #fe4450;
     --synthwave-purple: #9d8cff;
     --synthwave-blue: #36f9f6;
@@ -79,6 +79,14 @@ body.dark-mode {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Improve text readability in dark mode */
+body.dark-mode p,
+body.dark-mode .card-text,
+body.dark-mode .lead {
+    color: #ffffff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
 /* Navbar */
 body.dark-mode .navbar {
     background: linear-gradient(to right, #2b213a, #171520) !important;
@@ -105,6 +113,16 @@ body.dark-mode .card {
     background-color: var(--synthwave-card-bg);
     border: 1px solid var(--synthwave-border);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve card header readability */
+body.dark-mode .card-header h2,
+body.dark-mode .card-header h4,
+body.dark-mode .card-header h5,
+body.dark-mode h5 {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 138, 236, 0.7);
+    font-weight: 600;
 }
 
 body.dark-mode .card-header {
@@ -188,7 +206,7 @@ body.dark-mode .btn-link {
 
 /* Tables */
 body.dark-mode .table {
-    color: var(--synthwave-text-secondary);
+    color: #ffffff;
 }
 
 body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
@@ -204,11 +222,11 @@ body.dark-mode .dataTables_wrapper .dataTables_filter,
 body.dark-mode .dataTables_wrapper .dataTables_info,
 body.dark-mode .dataTables_wrapper .dataTables_processing,
 body.dark-mode .dataTables_wrapper .dataTables_paginate {
-    color: var(--synthwave-text-secondary);
+    color: #ffffff;
 }
 
 body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
-    color: var(--synthwave-text-secondary) !important;
+    color: #ffffff !important;
 }
 
 body.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button.current,
@@ -289,7 +307,16 @@ body.dark-mode .show-full-description {
 
 /* Summary stats */
 body.dark-mode .summary-stat h3,
-body.dark-mode .summary-stat h4 {
+body.dark-mode .summary-stat h4,
+body.dark-mode h5.card-title {
     color: var(--synthwave-pink);
     text-shadow: var(--synthwave-glow);
+}
+
+/* Specifically target the Overall Statistics heading */
+body.dark-mode .card-header h5,
+body.dark-mode h5 {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 138, 236, 0.7) !important;
+    font-weight: 700 !important;
 }
