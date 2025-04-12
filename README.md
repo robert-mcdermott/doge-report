@@ -1,4 +1,5 @@
 # DOGE Report Utility
+![](https://github.com/robert-mcdermott/doge-report/blob/main/data/doge_grants_savings_treemap.png)
 
 A command-line utility to retrieve data from the Department of Government Efficiency (DOGE) API.
 
