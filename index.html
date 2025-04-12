@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOGE Report Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-graph-up me-2"></i>DOGE Report Dashboard
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="overview-link">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="grants-link">Grants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="contracts-link">Contracts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="leases-link">Leases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <!-- Overview Section -->
+        <div id="overview-section" class="section active">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h2>Department of Government Efficiency (DOGE) Report</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead">This dashboard provides comprehensive reporting on canceled grants, contracts, and leases from the Department of Government Efficiency.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div class="card text-white bg-primary mb-3">
+                                        <div class="card-header">Grants</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canceled Grants</h5>
+                                            <p class="card-text">View detailed information about canceled grants, including recipients, values, and savings.</p>
+                                            <button class="btn btn-light" id="view-grants-btn">View Grants</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-white bg-success mb-3">
+                                        <div class="card-header">Contracts</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canceled Contracts</h5>
+                                            <p class="card-text">Explore canceled contracts, including vendors, values, and descriptions.</p>
+                                            <button class="btn btn-light" id="view-contracts-btn">View Contracts</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card text-white bg-info mb-3">
+                                        <div class="card-header">Leases</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canceled Leases</h5>
+                                            <p class="card-text">Review canceled leases, including locations, square footage, and savings.</p>
+                                            <button class="btn btn-light" id="view-leases-btn">View Leases</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Summary Statistics</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-4 text-center">
+                                                    <div class="summary-stat">
+                                                        <h3 id="total-savings">Loading...</h3>
+                                                        <p>Total Savings</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center">
+                                                    <div class="summary-stat">
+                                                        <h3 id="total-items">Loading...</h3>
+                                                        <p>Total Items</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center">
+                                                    <div class="summary-stat">
+                                                        <h3 id="total-agencies">Loading...</h3>
+                                                        <p>Unique Agencies</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grants Section -->
+        <div id="grants-section" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h2>Grants Report</h2>
+                            <div>
+                                <button id="grants-load-btn" class="btn btn-primary">Load Grants Data</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="grants-loading" class="text-center my-5 d-none">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-2">Loading grants data...</p>
+                            </div>
+                            <div id="grants-content" class="d-none">
+                                <div class="row mb-4">
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Grants</h5>
+                                                <h3 id="grants-count" class="text-primary">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Value</h5>
+                                                <h3 id="grants-value" class="text-primary">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Savings</h5>
+                                                <h3 id="grants-savings" class="text-primary">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Recipients</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="grants-recipients-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Agencies</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="grants-agencies-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Grants Data</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table id="grants-table" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Date</th>
+                                                                <th>Agency</th>
+                                                                <th>Recipient</th>
+                                                                <th>Value</th>
+                                                                <th>Savings</th>
+                                                                <th>Link</th>
+                                                                <th>Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- Data will be populated dynamically -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contracts Section -->
+        <div id="contracts-section" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h2>Contracts Report</h2>
+                            <div>
+                                <button id="contracts-load-btn" class="btn btn-success">Load Contracts Data</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="contracts-loading" class="text-center my-5 d-none">
+                                <div class="spinner-border text-success" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-2">Loading contracts data...</p>
+                            </div>
+                            <div id="contracts-content" class="d-none">
+                                <div class="row mb-4">
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Contracts</h5>
+                                                <h3 id="contracts-count" class="text-success">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Value</h5>
+                                                <h3 id="contracts-value" class="text-success">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Savings</h5>
+                                                <h3 id="contracts-savings" class="text-success">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Vendors</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="contracts-vendors-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Agencies</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="contracts-agencies-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Contracts Data</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table id="contracts-table" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>PIID</th>
+                                                                <th>Agency</th>
+                                                                <th>Vendor</th>
+                                                                <th>Value</th>
+                                                                <th>Savings</th>
+                                                                <th>Deleted Date</th>
+                                                                <th>Description</th>
+                                                                <th>Status</th>
+                                                                <th>Link</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- Data will be populated dynamically -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leases Section -->
+        <div id="leases-section" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h2>Leases Report</h2>
+                            <div>
+                                <button id="leases-load-btn" class="btn btn-info">Load Leases Data</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="leases-loading" class="text-center my-5 d-none">
+                                <div class="spinner-border text-info" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-2">Loading leases data...</p>
+                            </div>
+                            <div id="leases-content" class="d-none">
+                                <div class="row mb-4">
+                                    <div class="col-md-3">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Leases</h5>
+                                                <h3 id="leases-count" class="text-info">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Value</h5>
+                                                <h3 id="leases-value" class="text-info">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Savings</h5>
+                                                <h3 id="leases-savings" class="text-info">$0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Sq. Ft.</h5>
+                                                <h3 id="leases-sqft" class="text-info">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Locations</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="leases-locations-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Top Agencies</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="leases-agencies-chart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Leases Data</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table id="leases-table" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Date</th>
+                                                                <th>Agency</th>
+                                                                <th>Location</th>
+                                                                <th>Square Feet</th>
+                                                                <th>Value</th>
+                                                                <th>Savings</th>
+                                                                <th>Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- Data will be populated dynamically -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>DOGE Report Dashboard &copy; 2025 | Department of Government Efficiency</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

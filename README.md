@@ -9,7 +9,7 @@ This utility connects to the DOGE API at https://api.doge.gov/ and retrieves dat
 - `/savings/grants` - Grants that have been cancelled
 - `/savings/contracts` - Contracts that have been cancelled  
 - `/savings/leases` - Leases that have been cancelled
-- `/payments` - Payments made by the US Government
+- `/payments` - Payments made by the US Government # currently not working
 
 The utility handles pagination automatically and saves the complete dataset to a file in the specified format (JSON or CSV).
 
@@ -105,3 +105,32 @@ The utility includes robust error handling:
 - The utility will automatically handle the API's rate limiting by pausing and retrying when necessary.
 - The maximum number of records retrieved per page is set to 500 (the maximum allowed by the API).
 - All data is retrieved and saved in the specified format, maintaining the original structure provided by the API.
+
+## Web Dashboard
+
+The DOGE Report Dashboard provides a user-friendly interface to explore and analyze the data retrieved from the DOGE API.
+
+### Features
+
+- **Modern, Responsive Design**: Works on desktop and mobile devices
+- **Interactive Data Tables**: Sort, filter, and search through all datasets
+- **Data Visualizations**: Charts showing top recipients, agencies, vendors, and locations
+- **Lazy Loading**: Datasets are only loaded when selected to ensure fast initial page load
+- **Detailed Views**: Comprehensive information about each grant, contract, and lease
+- **Summary Statistics**: Overview of total savings, items, and agencies across all datasets
+
+### Usage
+
+1. Open `index.html` in a web browser
+2. Navigate between the Overview, Grants, Contracts, and Leases sections using the navigation bar
+3. Click "Load Data" buttons to load the respective datasets
+4. Use the search functionality to find specific items
+5. View charts and tables to analyze the data
+
+### Technical Details
+
+- Built with HTML5, CSS3, and JavaScript
+- Uses Bootstrap 5 for responsive layout and styling
+- Chart.js for data visualizations
+- DataTables for interactive tables
+- No server-side dependencies required - works entirely in the browser
