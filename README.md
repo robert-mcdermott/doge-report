@@ -2,8 +2,9 @@
 
 A simple web application for exploring and analyzing data from the Department of Government Efficiency (DOGE) API.
 
+**Access the application here:** [https://robert-mcdermott.github.io/doge-report/](https://robert-mcdermott.github.io/doge-report/)
 
-**Access the applicaiton here:** [https://robert-mcdermott.github.io/doge-report/](https://robert-mcdermott.github.io/doge-report/)
+![Doge Report Dashboard Screenshot](https://github.com/robert-mcdermott/doge-report/blob/main/data/doge-report-dashboard-screenshot.png)
 
 ## Overview
 
