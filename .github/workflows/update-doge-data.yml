@@ -1,0 +1,31 @@
+name: Update Doge Data
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Runs daily at 3 AM UTC
+  workflow_dispatch:      # Optional manual trigger
+
+jobs:
+  update-doge-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Run doge-data-download.py with different arguments
+      run: |
+        cd data
+        python doge-data-download.py grants
+        python doge-data-download.py contracts
+        python doge-data-download.py leases
+        cd ..
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add data/doge_*_data.json
+        git diff --cached --quiet || git commit -m "Automated Doge data update"
+        git push
+
