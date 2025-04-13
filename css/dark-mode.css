@@ -111,13 +111,39 @@ body.dark-mode .navbar-dark .navbar-nav .nav-link.active {
 /* Cards */
 body.dark-mode .card {
     background-color: var(--synthwave-card-bg);
-    border: 1px solid var(--synthwave-border);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-color: var(--synthwave-border);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Improve card header readability */
-body.dark-mode .card-header h2,
-body.dark-mode .card-header h4,
+body.dark-mode .card-header {
+    background-color: var(--synthwave-card-header);
+    border-bottom: 1px solid var(--synthwave-border);
+    color: #ffffff;
+}
+
+/* Main header banner styling */
+body.dark-mode .card-header h2 {
+    color: var(--synthwave-pink) !important;
+    text-shadow: 0 0 10px rgba(255, 66, 215, 0.8), 0 0 20px rgba(255, 66, 215, 0.5), 0 0 30px rgba(255, 66, 215, 0.3) !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+}
+
+body.dark-mode #overview-section .card-header.bg-light,
+body.dark-mode .main-header {
+    background-color: var(--synthwave-bg-darker) !important;
+    border-bottom: 2px solid var(--synthwave-pink) !important;
+    padding: 15px;
+}
+
+body.dark-mode #main-title {
+    color: var(--synthwave-pink) !important;
+    text-shadow: 0 0 10px rgba(255, 66, 215, 0.8), 0 0 20px rgba(255, 66, 215, 0.5), 0 0 30px rgba(255, 66, 215, 0.3) !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
 body.dark-mode .card-header h5,
 body.dark-mode h5 {
     color: #ffffff;
