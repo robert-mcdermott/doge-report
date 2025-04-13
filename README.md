@@ -1,11 +1,11 @@
 # DOGE Report Dashboard
+[![Update Doge Data](https://github.com/robert-mcdermott/doge-report/actions/workflows/update-doge-data.yml/badge.svg)](https://github.com/robert-mcdermott/doge-report/actions/workflows/update-doge-data.yml)
 
 A simple web application for exploring and analyzing data from the Department of Government Efficiency (DOGE) API.
 
 **Access the application here:** [https://robert-mcdermott.github.io/doge-report/](https://robert-mcdermott.github.io/doge-report/)
 
 ![Doge Report Dashboard Screenshot](https://github.com/robert-mcdermott/doge-report/blob/main/data/doge-report-dashboard-screenshot.png)
-
 ## Overview
 
 The DOGE Report Dashboard provides a user-friendly interface to explore and analyze canceled grants, contracts, and leases data from the Department of Government Efficiency. The dashboard features interactive tables, visualizations, and filtering capabilities to help you explore and search the data.
