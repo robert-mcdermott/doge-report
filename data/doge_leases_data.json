@@ -1,5 +1,122 @@
 [
   {
+    "date": "4/4/2025",
+    "location": "SAN JOSE, CA",
+    "sq_ft": 5736,
+    "description": "",
+    "value": 308476,
+    "savings": 988813,
+    "agency": "EQUAL EMPLOYMENT OPPORTUNITY COMMISSION"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "ISELIN, NJ",
+    "sq_ft": 5278,
+    "description": "Termination via Mass Mod",
+    "value": 158576,
+    "savings": 0,
+    "agency": "FED MED & CONCIL SRV"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "PONCE, PR",
+    "sq_ft": 270,
+    "description": "Termination via Mass Mod",
+    "value": 10727,
+    "savings": 75119,
+    "agency": "EMPLOYMENT STANDARDS ADMINISTRATION, WAGE AND HOUR DIVI"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "BALTIMORE, MD",
+    "sq_ft": 103579,
+    "description": "Termination via Mass Mod",
+    "value": 2402919,
+    "savings": 0,
+    "agency": "CENTERS FOR MEDICARE AND MEDICAID SERVICES"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "PORTSMOUTH, VA",
+    "sq_ft": 1730,
+    "description": "Termination via Mass Mod",
+    "value": 37830,
+    "savings": 189253,
+    "agency": "FED MED & CONCIL SRV"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "PEMBROKE PINES, FL",
+    "sq_ft": 4830,
+    "description": "Termination via Mass Mod",
+    "value": 161498,
+    "savings": 0,
+    "agency": "DEPARTMENT OF EDUCATION"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "GREENVILLE, NC",
+    "sq_ft": 7701,
+    "description": "True Termination- Agency Closed Office",
+    "value": 148367,
+    "savings": 0,
+    "agency": "FARM SERVICE AGENCY - COUNTY"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "CLEVELAND, OH",
+    "sq_ft": 10818,
+    "description": "Termination via Mass Mod",
+    "value": 289621,
+    "savings": 290415,
+    "agency": "DEPARTMENT OF EDUCATION"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "FAIRFIELD, CA",
+    "sq_ft": 19413,
+    "description": "Termination via Mass Mod",
+    "value": 645525,
+    "savings": 3227627,
+    "agency": "JOINT FORCES HEADQUARTERS NCR/MILITARY DC WASH"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "WASHINGTON, DC",
+    "sq_ft": 17500,
+    "description": "Termination via Mass Mod",
+    "value": 179604,
+    "savings": 0,
+    "agency": "DEPARTMENT OF EDUCATION"
+  },
+  {
+    "date": "4/3/2025",
+    "location": "WASHINGTON, DC",
+    "sq_ft": 27714,
+    "description": "Termination via Mass Mod",
+    "value": 1238963,
+    "savings": 0,
+    "agency": "INSTITUTE MUSM SERV"
+  },
+  {
+    "date": "4/1/2025",
+    "location": "NORTH CHARLESTON, SC",
+    "sq_ft": 75000,
+    "description": "True Termination- Agency Closed Office",
+    "value": 725132,
+    "savings": 25827,
+    "agency": "DEPARTMENT OF AIR FORCE"
+  },
+  {
+    "date": "3/28/2025",
+    "location": "INDEPENDENCE, OH",
+    "sq_ft": 6609,
+    "description": "True Termination- Agency Closed Office",
+    "value": 137951,
+    "savings": 542735,
+    "agency": "FED MED & CONCIL SRV"
+  },
+  {
     "date": "3/13/2025",
     "location": "IDAHO FALLS, ID",
     "sq_ft": 1920,
@@ -7,15 +124,6 @@
     "value": 34856,
     "savings": 225272,
     "agency": "AGRICULTURAL MARKETING SERVICE"
-  },
-  {
-    "date": "3/12/2025",
-    "location": "LITTLETON, CO",
-    "sq_ft": 1250,
-    "description": "Soft Term Terminations via PBS Commissioner Letter 2.25.25",
-    "value": 20859,
-    "savings": 19144,
-    "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
     "date": "3/12/2025",
@@ -34,6 +142,24 @@
     "value": 95124,
     "savings": 475881,
     "agency": "FOOD AND DRUG ADMINISTRATION"
+  },
+  {
+    "date": "3/11/2025",
+    "location": "BUFFALO, NY",
+    "sq_ft": 2178,
+    "description": "True Termination- Agency Closed Office",
+    "value": 44352,
+    "savings": 144236,
+    "agency": "FED MED & CONCIL SRV"
+  },
+  {
+    "date": "3/7/2025",
+    "location": "LITTLETON, CO",
+    "sq_ft": 1250,
+    "description": "Soft Term Terminations via PBS Commissioner Letter 2.25.25",
+    "value": 20859,
+    "savings": 19144,
+    "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
     "date": "3/7/2025",
@@ -91,15 +217,6 @@
   },
   {
     "date": "3/4/2025",
-    "location": "ALTOONA, PA",
-    "sq_ft": 2541,
-    "description": "Termination via Mass Mod",
-    "value": 41351,
-    "savings": 289570,
-    "agency": "RAILROAD RETIREMENT BOARD"
-  },
-  {
-    "date": "3/4/2025",
     "location": "WARRENDALE, PA",
     "sq_ft": 11380,
     "description": "Termination via Mass Mod",
@@ -141,7 +258,7 @@
     "description": "Termination via Mass Mod",
     "value": 94072,
     "savings": 0,
-    "agency": "ALCOHOL AND TOBACCO TAX AND TRADE BUREAU"
+    "agency": "ALCOHOL  AND TOBACCO TAX  AND TRADE BUREAU"
   },
   {
     "date": "3/4/2025",
@@ -157,7 +274,7 @@
     "location": "NORCROSS, GA",
     "sq_ft": 15120,
     "description": "Termination via Mass Mod",
-    "value": 218257,
+    "value": 219857,
     "savings": 0,
     "agency": "ENVIRONMENTAL PROTECTION AGENCY"
   },
@@ -172,21 +289,12 @@
   },
   {
     "date": "3/4/2025",
-    "location": "ERLANGER, KY",
-    "sq_ft": 24416,
-    "description": "Termination via Mass Mod",
-    "value": 464061,
-    "savings": 928122,
-    "agency": "ENVIRONMENTAL PROTECTION AGENCY"
-  },
-  {
-    "date": "3/4/2025",
     "location": "GREENSBORO, NC",
     "sq_ft": 2696,
     "description": "Termination via Mass Mod",
-    "value": 62450,
-    "savings": 312423,
-    "agency": "ALCOHOL AND TOBACCO TAX AND TRADE BUREAU"
+    "value": 62834,
+    "savings": 314345,
+    "agency": "ALCOHOL  AND TOBACCO TAX  AND TRADE BUREAU"
   },
   {
     "date": "3/4/2025",
@@ -238,27 +346,9 @@
     "location": "INDIANAPOLIS, IN",
     "sq_ft": 2409,
     "description": "Termination via Mass Mod",
-    "value": 70236,
-    "savings": 140665,
+    "value": 70798,
+    "savings": 141789,
     "agency": "EMPLOYMENT STANDARDS ADMINISTRATION, WAGE AND HOUR DIVI"
-  },
-  {
-    "date": "3/4/2025",
-    "location": "INDIANAPOLIS, IN",
-    "sq_ft": 2407,
-    "description": "Termination via Mass Mod",
-    "value": 68422,
-    "savings": 62611,
-    "agency": "ENVIRONMENTAL PROTECTION AGENCY"
-  },
-  {
-    "date": "3/4/2025",
-    "location": "ST. PAUL, MN",
-    "sq_ft": 3006,
-    "description": "Termination via Mass Mod",
-    "value": 70622,
-    "savings": 0,
-    "agency": "RAILROAD RETIREMENT BOARD"
   },
   {
     "date": "3/4/2025",
@@ -346,8 +436,8 @@
     "location": "LANDER, WY",
     "sq_ft": 7601,
     "description": "Termination via Mass Mod",
-    "value": 109873,
-    "savings": 769413,
+    "value": 111187,
+    "savings": 778616,
     "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
@@ -393,7 +483,7 @@
     "description": "Termination via Mass Mod",
     "value": 87006,
     "savings": 0,
-    "agency": "ALCOHOL AND TOBACCO TAX AND TRADE BUREAU"
+    "agency": "ALCOHOL  AND TOBACCO TAX  AND TRADE BUREAU"
   },
   {
     "date": "3/4/2025",
@@ -580,8 +670,8 @@
     "location": "WINONA, MN",
     "sq_ft": 6827,
     "description": "Termination via Mass Mod",
-    "value": 117314,
-    "savings": 523254,
+    "value": 118449,
+    "savings": 528313,
     "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
@@ -658,30 +748,12 @@
   },
   {
     "date": "2/28/2025",
-    "location": "FORT PAYNE, AL",
-    "sq_ft": 5300,
-    "description": "Termination via Mass Mod",
-    "value": 78171,
-    "savings": 348449,
-    "agency": "NATIONAL PARK SERVICE"
-  },
-  {
-    "date": "2/28/2025",
     "location": "TALLAHASSEE, FL",
     "sq_ft": 3802,
     "description": "Termination via Mass Mod",
     "value": 142115,
     "savings": 693055,
     "agency": "GEOLOGICAL SURVEY"
-  },
-  {
-    "date": "2/28/2025",
-    "location": "JACKSONVILLE, FL",
-    "sq_ft": 2307,
-    "description": "Termination via Mass Mod",
-    "value": 55492,
-    "savings": 108400,
-    "agency": "RAILROAD RETIREMENT BOARD"
   },
   {
     "date": "2/28/2025",
@@ -775,15 +847,6 @@
   },
   {
     "date": "2/28/2025",
-    "location": "CINCINNATI, OH",
-    "sq_ft": 1428,
-    "description": "Termination via Mass Mod",
-    "value": 31416,
-    "savings": 52331,
-    "agency": "RAILROAD RETIREMENT BOARD"
-  },
-  {
-    "date": "2/28/2025",
     "location": "INDEPENDENCE, OH",
     "sq_ft": 6573,
     "description": "Termination via Mass Mod",
@@ -796,8 +859,8 @@
     "location": "CLEVELAND, OH",
     "sq_ft": 5722,
     "description": "Termination via Mass Mod",
-    "value": 144079,
-    "savings": 322895,
+    "value": 145182,
+    "savings": 325366,
     "agency": "SMALL BUSINESS ADMINISTRATION"
   },
   {
@@ -1102,8 +1165,8 @@
     "location": "MANSFIELD, OH",
     "sq_ft": 1047,
     "description": "True Termination- Agency Closed Office",
-    "value": 15031,
-    "savings": 27674,
+    "value": 15188,
+    "savings": 27963,
     "agency": "SOCIAL SECURITY ADMINISTRATION"
   },
   {
@@ -1174,8 +1237,8 @@
     "location": "BARRE, VT",
     "sq_ft": 287,
     "description": "Termination via Mass Mod",
-    "value": 9310,
-    "savings": 13161,
+    "value": 9369,
+    "savings": 13245,
     "agency": "NATIONAL OCEANIC ATMOSPHERIC ADMINISTRATION"
   },
   {
@@ -1534,8 +1597,8 @@
     "location": "SUNRISE, FL",
     "sq_ft": 1858,
     "description": "Termination via Mass Mod",
-    "value": 51429,
-    "savings": 79187,
+    "value": 52972,
+    "savings": 81562,
     "agency": "NATIONAL OCEANIC ATMOSPHERIC ADMINISTRATION"
   },
   {
@@ -1621,21 +1684,12 @@
   },
   {
     "date": "2/26/2025",
-    "location": "CHARLOTTE, NC",
-    "sq_ft": 2154,
-    "description": "Termination via Mass Mod",
-    "value": 67647,
-    "savings": 150677,
-    "agency": "ENVIRONMENTAL PROTECTION AGENCY"
-  },
-  {
-    "date": "2/26/2025",
     "location": "GREENSBORO, NC",
     "sq_ft": 1579,
     "description": "Termination via Mass Mod",
     "value": 24855,
     "savings": 16547,
-    "agency": "FOOD AND DRUG ADMINISTRATION"
+    "agency": "HHS FDA"
   },
   {
     "date": "2/26/2025",
@@ -1711,15 +1765,6 @@
   },
   {
     "date": "2/26/2025",
-    "location": "SAULT STE MARIE, MI",
-    "sq_ft": 1100,
-    "description": "Termination via Mass Mod",
-    "value": 34375,
-    "savings": 88150,
-    "agency": "INDIAN HEALTH SERVICE-BEMIDJI"
-  },
-  {
-    "date": "2/26/2025",
     "location": "MINNEAPOLIS, MN",
     "sq_ft": 3499,
     "description": "Termination via Mass Mod",
@@ -1789,15 +1834,6 @@
     "value": 91115,
     "savings": 261362,
     "agency": "MINE SAFETY HEALTH ADMINISTRATION"
-  },
-  {
-    "date": "2/26/2025",
-    "location": "INDEPENDENCE, OH",
-    "sq_ft": 6609,
-    "description": "Termination via Mass Mod",
-    "value": 137951,
-    "savings": 517412,
-    "agency": ""
   },
   {
     "date": "2/26/2025",
@@ -1927,29 +1963,20 @@
   },
   {
     "date": "2/26/2025",
-    "location": "OPELOUSAS, LA",
-    "sq_ft": 1029,
-    "description": "Termination via Mass Mod",
-    "value": 25015,
-    "savings": 22959,
-    "agency": "INDIAN HEALTH SERVICE-NASHVILLE"
-  },
-  {
-    "date": "2/26/2025",
     "location": "ROSWELL, NM",
     "sq_ft": 5635,
     "description": "Termination via Mass Mod",
     "value": 88639,
     "savings": 765934,
-    "agency": "FARM SERVICE AGENCY - COUNTY"
+    "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
   },
   {
     "date": "2/26/2025",
     "location": "SILVER CITY, NM",
     "sq_ft": 29554,
     "description": "Termination via Mass Mod",
-    "value": 544570,
-    "savings": 1873918,
+    "value": 549937,
+    "savings": 1892386,
     "agency": "FOREST SERVICE"
   },
   {
@@ -1966,8 +1993,8 @@
     "location": "LONGVIEW, TX",
     "sq_ft": 2400,
     "description": "Termination via Mass Mod",
-    "value": 63059,
-    "savings": 217163,
+    "value": 63624,
+    "savings": 219112,
     "agency": "MINE SAFETY HEALTH ADMINISTRATION"
   },
   {
@@ -2014,15 +2041,6 @@
     "value": 312042,
     "savings": 969467,
     "agency": "ANIMAL AND PLANT HEALTH INSPECTION SERVICE"
-  },
-  {
-    "date": "2/26/2025",
-    "location": "CASTLE ROCK, CO",
-    "sq_ft": 10800,
-    "description": "Termination via Mass Mod",
-    "value": 291265,
-    "savings": 1269597,
-    "agency": "ENVIRONMENTAL PROTECTION AGENCY"
   },
   {
     "date": "2/26/2025",
@@ -2188,15 +2206,6 @@
   },
   {
     "date": "2/26/2025",
-    "location": "UKIAH, CA",
-    "sq_ft": 1848,
-    "description": "Termination via Mass Mod",
-    "value": 45857,
-    "savings": 192475,
-    "agency": "INDIAN HEALTH SERVICE-CALIFORNIA"
-  },
-  {
-    "date": "2/26/2025",
     "location": "CERRITOS, CA",
     "sq_ft": 3680,
     "description": "Termination via Mass Mod",
@@ -2263,8 +2272,8 @@
     "location": "ANCHORAGE, AK",
     "sq_ft": 4031,
     "description": "Termination via Mass Mod",
-    "value": 174743,
-    "savings": 87132,
+    "value": 179985,
+    "savings": 89746,
     "agency": "SMALL BUSINESS ADMINISTRATION"
   },
   {
@@ -2389,8 +2398,8 @@
     "location": "FALMOUTH, ME",
     "sq_ft": 2999,
     "description": "Termination via Mass Mod",
-    "value": 70616,
-    "savings": 251897,
+    "value": 71369,
+    "savings": 254583,
     "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
@@ -2425,8 +2434,8 @@
     "location": "PORTSMOUTH, NH",
     "sq_ft": 1099,
     "description": "Termination via Mass Mod",
-    "value": 31147,
-    "savings": 47872,
+    "value": 31432,
+    "savings": 48311,
     "agency": "INTERNATIONAL TRADE ADMINISTRATION"
   },
   {
@@ -2473,15 +2482,6 @@
     "value": 128580,
     "savings": 21489,
     "agency": "BUREAU OF LABOR STATISTICS"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "MANLIUS, NY",
-    "sq_ft": 2105,
-    "description": "Termination via Mass Mod",
-    "value": 37648,
-    "savings": 63227,
-    "agency": "INDIAN HEALTH SERVICE-NASHVILLE"
   },
   {
     "date": "2/25/2025",
@@ -2596,8 +2596,8 @@
     "location": "ARECIBO, PR",
     "sq_ft": 4360,
     "description": "Termination via Mass Mod",
-    "value": 176795,
-    "savings": 451916,
+    "value": 178801,
+    "savings": 457044,
     "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
   },
   {
@@ -2677,8 +2677,8 @@
     "location": "NORTHFIELD, NJ",
     "sq_ft": 1035,
     "description": "Termination via Mass Mod",
-    "value": 29265,
-    "savings": 45942,
+    "value": 29579,
+    "savings": 46435,
     "agency": "NATIONAL OCEANIC ATMOSPHERIC ADMINISTRATION"
   },
   {
@@ -2698,15 +2698,6 @@
     "value": 102968,
     "savings": 231608,
     "agency": "GEOLOGICAL SURVEY"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "SCRANTON, PA",
-    "sq_ft": 1250,
-    "description": "Termination via Mass Mod",
-    "value": 32369,
-    "savings": 71212,
-    "agency": "RAILROAD RETIREMENT BOARD"
   },
   {
     "date": "2/25/2025",
@@ -2809,15 +2800,6 @@
   },
   {
     "date": "2/25/2025",
-    "location": "BIRMINGHAM, AL",
-    "sq_ft": 7580,
-    "description": "Termination via Mass Mod",
-    "value": 217203,
-    "savings": 126156,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
-  },
-  {
-    "date": "2/25/2025",
     "location": "NAPLES, FL",
     "sq_ft": 4862,
     "description": "Termination via Mass Mod",
@@ -2841,7 +2823,7 @@
     "description": "Termination via Mass Mod",
     "value": 1483967,
     "savings": 5439856,
-    "agency": ""
+    "agency": "U.S. AGNY FOR GL MED"
   },
   {
     "date": "2/25/2025",
@@ -2869,15 +2851,6 @@
     "value": 79365,
     "savings": 79365,
     "agency": "BUREAU OF INDIAN AFFAIRS"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "GAINESVILLE, FL",
-    "sq_ft": 2397,
-    "description": "Termination via Mass Mod",
-    "value": 63100,
-    "savings": 118765,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
   },
   {
     "date": "2/25/2025",
@@ -3034,15 +3007,6 @@
   },
   {
     "date": "2/25/2025",
-    "location": "ACKERMAN, MS",
-    "sq_ft": 4809,
-    "description": "Termination via Mass Mod",
-    "value": 71558,
-    "savings": 83517,
-    "agency": "FOREST SERVICE"
-  },
-  {
-    "date": "2/25/2025",
     "location": "RIDGELAND, MS",
     "sq_ft": 7277,
     "description": "Termination via Mass Mod",
@@ -3076,15 +3040,6 @@
     "value": 104475,
     "savings": 8587,
     "agency": "FARM SERVICE AGENCY - COUNTY"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "RALEIGH, NC",
-    "sq_ft": 5641,
-    "description": "Termination via Mass Mod",
-    "value": 122754,
-    "savings": 480925,
-    "agency": "EMPLOYMENT STANDARDS ADMINISTRATION, WAGE AND HOUR DIVI"
   },
   {
     "date": "2/25/2025",
@@ -3142,30 +3097,12 @@
   },
   {
     "date": "2/25/2025",
-    "location": "FRANKLIN, TN",
-    "sq_ft": 135373,
-    "description": "Termination via Mass Mod",
-    "value": 4602070,
-    "savings": 31949712,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
-  },
-  {
-    "date": "2/25/2025",
     "location": "MEMPHIS, TN",
     "sq_ft": 12305,
     "description": "Termination via Mass Mod",
     "value": 323607,
     "savings": 701297,
     "agency": "FOOD AND DRUG ADMINISTRATION"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "KNOXVILLE, TN",
-    "sq_ft": 3703,
-    "description": "Termination via Mass Mod",
-    "value": 69357,
-    "savings": 109641,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
   },
   {
     "date": "2/25/2025",
@@ -3232,15 +3169,6 @@
   },
   {
     "date": "2/25/2025",
-    "location": "CHICAGO, IL",
-    "sq_ft": 81492,
-    "description": "Termination via Mass Mod",
-    "value": 2602276,
-    "savings": 3935496,
-    "agency": "SECURITIES AND EXCHANGE COMMISSION"
-  },
-  {
-    "date": "2/25/2025",
     "location": "TINLEY PARK, IL",
     "sq_ft": 7010,
     "description": "Termination via Mass Mod",
@@ -3271,8 +3199,8 @@
     "location": "SOUTH BEND, IN",
     "sq_ft": 1734,
     "description": "Termination via Mass Mod",
-    "value": 28745,
-    "savings": 14254,
+    "value": 29044,
+    "savings": 14403,
     "agency": "FOOD AND DRUG ADMINISTRATION"
   },
   {
@@ -3286,30 +3214,12 @@
   },
   {
     "date": "2/25/2025",
-    "location": "TRAVERSE CITY, MI",
-    "sq_ft": 798,
-    "description": "Termination via Mass Mod",
-    "value": 28638,
-    "savings": 50058,
-    "agency": "INDIAN HEALTH SERVICE-BEMIDJI"
-  },
-  {
-    "date": "2/25/2025",
     "location": "BAUDETTE, MN",
     "sq_ft": 2081,
     "description": "Termination via Mass Mod",
     "value": 22509,
     "savings": 1850,
     "agency": "FARM SERVICE AGENCY - COUNTY"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "BEMIDJI, MN",
-    "sq_ft": 4896,
-    "description": "Termination via Mass Mod",
-    "value": 133916,
-    "savings": 180144,
-    "agency": "INDIAN HEALTH SERVICE-BEMIDJI"
   },
   {
     "date": "2/25/2025",
@@ -3370,8 +3280,8 @@
     "location": "CLEVELAND, OH",
     "sq_ft": 9340,
     "description": "Termination via Mass Mod",
-    "value": 205829,
-    "savings": 102069,
+    "value": 207729,
+    "savings": 103011,
     "agency": "FEDERAL TRADE COMMISSION"
   },
   {
@@ -3478,8 +3388,8 @@
     "location": "KANSAS CITY, KS",
     "sq_ft": 69437,
     "description": "Termination via Mass Mod",
-    "value": 1449511,
-    "savings": 2168309,
+    "value": 1463756,
+    "savings": 2189619,
     "agency": "OFFICE OF THE SECRETARY"
   },
   {
@@ -3550,8 +3460,8 @@
     "location": "LITTLE ROCK, AR",
     "sq_ft": 6779,
     "description": "Termination via Mass Mod",
-    "value": 119943,
-    "savings": 59479,
+    "value": 121148,
+    "savings": 60076,
     "agency": "UNITED STATES TRUSTEES"
   },
   {
@@ -3631,8 +3541,8 @@
     "location": "ZUNI, NM",
     "sq_ft": 2117,
     "description": "Termination via Mass Mod",
-    "value": 39819,
-    "savings": 19855,
+    "value": 40252,
+    "savings": 20071,
     "agency": "BUREAU OF INDIAN AFFAIRS"
   },
   {
@@ -3661,15 +3571,6 @@
     "value": 151063,
     "savings": 970116,
     "agency": "FARM SERVICE AGENCY - COUNTY"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "GALLUP, NM",
-    "sq_ft": 20287,
-    "description": "Termination via Mass Mod",
-    "value": 322529,
-    "savings": 3145759,
-    "agency": "INDIAN HEALTH SERVICE NAVAJO"
   },
   {
     "date": "2/25/2025",
@@ -3748,8 +3649,8 @@
     "location": "IRVING, TX",
     "sq_ft": 5788,
     "description": "Termination via Mass Mod",
-    "value": 115742,
-    "savings": 421110,
+    "value": 109954,
+    "savings": 400051,
     "agency": "FOOD AND DRUG ADMINISTRATION"
   },
   {
@@ -3944,15 +3845,6 @@
   {
     "date": "2/25/2025",
     "location": "PHOENIX, AZ",
-    "sq_ft": 99880,
-    "description": "Termination via Mass Mod",
-    "value": 2666602,
-    "savings": 10081946,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "PHOENIX, AZ",
     "sq_ft": 71591,
     "description": "Termination via Mass Mod",
     "value": 1784239,
@@ -4042,15 +3934,6 @@
   },
   {
     "date": "2/25/2025",
-    "location": "COVINA, CA",
-    "sq_ft": 2270,
-    "description": "Termination via Mass Mod",
-    "value": 79283,
-    "savings": 290631,
-    "agency": "RAILROAD RETIREMENT BOARD"
-  },
-  {
-    "date": "2/25/2025",
     "location": "VENTURA, CA",
     "sq_ft": 10855,
     "description": "Termination via Mass Mod",
@@ -4129,15 +4012,6 @@
     "value": 313985,
     "savings": 552270,
     "agency": "FEDERAL HIGHWAY ADMINISTRATION"
-  },
-  {
-    "date": "2/25/2025",
-    "location": "IRVINE, CA",
-    "sq_ft": 13775,
-    "description": "Termination via Mass Mod",
-    "value": 503029,
-    "savings": 836544,
-    "agency": "BUR OF INDUSTRY & SECURITY"
   },
   {
     "date": "2/25/2025",
@@ -4240,15 +4114,6 @@
   },
   {
     "date": "2/25/2025",
-    "location": "ELKO, NV",
-    "sq_ft": 853,
-    "description": "Termination via Mass Mod",
-    "value": 22240,
-    "savings": 148731,
-    "agency": "INDIAN HEALTH SERVICE-PHOENIX"
-  },
-  {
-    "date": "2/25/2025",
     "location": "FAIRBANKS, AK",
     "sq_ft": 4446,
     "description": "Termination via Mass Mod",
@@ -4333,8 +4198,8 @@
     "location": "PORTLAND, OR",
     "sq_ft": 4987,
     "description": "Termination via Mass Mod",
-    "value": 86585,
-    "savings": 134504,
+    "value": 87362,
+    "savings": 135710,
     "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
   },
   {
@@ -4351,8 +4216,8 @@
     "location": "SPOKANE VALLEY, WA",
     "sq_ft": 13196,
     "description": "Termination via Mass Mod",
-    "value": 257897,
-    "savings": 2192479,
+    "value": 260022,
+    "savings": 2210543,
     "agency": "GEOLOGICAL SURVEY"
   },
   {
@@ -4360,8 +4225,8 @@
     "location": "PUYALLUP, WA",
     "sq_ft": 2930,
     "description": "Termination via Mass Mod",
-    "value": 85239,
-    "savings": 305225,
+    "value": 85745,
+    "savings": 307038,
     "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
   },
   {
@@ -4375,20 +4240,11 @@
   },
   {
     "date": "2/25/2025",
-    "location": "PORT ANGELES, WA",
-    "sq_ft": 4556,
-    "description": "Termination via Mass Mod",
-    "value": 100232,
-    "savings": 225453,
-    "agency": "NATIONAL OCEANIC ATMOSPHERIC ADMINISTRATION"
-  },
-  {
-    "date": "2/25/2025",
     "location": "HYATTSVILLE, MD",
     "sq_ft": 76372,
     "description": "True Termination- Move to Federal Space",
-    "value": 2544684,
-    "savings": 4350364,
+    "value": 2568071,
+    "savings": 4390347,
     "agency": "DEPT OF TREASURY-BUREAU OF THE FISCAL SERVICE"
   },
   {
@@ -4422,7 +4278,7 @@
     "date": "2/24/2025",
     "location": "LOWELL, MA",
     "sq_ft": 3900,
-    "description": "True Termination- Agency Closed Office",
+    "description": "GSA and NPS identified this as a termination project",
     "value": 44853,
     "savings": 152377,
     "agency": "NATIONAL PARK SERVICE"
@@ -4441,8 +4297,8 @@
     "location": "EVERETT, MA",
     "sq_ft": 2789,
     "description": "Termination via Mass Mod",
-    "value": 121254,
-    "savings": 384692,
+    "value": 122029,
+    "savings": 387151,
     "agency": "AGRICULTURAL MARKETING SERVICE"
   },
   {
@@ -4531,8 +4387,8 @@
     "location": "COCOA, FL",
     "sq_ft": 1088,
     "description": "Termination via Mass Mod",
-    "value": 15368,
-    "savings": 26231,
+    "value": 15518,
+    "savings": 26487,
     "agency": "FED ACQUISITION SRVC REG 04, FLEET MGMT FACILITIES"
   },
   {
@@ -4570,15 +4426,6 @@
     "value": 786167,
     "savings": 930477,
     "agency": "FARM SERVICE AGENCY- STATE"
-  },
-  {
-    "date": "2/24/2025",
-    "location": "OXFORD, MS",
-    "sq_ft": 1630,
-    "description": "Termination via Mass Mod",
-    "value": 32758,
-    "savings": 14988,
-    "agency": "INTERNAL REVENUE SERVICE NATIONAL OFFICE"
   },
   {
     "date": "2/24/2025",
@@ -4639,8 +4486,8 @@
     "location": "AIKEN, SC",
     "sq_ft": 2250,
     "description": "True Termination- Agency Closed Office",
-    "value": 42225,
-    "savings": 200712,
+    "value": 43133,
+    "savings": 205027,
     "agency": "SAVANNAH RIVER OPERATIONS OFFICE"
   },
   {
@@ -4651,15 +4498,6 @@
     "value": 33110,
     "savings": 82911,
     "agency": "OCCUPATIONAL SAFETY AND HEALTH ADMINISTRATION"
-  },
-  {
-    "date": "2/24/2025",
-    "location": "JOLIET, IL",
-    "sq_ft": 1397,
-    "description": "Termination via Mass Mod",
-    "value": 17882,
-    "savings": 3037,
-    "agency": "RAILROAD RETIREMENT BOARD"
   },
   {
     "date": "2/24/2025",
@@ -4678,15 +4516,6 @@
     "value": 12312,
     "savings": 37442,
     "agency": "FOOD AND DRUG ADMINISTRATION"
-  },
-  {
-    "date": "2/24/2025",
-    "location": "WICHITA, KS",
-    "sq_ft": 1290,
-    "description": "Termination via Mass Mod",
-    "value": 32444,
-    "savings": 78931,
-    "agency": "RAILROAD RETIREMENT BOARD"
   },
   {
     "date": "2/24/2025",
@@ -4713,16 +4542,7 @@
     "description": "Agency approved lease termination",
     "value": 85875,
     "savings": 0,
-    "agency": "AGRICULTURAL MARKETING SERVICE"
-  },
-  {
-    "date": "2/24/2025",
-    "location": "FARMINGTON, NM",
-    "sq_ft": 2000,
-    "description": "Termination via Mass Mod",
-    "value": 62677,
-    "savings": 488193,
-    "agency": "INDIAN HEALTH SERVICE NAVAJO"
+    "agency": "USDA AMS"
   },
   {
     "date": "2/24/2025",
@@ -4765,8 +4585,8 @@
     "location": "GRAND JUNCTION, CO",
     "sq_ft": 1444,
     "description": "True Termination- Agency Closed Office",
-    "value": 22360,
-    "savings": 106286,
+    "value": 25176,
+    "savings": 119671,
     "agency": "UNITED STATES FISH AND WILDLIFE SERVICE"
   },
   {
@@ -4825,15 +4645,6 @@
   },
   {
     "date": "2/24/2025",
-    "location": "MESA, AZ",
-    "sq_ft": 1946,
-    "description": "Termination via Mass Mod",
-    "value": 36974,
-    "savings": 44774,
-    "agency": "RAILROAD RETIREMENT BOARD"
-  },
-  {
-    "date": "2/24/2025",
     "location": "FREDONIA, AZ",
     "sq_ft": 1500,
     "description": "Termination via Mass Mod",
@@ -4849,15 +4660,6 @@
     "value": 53075,
     "savings": 75323,
     "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
-  },
-  {
-    "date": "2/24/2025",
-    "location": "ARCATA, CA",
-    "sq_ft": 1492,
-    "description": "Termination via Mass Mod",
-    "value": 37205,
-    "savings": 59120,
-    "agency": "INDIAN HEALTH SERVICE-CALIFORNIA"
   },
   {
     "date": "2/24/2025",
@@ -4891,18 +4693,9 @@
     "location": "BOISE, ID",
     "sq_ft": 44623,
     "description": "Termination via Mass Mod",
-    "value": 1199187,
-    "savings": 5598394,
+    "value": 1204491,
+    "savings": 5623156,
     "agency": "ANIMAL AND PLANT HEALTH INSPECTION SERVICE"
-  },
-  {
-    "date": "2/21/2025",
-    "location": "BUFFALO, NY",
-    "sq_ft": 2178,
-    "description": "End of term",
-    "value": 44352,
-    "savings": 0,
-    "agency": ""
   },
   {
     "date": "2/21/2025",
@@ -4956,7 +4749,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 112316,
     "savings": 0,
-    "agency": ""
+    "agency": "NATURAL RESOURCES CONSERVATION SERVICE"
   },
   {
     "date": "2/21/2025",
@@ -4965,7 +4758,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 40141,
     "savings": 139779,
-    "agency": ""
+    "agency": "FED MED & CONCIL SRV"
   },
   {
     "date": "2/21/2025",
@@ -4983,7 +4776,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 122625,
     "savings": 337639,
-    "agency": ""
+    "agency": "FED MED & CONCIL SRV"
   },
   {
     "date": "2/21/2025",
@@ -5010,7 +4803,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 2016,
     "savings": 2563,
-    "agency": ""
+    "agency": "FAS REG8 FLT MGT FAC"
   },
   {
     "date": "2/21/2025",
@@ -5054,8 +4847,17 @@
     "sq_ft": 0,
     "description": "True Termination- Agency Closed Office",
     "value": 8400,
-    "savings": 23336,
-    "agency": "FAS, REG 01 FLEET MANAGEMENT FACILITIES"
+    "savings": 23382,
+    "agency": "FAS REG1 FLT MGT FAC"
+  },
+  {
+    "date": "2/20/2025",
+    "location": "JACKSONVILLE, FL",
+    "sq_ft": 12353,
+    "description": "True Termination- Agency Closed Office",
+    "value": 243409,
+    "savings": 0,
+    "agency": "ARMY RECRUITING COMMAND"
   },
   {
     "date": "2/20/2025",
@@ -5065,15 +4867,6 @@
     "value": 59697,
     "savings": 263973,
     "agency": "SOCIAL SECURITY ADMINISTRATION"
-  },
-  {
-    "date": "2/20/2025",
-    "location": "NORTH CHARLESTON, SC",
-    "sq_ft": 75000,
-    "description": "True Termination- Agency Closed Office",
-    "value": 725132,
-    "savings": 0,
-    "agency": "DEPARTMENT OF AIR FORCE"
   },
   {
     "date": "2/20/2025",
@@ -5097,7 +4890,7 @@
     "date": "2/20/2025",
     "location": "WATERTOWN, SD",
     "sq_ft": 7869,
-    "description": "Termination details are still being finalized. The lessor and customer have been notified, and the strategy is under development.",
+    "description": "True Termination- Agency Closed Office",
     "value": 238328,
     "savings": 294482,
     "agency": "FARM SERVICE AGENCY - COUNTY"
@@ -5106,19 +4899,10 @@
     "date": "2/20/2025",
     "location": "ST. GEORGE, UT",
     "sq_ft": 750,
-    "description": "Termination details are still being finalized. The lessor and customer have been notified, and the strategy is under development.",
+    "description": "True Termination- Agency Closed Office",
     "value": 50400,
-    "savings": 253381,
+    "savings": 252138,
     "agency": "BUREAU OF INDIAN AFFAIRS"
-  },
-  {
-    "date": "2/20/2025",
-    "location": "SAN JOSE, CA",
-    "sq_ft": 5736,
-    "description": "True Termination: Agency Approved Termination",
-    "value": 308476,
-    "savings": 1202633,
-    "agency": "EQUAL EMPLOYMENT OPPORTUNITY COMMISSION"
   },
   {
     "date": "2/20/2025",
@@ -5136,7 +4920,7 @@
     "description": "True Termination- Move to Federal Space",
     "value": 3016102,
     "savings": 0,
-    "agency": ""
+    "agency": "LD MINE SAFE HEALTH"
   },
   {
     "date": "2/19/2025",
@@ -5180,8 +4964,8 @@
     "sq_ft": 1023,
     "description": "True Termination- Agency Closed Office",
     "value": 19938,
-    "savings": 0,
-    "agency": ""
+    "savings": 5026,
+    "agency": "DHS-CBP FIELD OPERATIONS FACILITIES"
   },
   {
     "date": "2/14/2025",
@@ -5208,7 +4992,7 @@
     "description": "True Termination- Move to Federal Space",
     "value": 223483,
     "savings": 12858,
-    "agency": "FEDERAL TRADE COMMISSION"
+    "agency": "FTC"
   },
   {
     "date": "2/13/2025",
@@ -5271,7 +5055,7 @@
     "description": "True Termination- Move to Federal Space",
     "value": 65406,
     "savings": 17203,
-    "agency": "SOCIAL SECURITY ADMINISTRATION"
+    "agency": "SSA-OFFICE OF THE INSPECTOR GENERAL"
   },
   {
     "date": "2/12/2025",
@@ -5289,7 +5073,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 342689,
     "savings": 0,
-    "agency": "General Services Administration"
+    "agency": ""
   },
   {
     "date": "2/11/2025",
@@ -5352,7 +5136,7 @@
     "description": "True Termination- Agency Direct Lease",
     "value": 1800000,
     "savings": 0,
-    "agency": "GEOLOGICAL SURVEY"
+    "agency": "ID GEOLOGICAL SURVEY"
   },
   {
     "date": "2/7/2025",
@@ -5362,6 +5146,15 @@
     "value": 1863031,
     "savings": 18630308,
     "agency": "BUREAU OF RECLAMATION"
+  },
+  {
+    "date": "2/6/2025",
+    "location": "MCLEANSVILLE, NC",
+    "sq_ft": 6913,
+    "description": "True Termination- Agency Closed Office",
+    "value": 156339,
+    "savings": 347800,
+    "agency": "DOD DCAA"
   },
   {
     "date": "2/6/2025",
@@ -5585,7 +5378,7 @@
     "sq_ft": 7322,
     "description": "True Termination- Move to Federal Space",
     "value": 186700,
-    "savings": 0,
+    "savings": 36829,
     "agency": "DEFENSE CONTRACT MANAGEMENT AGENCY- NATIONAL"
   },
   {
@@ -5694,7 +5487,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 528160,
     "savings": 0,
-    "agency": "DHS UNITED STATES SECRET SERVICE"
+    "agency": "DHS USSS"
   },
   {
     "date": "2/4/2025",
@@ -5712,7 +5505,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 39348,
     "savings": 0,
-    "agency": "DHS UNITED STATES SECRET SERVICE"
+    "agency": "DHS USSS"
   },
   {
     "date": "2/4/2025",
@@ -5730,7 +5523,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 57893,
     "savings": 0,
-    "agency": "General Services Administration"
+    "agency": "TD OFF CMPT CRRNCY"
   },
   {
     "date": "2/4/2025",
@@ -5784,7 +5577,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 68743,
     "savings": 0,
-    "agency": "DHS TRANSPORTATION SECURITY ADMINISTRATION"
+    "agency": "DHS TSA"
   },
   {
     "date": "2/4/2025",
@@ -5802,7 +5595,7 @@
     "description": "True Termination- Vacant Space Buyout",
     "value": 2580,
     "savings": 1647,
-    "agency": "General Services Administration"
+    "agency": "JD DRUG ENF"
   },
   {
     "date": "2/4/2025",
@@ -5829,7 +5622,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 463440,
     "savings": 0,
-    "agency": "General Services Administration"
+    "agency": "DOD WHS"
   },
   {
     "date": "2/3/2025",
@@ -5856,7 +5649,7 @@
     "description": "True Termination- Agency Closed Office",
     "value": 63000,
     "savings": 0,
-    "agency": "General Services Administration"
+    "agency": "DHS USSS"
   },
   {
     "date": "1/31/2025",
@@ -5881,7 +5674,7 @@
     "location": "WASHINGTON, DC",
     "sq_ft": 22195,
     "description": "True Termination- Move to Federal Space",
-    "value": 1052263,
+    "value": 1060029,
     "savings": 0,
     "agency": "FIELD OFFICES"
   },
@@ -6034,8 +5827,8 @@
     "location": "ATLANTA, GA",
     "sq_ft": 119812,
     "description": "True Termination- Agency Direct Lease",
-    "value": 2473061,
-    "savings": 2059755,
+    "value": 2490197,
+    "savings": 2074027,
     "agency": "CENTER FOR DISEASE CONTROL"
   },
   {
@@ -6054,7 +5847,7 @@
     "description": "True Termination- Lease Backfill",
     "value": 112278,
     "savings": 0,
-    "agency": "General Services Administration"
+    "agency": "STATE DEPT"
   },
   {
     "date": "1/22/2025",
