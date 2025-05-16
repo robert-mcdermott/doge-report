@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Mac OS
+.DS_Store
+
+# Personal VS Code stuff
+.vscode
