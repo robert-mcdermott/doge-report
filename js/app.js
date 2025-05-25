@@ -55,23 +55,35 @@ const getTop10Items = (data, key) => {
 };
 
 const getTopValueItems = (data, keyName, keyValue, limit = 10) => {
-    const aggregated = {};
-    
-    data.forEach(item => {
-        const name = item[keyName];
-        const value = item[keyValue] || 0;
+    try {
+        const aggregated = {};
         
-        if (!aggregated[name]) {
-            aggregated[name] = 0;
+        if (!data || !Array.isArray(data)) {
+            console.warn('Invalid data passed to getTopValueItems');
+            return [];
         }
         
-        aggregated[name] += value;
-    });
-    
-    return Object.entries(aggregated)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, limit)
-        .map(([name, value]) => ({ name, value }));
+        data.forEach(item => {
+            if (!item) return;
+            
+            const name = item[keyName] || 'Unknown';
+            const value = parseFloat(item[keyValue]) || 0;
+            
+            if (!aggregated[name]) {
+                aggregated[name] = 0;
+            }
+            
+            aggregated[name] += value;
+        });
+        
+        return Object.entries(aggregated)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, limit)
+            .map(([name, value]) => ({ name, value }));
+    } catch (error) {
+        console.error('Error in getTopValueItems:', error);
+        return [];
+    }
 };
 
 const createBarChart = (ctx, data, label, backgroundColor) => {
@@ -450,100 +462,178 @@ const loadPaymentsData = async () => {
     }
     
     try {
+        // Verify all required DOM elements exist before proceeding
+        const requiredElements = [
+            'payments-loading',
+            'payments-error',
+            'payments-count',
+            'payments-total-value',
+            'payments-organizations-chart',
+            'payments-agencies-chart',
+            'payments-table'
+        ];
+        
+        // Check all required elements exist
+        for (const elementId of requiredElements) {
+            if (!document.getElementById(elementId)) {
+                console.warn(`Required element #${elementId} not found in the DOM`);
+                // Don't throw here, just warn
+            }
+        }
+        
         // Show loading indicator
-        document.getElementById('payments-loading').style.display = 'block';
-        document.getElementById('payments-error').style.display = 'none';
+        const loadingElement = document.getElementById('payments-loading');
+        const errorElement = document.getElementById('payments-error');
+        
+        if (loadingElement) loadingElement.style.display = 'block';
+        if (errorElement) errorElement.style.display = 'none';
         
         // Fetch payments data
         const response = await fetch('data/doge_payments_data.json');
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Network response was not ok: ' + response.status);
         }
         
         // Parse JSON data
         const data = await response.json();
         
+        // Validate data
+        if (!data || !Array.isArray(data)) {
+            throw new Error('Invalid data format received');
+        }
+        
         // Store the data
         paymentsData = data;
         
-        // Update UI with payments data
-        updatePaymentsStats();
+        try {
+            // Update UI with payments data - wrapped in try/catch
+            updatePaymentsStats();
+        } catch (statsError) {
+            console.error('Error updating payment stats:', statsError);
+        }
         
-        // Create charts
-        createPaymentsCharts();
+        try {
+            // Create charts - wrapped in try/catch
+            createPaymentsCharts();
+        } catch (chartError) {
+            console.error('Error creating payment charts:', chartError);
+        }
         
-        // Create DataTable
-        createPaymentsTable();
+        try {
+            // Create DataTable - wrapped in try/catch
+            createPaymentsTable();
+        } catch (tableError) {
+            console.error('Error creating payment table:', tableError);
+        }
         
-        // Update overview stats
-        updateOverviewStats();
+        try {
+            // Update overview stats - wrapped in try/catch
+            updateOverviewStats();
+        } catch (overviewError) {
+            console.error('Error updating overview stats:', overviewError);
+        }
         
         // Hide loading indicator
-        document.getElementById('payments-loading').style.display = 'none';
+        if (loadingElement) loadingElement.style.display = 'none';
     } catch (error) {
         console.error('Error loading payments data:', error);
-        document.getElementById('payments-loading').style.display = 'none';
-        alert('Failed to load payments data. Please try again later.');
+        const loadingElement = document.getElementById('payments-loading');
+        if (loadingElement) loadingElement.style.display = 'none';
+        
+        // Only show alert for network or data parsing errors
+        if (error.message && (error.message.includes('Network') || error.message.includes('Invalid data'))) {
+            alert('Failed to load payments data: ' + error.message);
+        }
     }
 }
 
 // Update payments stats
 function updatePaymentsStats() {
-    if (!paymentsData) return;
-    
-    const totalPayments = paymentsData.length;
-    const totalValue = paymentsData.reduce((sum, item) => sum + (item.payment_amt || 0), 0);
-    
-    document.getElementById('payments-count').textContent = formatNumber(totalPayments);
-    document.getElementById('payments-total-value').textContent = formatCurrency(totalValue);
+    try {
+        if (!paymentsData) return;
+        
+        const totalPayments = paymentsData.length;
+        const totalValue = paymentsData.reduce((sum, item) => sum + (parseFloat(item.payment_amt) || 0), 0);
+        
+        const countElement = document.getElementById('payments-count');
+        const valueElement = document.getElementById('payments-total-value');
+        
+        if (countElement) countElement.textContent = formatNumber(totalPayments);
+        if (valueElement) valueElement.textContent = formatCurrency(totalValue);
+    } catch (error) {
+        console.error('Error in updatePaymentsStats:', error);
+    }
 }
 
 // Create charts for payments data
 function createPaymentsCharts() {
-    if (!paymentsData) return;
-    
-    // Get top organizations by payment amount
-    const topOrganizations = getTopValueItems(paymentsData, 'org_name', 'payment_amt');
-    
-    // Get top agencies by payment amount
-    const topAgencies = getTopValueItems(paymentsData, 'agency_name', 'payment_amt');
-    
-    // Create organization chart
-    const orgChartCtx = document.getElementById('payments-organizations-chart');
-    if (paymentsOrganizationsChart) {
-        paymentsOrganizationsChart.destroy();
+    try {
+        if (!paymentsData) return;
+        
+        // Get top organizations by payment amount
+        const topOrganizations = getTopValueItems(paymentsData, 'org_name', 'payment_amt');
+        
+        // Get top agencies by payment amount
+        const topAgencies = getTopValueItems(paymentsData, 'agency_name', 'payment_amt');
+        
+        // Create organization chart
+        const orgChartCtx = document.getElementById('payments-organizations-chart');
+        if (!orgChartCtx) {
+            console.warn('Element payments-organizations-chart not found');
+            return;
+        }
+        
+        if (paymentsOrganizationsChart) {
+            paymentsOrganizationsChart.destroy();
+        }
+        
+        paymentsOrganizationsChart = createBarChart(
+            orgChartCtx, 
+            topOrganizations, 
+            'Total Payment Amount', 
+            'rgba(255, 193, 7, 0.7)'
+        );
+        
+        // Create agency chart
+        const agencyChartCtx = document.getElementById('payments-agencies-chart');
+        if (!agencyChartCtx) {
+            console.warn('Element payments-agencies-chart not found');
+            return;
+        }
+        
+        if (paymentsAgenciesChart) {
+            paymentsAgenciesChart.destroy();
+        }
+        
+        paymentsAgenciesChart = createBarChart(
+            agencyChartCtx, 
+            topAgencies, 
+            'Total Payment Amount', 
+            'rgba(255, 193, 7, 0.7)'
+        );
+    } catch (error) {
+        console.error('Error in createPaymentsCharts:', error);
     }
-    paymentsOrganizationsChart = createBarChart(
-        orgChartCtx, 
-        topOrganizations, 
-        'Total Payment Amount', 
-        'rgba(255, 193, 7, 0.7)'
-    );
-    
-    // Create agency chart
-    const agencyChartCtx = document.getElementById('payments-agencies-chart');
-    if (paymentsAgenciesChart) {
-        paymentsAgenciesChart.destroy();
-    }
-    paymentsAgenciesChart = createBarChart(
-        agencyChartCtx, 
-        topAgencies, 
-        'Total Payment Amount', 
-        'rgba(255, 193, 7, 0.7)'
-    );
 }
 
 // Create DataTable for payments
 function createPaymentsTable() {
-    if (!paymentsData) return;
-    
-    // Destroy existing table if it exists
-    if (paymentsTable) {
-        paymentsTable.destroy();
-    }
-    
-    // Create new DataTable
-    paymentsTable = $('#payments-table').DataTable({
+    try {
+        if (!paymentsData) return;
+        
+        // Check if table element exists
+        if (!document.getElementById('payments-table')) {
+            console.warn('Element payments-table not found');
+            return;
+        }
+        
+        // Destroy existing table if it exists
+        if (paymentsTable) {
+            paymentsTable.destroy();
+        }
+        
+        // Create new DataTable
+        paymentsTable = $('#payments-table').DataTable({
         data: paymentsData,
         columns: [
             { 
@@ -624,6 +714,9 @@ function createPaymentsTable() {
             }, 100);
         }
     });
+    } catch (error) {
+        console.error('Error in createPaymentsTable:', error);
+    }
 }
 
 // Update overview summary stats
@@ -687,23 +780,30 @@ const updateOverviewStats = () => {
     // Update payments stats in overview
     if (paymentsData) {
         loadedDatasets.push('Payments');
-        const paymentsValue = paymentsData.reduce((sum, item) => sum + (item.payment_amt || 0), 0);
+        const paymentsValue = paymentsData.reduce((sum, item) => sum + (parseFloat(item.payment_amt) || 0), 0);
         
-        document.getElementById('payments-overview-count').textContent = formatNumber(paymentsData.length);
-        document.getElementById('payments-overview-value').textContent = formatCurrency(paymentsValue);
+        // Add null checks for all DOM elements
+        const countElement = document.getElementById('payments-overview-count');
+        const valueElement = document.getElementById('payments-overview-value');
+        const agenciesElement = document.getElementById('payments-overview-agencies');
+        const statsSectionElement = document.getElementById('payments-stats-section');
+        
+        if (countElement) countElement.textContent = formatNumber(paymentsData.length);
+        if (valueElement) valueElement.textContent = formatCurrency(paymentsValue);
         
         // Count unique agencies in payments data
         const paymentAgencies = new Set();
         paymentsData.forEach(item => item.agency_name && paymentAgencies.add(item.agency_name));
-        document.getElementById('payments-overview-agencies').textContent = formatNumber(paymentAgencies.size);
         
-        document.getElementById('payments-stats-section').style.display = 'block';
+        if (agenciesElement) agenciesElement.textContent = formatNumber(paymentAgencies.size);
+        if (statsSectionElement) statsSectionElement.style.display = 'block';
         
         // No savings in payments data, but add to total items
         totalItems += paymentsData.length;
         paymentsData.forEach(item => item.agency_name && agencies.add(item.agency_name));
     } else {
-        document.getElementById('payments-stats-section').style.display = 'none';
+        const statsSectionElement = document.getElementById('payments-stats-section');
+        if (statsSectionElement) statsSectionElement.style.display = 'none';
     }
     
     // Update overall stats
