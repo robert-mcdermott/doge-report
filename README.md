@@ -8,7 +8,7 @@ A simple web application for exploring and analyzing data from the Department of
 ![Doge Report Dashboard Screenshot](https://github.com/robert-mcdermott/doge-report/blob/main/data/doge-report-dashboard-screenshot.png)
 ## Overview
 
-The DOGE Report Dashboard provides a user-friendly interface to explore and analyze canceled grants, contracts, and leases data from the Department of Government Efficiency. The dashboard features interactive tables, visualizations, and filtering capabilities to help you explore and search the data.
+The DOGE Report Dashboard provides a user-friendly interface to explore and analyze canceled grants, contracts, and leases data from the Department of Government Efficiency. It also provides information on federal payments made via the federal Payment Management System (PMS). The dashboard features interactive tables, visualizations, and filtering capabilities to help you explore and search the data.
 
 ### Key Features
 
@@ -27,8 +27,7 @@ The dashboard works with three datasets from the DOGE API:
 - **Grants** - Canceled grants with recipient and savings information
 - **Contracts** - Canceled contracts with vendor details
 - **Leases** - Canceled leases with location and square footage information
-
-*Note: The payments dataset is currently unavailable from the DOGE API (server errors when attempting to access it)*
+- **Payments** - Payments processed via the federal Payment Management System (PMS).
 
 ## Using the Dashboard
 
