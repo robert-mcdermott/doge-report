@@ -4,11 +4,13 @@
 let grantsData = null;
 let contractsData = null;
 let leasesData = null;
+let paymentsData = null;
 
 // DataTable instances
 let grantsTable = null;
 let contractsTable = null;
 let leasesTable = null;
+let paymentsTable = null;
 
 // Chart instances
 let grantsRecipientsChart = null;
@@ -17,6 +19,8 @@ let contractsVendorsChart = null;
 let contractsAgenciesChart = null;
 let leasesLocationsChart = null;
 let leasesAgenciesChart = null;
+let paymentsOrganizationsChart = null;
+let paymentsAgenciesChart = null;
 
 // Utility functions
 const formatCurrency = (value) => {
@@ -51,23 +55,35 @@ const getTop10Items = (data, key) => {
 };
 
 const getTopValueItems = (data, keyName, keyValue, limit = 10) => {
-    const aggregated = {};
-    
-    data.forEach(item => {
-        const name = item[keyName];
-        const value = item[keyValue] || 0;
+    try {
+        const aggregated = {};
         
-        if (!aggregated[name]) {
-            aggregated[name] = 0;
+        if (!data || !Array.isArray(data)) {
+            console.warn('Invalid data passed to getTopValueItems');
+            return [];
         }
         
-        aggregated[name] += value;
-    });
-    
-    return Object.entries(aggregated)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, limit)
-        .map(([name, value]) => ({ name, value }));
+        data.forEach(item => {
+            if (!item) return;
+            
+            const name = item[keyName] || 'Unknown';
+            const value = parseFloat(item[keyValue]) || 0;
+            
+            if (!aggregated[name]) {
+                aggregated[name] = 0;
+            }
+            
+            aggregated[name] += value;
+        });
+        
+        return Object.entries(aggregated)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, limit)
+            .map(([name, value]) => ({ name, value }));
+    } catch (error) {
+        console.error('Error in getTopValueItems:', error);
+        return [];
+    }
 };
 
 const createBarChart = (ctx, data, label, backgroundColor) => {
@@ -438,21 +454,285 @@ const loadLeasesData = async () => {
     }
 };
 
+const loadPaymentsData = async () => {
+    // Check if data is already loaded
+    if (paymentsData) {
+        updatePaymentsStats();
+        return;
+    }
+    
+    try {
+        // Verify all required DOM elements exist before proceeding
+        const requiredElements = [
+            'payments-loading',
+            'payments-error',
+            'payments-count',
+            'payments-total-value',
+            'payments-organizations-chart',
+            'payments-agencies-chart',
+            'payments-table'
+        ];
+        
+        // Check all required elements exist
+        for (const elementId of requiredElements) {
+            if (!document.getElementById(elementId)) {
+                console.warn(`Required element #${elementId} not found in the DOM`);
+                // Don't throw here, just warn
+            }
+        }
+        
+        // Show loading indicator
+        const loadingElement = document.getElementById('payments-loading');
+        const errorElement = document.getElementById('payments-error');
+        
+        if (loadingElement) loadingElement.style.display = 'block';
+        if (errorElement) errorElement.style.display = 'none';
+        
+        // Fetch payments data
+        const response = await fetch('data/doge_payments_data.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.status);
+        }
+        
+        // Parse JSON data
+        const data = await response.json();
+        
+        // Validate data
+        if (!data || !Array.isArray(data)) {
+            throw new Error('Invalid data format received');
+        }
+        
+        // Store the data
+        paymentsData = data;
+        
+        try {
+            // Update UI with payments data - wrapped in try/catch
+            updatePaymentsStats();
+        } catch (statsError) {
+            console.error('Error updating payment stats:', statsError);
+        }
+        
+        try {
+            // Create charts - wrapped in try/catch
+            createPaymentsCharts();
+        } catch (chartError) {
+            console.error('Error creating payment charts:', chartError);
+        }
+        
+        try {
+            // Create DataTable - wrapped in try/catch
+            createPaymentsTable();
+        } catch (tableError) {
+            console.error('Error creating payment table:', tableError);
+        }
+        
+        try {
+            // Update overview stats - wrapped in try/catch
+            updateOverviewStats();
+        } catch (overviewError) {
+            console.error('Error updating overview stats:', overviewError);
+        }
+        
+        // Hide loading indicator
+        if (loadingElement) loadingElement.style.display = 'none';
+    } catch (error) {
+        console.error('Error loading payments data:', error);
+        const loadingElement = document.getElementById('payments-loading');
+        if (loadingElement) loadingElement.style.display = 'none';
+        
+        // Only show alert for network or data parsing errors
+        if (error.message && (error.message.includes('Network') || error.message.includes('Invalid data'))) {
+            alert('Failed to load payments data: ' + error.message);
+        }
+    }
+}
+
+// Update payments stats
+function updatePaymentsStats() {
+    try {
+        if (!paymentsData) return;
+        
+        const totalPayments = paymentsData.length;
+        const totalValue = paymentsData.reduce((sum, item) => sum + (parseFloat(item.payment_amt) || 0), 0);
+        
+        const countElement = document.getElementById('payments-count');
+        const valueElement = document.getElementById('payments-total-value');
+        
+        if (countElement) countElement.textContent = formatNumber(totalPayments);
+        if (valueElement) valueElement.textContent = formatCurrency(totalValue);
+    } catch (error) {
+        console.error('Error in updatePaymentsStats:', error);
+    }
+}
+
+// Create charts for payments data
+function createPaymentsCharts() {
+    try {
+        if (!paymentsData) return;
+        
+        // Get top organizations by payment amount
+        const topOrganizations = getTopValueItems(paymentsData, 'org_name', 'payment_amt');
+        
+        // Get top agencies by payment amount
+        const topAgencies = getTopValueItems(paymentsData, 'agency_name', 'payment_amt');
+        
+        // Create organization chart
+        const orgChartCtx = document.getElementById('payments-organizations-chart');
+        if (!orgChartCtx) {
+            console.warn('Element payments-organizations-chart not found');
+            return;
+        }
+        
+        if (paymentsOrganizationsChart) {
+            paymentsOrganizationsChart.destroy();
+        }
+        
+        paymentsOrganizationsChart = createBarChart(
+            orgChartCtx, 
+            topOrganizations, 
+            'Total Payment Amount', 
+            'rgba(255, 193, 7, 0.7)'
+        );
+        
+        // Create agency chart
+        const agencyChartCtx = document.getElementById('payments-agencies-chart');
+        if (!agencyChartCtx) {
+            console.warn('Element payments-agencies-chart not found');
+            return;
+        }
+        
+        if (paymentsAgenciesChart) {
+            paymentsAgenciesChart.destroy();
+        }
+        
+        paymentsAgenciesChart = createBarChart(
+            agencyChartCtx, 
+            topAgencies, 
+            'Total Payment Amount', 
+            'rgba(255, 193, 7, 0.7)'
+        );
+    } catch (error) {
+        console.error('Error in createPaymentsCharts:', error);
+    }
+}
+
+// Create DataTable for payments
+function createPaymentsTable() {
+    try {
+        if (!paymentsData) return;
+        
+        // Check if table element exists
+        if (!document.getElementById('payments-table')) {
+            console.warn('Element payments-table not found');
+            return;
+        }
+        
+        // Destroy existing table if it exists
+        if (paymentsTable) {
+            paymentsTable.destroy();
+        }
+        
+        // Create new DataTable
+        paymentsTable = $('#payments-table').DataTable({
+        data: paymentsData,
+        columns: [
+            { 
+                data: 'payment_date',
+                title: 'Date',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'payment_amt',
+                title: 'Amount',
+                render: function(data) {
+                    return formatCurrency(data || 0);
+                }
+            },
+            { 
+                data: 'org_name',
+                title: 'Organization',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'agency_name',
+                title: 'Agency',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'recipient_justification',
+                title: 'Recipient Justification',
+                render: function(data, type, row) {
+                    if (type === 'display') {
+                        if (!data) return 'N/A';
+                        
+                        // Create expandable description
+                        return `
+                            <div class="description-cell">
+                                <div class="description-preview">${data.length > 100 ? data.substring(0, 100) + '...' : data}</div>
+                                ${data.length > 100 ? '<button class="btn btn-sm btn-link show-full-description">Show more</button>' : ''}
+                                <div class="full-description" style="display: none;">${data}</div>
+                            </div>
+                        `;
+                    }
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'agency_lead_justification',
+                title: 'Agency Justification',
+                render: function(data, type, row) {
+                    if (type === 'display') {
+                        if (!data) return 'N/A';
+                        
+                        // Create expandable description
+                        return `
+                            <div class="description-cell">
+                                <div class="description-preview">${data.length > 100 ? data.substring(0, 100) + '...' : data}</div>
+                                ${data.length > 100 ? '<button class="btn btn-sm btn-link show-full-description">Show more</button>' : ''}
+                                <div class="full-description" style="display: none;">${data}</div>
+                            </div>
+                        `;
+                    }
+                    return data || 'N/A';
+                }
+            }
+        ],
+        order: [[1, 'desc']], // Sort by payment amount by default
+        pageLength: 10,
+        lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        responsive: true,
+        initComplete: function() {
+            // Apply description expander after table is created
+            setTimeout(function() {
+                enhanceExistingDescriptions && enhanceExistingDescriptions();
+            }, 100);
+        }
+    });
+    } catch (error) {
+        console.error('Error in createPaymentsTable:', error);
+    }
+}
+
 // Update overview summary stats
 const updateOverviewStats = () => {
+    const loadedDatasets = [];
     let totalSavings = 0;
     let totalItems = 0;
     const agencies = new Set();
-    const loadedDatasets = [];
     
     // Update grants stats in overview
     if (grantsData) {
         loadedDatasets.push('Grants');
-        const grantsValue = grantsData.reduce((sum, item) => sum + item.value, 0);
         const grantsSavings = grantsData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('grants-overview-count').textContent = formatNumber(grantsData.length);
-        document.getElementById('grants-overview-value').textContent = formatCurrency(grantsValue);
+        document.getElementById('grants-overview-value').textContent = formatCurrency(grantsData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('grants-overview-savings').textContent = formatCurrency(grantsSavings);
         document.getElementById('grants-stats-section').style.display = 'block';
         
@@ -466,11 +746,10 @@ const updateOverviewStats = () => {
     // Update contracts stats in overview
     if (contractsData) {
         loadedDatasets.push('Contracts');
-        const contractsValue = contractsData.reduce((sum, item) => sum + item.value, 0);
         const contractsSavings = contractsData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('contracts-overview-count').textContent = formatNumber(contractsData.length);
-        document.getElementById('contracts-overview-value').textContent = formatCurrency(contractsValue);
+        document.getElementById('contracts-overview-value').textContent = formatCurrency(contractsData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('contracts-overview-savings').textContent = formatCurrency(contractsSavings);
         document.getElementById('contracts-stats-section').style.display = 'block';
         
@@ -484,11 +763,10 @@ const updateOverviewStats = () => {
     // Update leases stats in overview
     if (leasesData) {
         loadedDatasets.push('Leases');
-        const leasesValue = leasesData.reduce((sum, item) => sum + item.value, 0);
         const leasesSavings = leasesData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('leases-overview-count').textContent = formatNumber(leasesData.length);
-        document.getElementById('leases-overview-value').textContent = formatCurrency(leasesValue);
+        document.getElementById('leases-overview-value').textContent = formatCurrency(leasesData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('leases-overview-savings').textContent = formatCurrency(leasesSavings);
         document.getElementById('leases-stats-section').style.display = 'block';
         
@@ -497,6 +775,35 @@ const updateOverviewStats = () => {
         leasesData.forEach(item => agencies.add(item.agency));
     } else {
         document.getElementById('leases-stats-section').style.display = 'none';
+    }
+    
+    // Update payments stats in overview
+    if (paymentsData) {
+        loadedDatasets.push('Payments');
+        const paymentsValue = paymentsData.reduce((sum, item) => sum + (parseFloat(item.payment_amt) || 0), 0);
+        
+        // Add null checks for all DOM elements
+        const countElement = document.getElementById('payments-overview-count');
+        const valueElement = document.getElementById('payments-overview-value');
+        const agenciesElement = document.getElementById('payments-overview-agencies');
+        const statsSectionElement = document.getElementById('payments-stats-section');
+        
+        if (countElement) countElement.textContent = formatNumber(paymentsData.length);
+        if (valueElement) valueElement.textContent = formatCurrency(paymentsValue);
+        
+        // Count unique agencies in payments data
+        const paymentAgencies = new Set();
+        paymentsData.forEach(item => item.agency_name && paymentAgencies.add(item.agency_name));
+        
+        if (agenciesElement) agenciesElement.textContent = formatNumber(paymentAgencies.size);
+        if (statsSectionElement) statsSectionElement.style.display = 'block';
+        
+        // No savings in payments data, but add to total items
+        totalItems += paymentsData.length;
+        paymentsData.forEach(item => item.agency_name && agencies.add(item.agency_name));
+    } else {
+        const statsSectionElement = document.getElementById('payments-stats-section');
+        if (statsSectionElement) statsSectionElement.style.display = 'none';
     }
     
     // Update overall stats
@@ -510,7 +817,7 @@ const updateOverviewStats = () => {
         datasetsLoadedInfo.textContent = 'No datasets loaded yet';
         datasetsLoadedInfo.parentElement.className = 'alert alert-warning';
     } else {
-        datasetsLoadedInfo.textContent = `Datasets loaded: ${loadedDatasets.join(', ')} (${loadedDatasets.length} of 3)`;
+        datasetsLoadedInfo.textContent = `Datasets loaded: ${loadedDatasets.join(', ')} (${loadedDatasets.length} of 4)`;
         datasetsLoadedInfo.parentElement.className = 'alert alert-success';
     }
 };
@@ -538,10 +845,16 @@ document.addEventListener('DOMContentLoaded', () => {
         showSection('leases-section');
     });
     
+    document.getElementById('payments-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        showSection('payments-section');
+    });
+    
     // Load data buttons
     document.getElementById('grants-load-btn').addEventListener('click', loadGrantsData);
     document.getElementById('contracts-load-btn').addEventListener('click', loadContractsData);
     document.getElementById('leases-load-btn').addEventListener('click', loadLeasesData);
+    document.getElementById('payments-load-btn').addEventListener('click', loadPaymentsData);
     
     // Quick access buttons from overview
     document.getElementById('view-grants-btn').addEventListener('click', () => {
@@ -559,6 +872,11 @@ document.addEventListener('DOMContentLoaded', () => {
         loadLeasesData();
     });
     
+    document.getElementById('view-payments-btn').addEventListener('click', () => {
+        showSection('payments-section');
+        loadPaymentsData();
+    });
+    
     // Initialize with overview section
     showSection('overview-section');
     
@@ -571,5 +889,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('grants-stats-section').style.display = 'none';
     document.getElementById('contracts-stats-section').style.display = 'none';
     document.getElementById('leases-stats-section').style.display = 'none';
+    document.getElementById('payments-stats-section').style.display = 'none';
     document.getElementById('datasets-loaded-info').textContent = 'No datasets loaded yet';
 });

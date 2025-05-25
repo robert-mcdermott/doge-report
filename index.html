@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="leases-link">Leases</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="payments-link">Payments</a>
+                    </li>
                 </ul>
                 <div class="ms-auto theme-switch-wrapper">
                     <span class="theme-icon"><i class="bi bi-moon-stars-fill"></i></span>
@@ -55,10 +58,10 @@
                             <h2 id="main-title">Department of Government Efficiency (DOGE) Report</h2>
                         </div>
                         <div class="card-body">
-                            <p class="lead">This dashboard provides comprehensive reporting on canceled grants, contracts, and leases from the Department of Government Efficiency.</p>
+                            <p class="lead">This dashboard provides comprehensive reporting on canceled grants, contracts, and leases, as well as payment data from the Department of Government Efficiency.</p>
                             
                             <div class="row mt-4">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="card text-white bg-primary mb-3">
                                         <div class="card-header">Grants</div>
                                         <div class="card-body">
@@ -68,7 +71,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="card text-white bg-success mb-3">
                                         <div class="card-header">Contracts</div>
                                         <div class="card-body">
@@ -78,13 +81,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="card text-white bg-info mb-3">
                                         <div class="card-header">Leases</div>
                                         <div class="card-body">
                                             <h5 class="card-title">Canceled Leases</h5>
                                             <p class="card-text">Review canceled leases, including locations, square footage, and savings.</p>
                                             <button class="btn btn-light" id="view-leases-btn">View Leases</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-white bg-warning mb-3">
+                                        <div class="card-header">Payments</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Payment Data</h5>
+                                            <p class="card-text">View government agency payment data to organizations with recipient and agency details.</p>
+                                            <button class="btn btn-light" id="view-payments-btn">View Payments</button>
                                         </div>
                                     </div>
                                 </div>
@@ -545,6 +558,97 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payments Section -->
+        <div id="payments-section" class="section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h3>Government Payments Data</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <p>This section provides data on payments made by government agencies to various organizations.</p>
+                                    <button id="payments-load-btn" class="btn btn-primary mb-3">Load Payments Data</button>
+                                    <div id="payments-loading" class="alert alert-info" style="display: none;">Loading payments data...</div>
+                                    <div id="payments-error" class="alert alert-danger" style="display: none;">Error loading payments data.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="data-stat">
+                                                <h4 id="payments-count">-</h4>
+                                                <p>Total Payments</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="data-stat">
+                                                <h4 id="payments-total-value">-</h4>
+                                                <p>Total Value</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h5>Top Organizations by Payment Amount</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <canvas id="payments-organizations-chart" height="300"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h5>Top Agencies by Payment Amount</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <canvas id="payments-agencies-chart" height="300"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>Payments Data</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table id="payments-table" class="table table-striped table-hover" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Date</th>
+                                                            <th>Amount</th>
+                                                            <th>Organization</th>
+                                                            <th>Agency</th>
+                                                            <th>Recipient Justification</th>
+                                                            <th>Agency Justification</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <!-- Data will be populated dynamically -->
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
