@@ -163,6 +163,10 @@ body {
     color: #0dcaf0 !important;
 }
 
+#payments-section .card-header h2 {
+    color: #ffc107 !important;
+}
+
 /* Loading spinner styles */
 .spinner-border {
     width: 3rem;

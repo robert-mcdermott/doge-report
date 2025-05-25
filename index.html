@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dark-mode.css">
+    <style>
+        #payments-title {
+            color: #ffc107 !important;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -575,7 +580,7 @@
                 <div class="col-12">
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <h2 class="text-warning">Payments Report</h2>
+                            <h2 id="payments-title" style="color: #ffc107 !important; font-weight: bold;">Payments Report</h2>
                             <div>
                                 <button id="payments-load-btn" class="btn btn-warning">Load Payments Data</button>
                             </div>
@@ -592,15 +597,19 @@
                             <div id="payments-content" class="d-none">
                                 <div class="row mb-4">
                                     <div class="col-md-6">
-                                        <div class="data-stat">
-                                            <h4 id="payments-count">-</h4>
-                                            <p>Total Payments</p>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Payments</h5>
+                                                <h3 id="payments-count" style="color: #ffc107;">-</h3>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="data-stat">
-                                            <h4 id="payments-total-value">-</h4>
-                                            <p>Total Value</p>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Total Value</h5>
+                                                <h3 id="payments-total-value" style="color: #ffc107;">-</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
