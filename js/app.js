@@ -773,17 +773,10 @@ const updateOverviewStats = () => {
         // Add null checks for all DOM elements
         const countElement = document.getElementById('payments-overview-count');
         const valueElement = document.getElementById('payments-overview-value');
-        const agenciesElement = document.getElementById('payments-overview-agencies');
         const statsSectionElement = document.getElementById('payments-stats-section');
         
         if (countElement) countElement.textContent = formatNumber(paymentsData.length);
         if (valueElement) valueElement.textContent = formatCurrency(paymentsValue);
-        
-        // Count unique agencies in payments data
-        const paymentAgencies = new Set();
-        paymentsData.forEach(item => item.agency_name && paymentAgencies.add(item.agency_name));
-        
-        if (agenciesElement) agenciesElement.textContent = formatNumber(paymentAgencies.size);
         if (statsSectionElement) statsSectionElement.style.display = 'block';
         
         // No savings in payments data, but add to total items
