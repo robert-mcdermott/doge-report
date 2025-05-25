@@ -456,37 +456,18 @@ const loadLeasesData = async () => {
 
 const loadPaymentsData = async () => {
     // Check if data is already loaded
-    if (paymentsData) {
-        updatePaymentsStats();
+    if (paymentsData !== null) {
+        // Data already loaded
+        document.getElementById('payments-loading').classList.add('d-none');
+        document.getElementById('payments-content').classList.remove('d-none');
         return;
     }
     
     try {
-        // Verify all required DOM elements exist before proceeding
-        const requiredElements = [
-            'payments-loading',
-            'payments-error',
-            'payments-count',
-            'payments-total-value',
-            'payments-organizations-chart',
-            'payments-agencies-chart',
-            'payments-table'
-        ];
-        
-        // Check all required elements exist
-        for (const elementId of requiredElements) {
-            if (!document.getElementById(elementId)) {
-                console.warn(`Required element #${elementId} not found in the DOM`);
-                // Don't throw here, just warn
-            }
-        }
-        
-        // Show loading indicator
-        const loadingElement = document.getElementById('payments-loading');
-        const errorElement = document.getElementById('payments-error');
-        
-        if (loadingElement) loadingElement.style.display = 'block';
-        if (errorElement) errorElement.style.display = 'none';
+        // Show loading indicator and hide content
+        document.getElementById('payments-loading').classList.remove('d-none');
+        document.getElementById('payments-content').classList.add('d-none');
+        document.getElementById('payments-error').style.display = 'none';
         
         // Fetch payments data
         const response = await fetch('data/doge_payments_data.json');
@@ -505,40 +486,47 @@ const loadPaymentsData = async () => {
         // Store the data
         paymentsData = data;
         
-        try {
-            // Update UI with payments data - wrapped in try/catch
-            updatePaymentsStats();
-        } catch (statsError) {
-            console.error('Error updating payment stats:', statsError);
-        }
+        // Update summary stats
+        document.getElementById('payments-count').textContent = formatNumber(paymentsData.length);
+        
+        const totalValue = paymentsData.reduce((sum, payment) => sum + (parseFloat(payment.payment_amt) || 0), 0);
+        document.getElementById('payments-total-value').textContent = formatCurrency(totalValue);
         
         try {
-            // Create charts - wrapped in try/catch
+            // Create charts
             createPaymentsCharts();
         } catch (chartError) {
             console.error('Error creating payment charts:', chartError);
         }
         
         try {
-            // Create DataTable - wrapped in try/catch
+            // Create DataTable
             createPaymentsTable();
         } catch (tableError) {
             console.error('Error creating payment table:', tableError);
         }
         
         try {
-            // Update overview stats - wrapped in try/catch
+            // Update overview stats
             updateOverviewStats();
         } catch (overviewError) {
             console.error('Error updating overview stats:', overviewError);
         }
         
-        // Hide loading indicator
-        if (loadingElement) loadingElement.style.display = 'none';
+        // Hide loading indicator and show content
+        document.getElementById('payments-loading').classList.add('d-none');
+        document.getElementById('payments-content').classList.remove('d-none');
+        
+        // Fix column alignment issues by adjusting columns after the table becomes visible
+        setTimeout(() => {
+            if (paymentsTable) {
+                paymentsTable.columns.adjust().draw();
+            }
+        }, 10);
     } catch (error) {
         console.error('Error loading payments data:', error);
-        const loadingElement = document.getElementById('payments-loading');
-        if (loadingElement) loadingElement.style.display = 'none';
+        document.getElementById('payments-loading').classList.add('d-none');
+        document.getElementById('payments-error').style.display = 'block';
         
         // Only show alert for network or data parsing errors
         if (error.message && (error.message.includes('Network') || error.message.includes('Invalid data'))) {

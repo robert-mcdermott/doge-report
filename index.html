@@ -574,81 +574,86 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card mb-4">
-                        <div class="card-header">
-                            <h3>Government Payments Data</h3>
+                        <div class="card-header bg-light">
+                            <h3 class="text-warning">Payments Report</h3>
                         </div>
                         <div class="card-body">
                             <div class="row mb-4">
                                 <div class="col-md-6">
                                     <p>This section provides data on payments made by government agencies to various organizations.</p>
                                     <button id="payments-load-btn" class="btn btn-primary mb-3">Load Payments Data</button>
-                                    <div id="payments-loading" class="alert alert-info" style="display: none;">Loading payments data...</div>
+                                    <div id="payments-loading" class="text-center my-5 d-none">
+                                        <div class="spinner-border text-warning" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p class="mt-2">Loading payments data...</p>
+                                    </div>
                                     <div id="payments-error" class="alert alert-danger" style="display: none;">Error loading payments data.</div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="data-stat">
-                                                <h4 id="payments-count">-</h4>
-                                                <p>Total Payments</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="data-stat">
-                                                <h4 id="payments-total-value">-</h4>
-                                                <p>Total Value</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <h5>Top Organizations by Payment Amount</h5>
+                            <div id="payments-content" class="d-none">
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="data-stat">
+                                            <h4 id="payments-count">-</h4>
+                                            <p>Total Payments</p>
                                         </div>
-                                        <div class="card-body">
-                                            <canvas id="payments-organizations-chart" height="300"></canvas>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="data-stat">
+                                            <h4 id="payments-total-value">-</h4>
+                                            <p>Total Value</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <h5>Top Agencies by Payment Amount</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card mb-4">
+                                            <div class="card-header">
+                                                <h5>Top Organizations by Payment Amount</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="payments-organizations-chart" height="300"></canvas>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <canvas id="payments-agencies-chart" height="300"></canvas>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card mb-4">
+                                            <div class="card-header">
+                                                <h5>Top Agencies by Payment Amount</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="payments-agencies-chart" height="300"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Payments Data</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table id="payments-table" class="table table-striped table-hover" style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Date</th>
-                                                            <th>Amount</th>
-                                                            <th>Organization</th>
-                                                            <th>Agency</th>
-                                                            <th>Recipient Justification</th>
-                                                            <th>Agency Justification</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <!-- Data will be populated dynamically -->
-                                                    </tbody>
-                                                </table>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Payments Data</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table id="payments-table" class="table table-striped table-hover" style="width:100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Date</th>
+                                                                <th>Amount</th>
+                                                                <th>Organization</th>
+                                                                <th>Agency</th>
+                                                                <th>Recipient Justification</th>
+                                                                <th>Agency Justification</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- Data will be populated dynamically -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
