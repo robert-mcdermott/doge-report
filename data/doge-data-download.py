@@ -39,7 +39,8 @@ ENDPOINTS = {
     "grants": "/savings/grants",
     "contracts": "/savings/contracts",
     "leases": "/savings/leases", 
-    "payments": "/payments"
+    "payments": "/payments",
+    "statistics": "/payments/statistics",
 }
 PER_PAGE = 500  # Maximum allowed per API spec
 API_KEY = None  # Will be set from command line args
@@ -156,8 +157,15 @@ def get_all_data(endpoint: str) -> List[Dict[str, Any]]:
             sys.exit(1)
             
         # Extract data based on the endpoint
-        if endpoint == '/payments':
-            items = response.get('result', {}).get('payments', [])
+        if endpoint == '/payments/statistics':
+            for dimension in [
+                'agency',
+                'request_date',
+                'org_names',
+            ]:
+                items = response.get('result', {}).get(dimension, [])
+                all_data = items # for consistency's sake
+                save_data(all_data, f"{result_key}_{dimension}", FORMAT)
         else:
             items = response.get('result', {}).get(result_key, [])
             
@@ -289,8 +297,12 @@ def main() -> None:
     endpoint_path = ENDPOINTS[args.endpoint]
     data = get_all_data(endpoint_path)
     
-    # Save data in the requested format
-    save_data(data, args.endpoint, args.format, args.output)
+    # The '/payments/statistics' path is its own beast; contains three reports,
+    # 'agency', 'org_names' and 'request_date', that get handled above in 
+    # get_all_data() so we skip it here.
+    if endpoint_path != '/payments/statistics':
+        # Save data in the requested format
+        save_data(data, args.endpoint, args.format, args.output)
 
 
 if __name__ == "__main__":

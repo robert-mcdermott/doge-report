@@ -1,0 +1,402 @@
+[
+  {
+    "org_name": "UNIVERSITY OF PITTSBURGH, THE",
+    "count": 4965
+  },
+  {
+    "org_name": "UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL",
+    "count": 2554
+  },
+  {
+    "org_name": "JOHNS HOPKINS UNIVERSITY",
+    "count": 2399
+  },
+  {
+    "org_name": "UNIVERSITY OF PENNSYLVANIA",
+    "count": 2182
+  },
+  {
+    "org_name": "RESEARCH FOUNDATION OF STATE UNIV OF NEW YORK (SUNY)",
+    "count": 1841
+  },
+  {
+    "org_name": "UNIVERSITY OF WASHINGTON",
+    "count": 1721
+  },
+  {
+    "org_name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+    "count": 1639
+  },
+  {
+    "org_name": "Duke University",
+    "count": 1425
+  },
+  {
+    "org_name": "ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI",
+    "count": 1406
+  },
+  {
+    "org_name": "EMORY UNIVERSITY",
+    "count": 1375
+  },
+  {
+    "org_name": "UNIVERSITY OF MIAMI",
+    "count": 1319
+  },
+  {
+    "org_name": "REGENTS OF THE UNIVERSITY OF COLORADO, THE",
+    "count": 1297
+  },
+  {
+    "org_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+    "count": 1254
+  },
+  {
+    "org_name": "TRUSTEES OF INDIANA UNIVERSITY",
+    "count": 1227
+  },
+  {
+    "org_name": "HEALTH AND HUMAN SERVICES, NEBRASKA DEPARTMENT OF",
+    "count": 1185
+  },
+  {
+    "org_name": "UNIVERSITY OF MASSACHUSETTS",
+    "count": 1159
+  },
+  {
+    "org_name": "OREGON HEALTH & SCIENCE UNIVERSITY",
+    "count": 1086
+  },
+  {
+    "org_name": "Massachusetts General Hospital, The",
+    "count": 1052
+  },
+  {
+    "org_name": "VANDERBILT UNIVERSITY",
+    "count": 1021
+  },
+  {
+    "org_name": "YALE UNIVERSITY",
+    "count": 1010
+  },
+  {
+    "org_name": "UNIVERSITY OF CHICAGO",
+    "count": 956
+  },
+  {
+    "org_name": "UNIVERSITY OF WISCONSIN SYSTEM/BOARD OF REGENTS",
+    "count": 937
+  },
+  {
+    "org_name": "UNIVERSITY OF FLORIDA",
+    "count": 930
+  },
+  {
+    "org_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+    "count": 847
+  },
+  {
+    "org_name": "OHIO STATE UNIVERSITY",
+    "count": 766
+  },
+  {
+    "org_name": "UNIVERSITY OF KENTUCKY RESEARCH FOUNDATION, THE",
+    "count": 751
+  },
+  {
+    "org_name": "CALIFORNIA INSTITUTE OF TECHNOLOGY - JPL",
+    "count": 739
+  },
+  {
+    "org_name": "CASE WESTERN RESERVE UNIVERSITY",
+    "count": 733
+  },
+  {
+    "org_name": "UNIVERSITY OF TEXAS HEALTH SCIENCE CTR AT SAN ANTONIO",
+    "count": 726
+  },
+  {
+    "org_name": "TULANE UNIVERSITY OF LOUISIANA",
+    "count": 710
+  },
+  {
+    "org_name": "UNIVERSITY OF MINNESOTA",
+    "count": 700
+  },
+  {
+    "org_name": "BRIGHAM & WOMEN`S HOSPITAL",
+    "count": 672
+  },
+  {
+    "org_name": "NEW YORK UNIVERSITY MEDICAL CENTER",
+    "count": 670
+  },
+  {
+    "org_name": "UNIVERSITY OF UTAH",
+    "count": 665
+  },
+  {
+    "org_name": "UNIV OF TEXAS SYS CANCER CTR, M D ANDERSON HOSP/TUM INS",
+    "count": 613
+  },
+  {
+    "org_name": "ALBERT EINSTEIN COLLEGE OF MEDICINE",
+    "count": 585
+  },
+  {
+    "org_name": "STATE OF NORTH CAROLINA DEPARTMENT OF HEALTH & HUMAN SE",
+    "count": 552
+  },
+  {
+    "org_name": "UNIVERSITY OF CALIFORNIA-SAN DIEGO",
+    "count": 530
+  },
+  {
+    "org_name": "UNIVERSITY OF TEXAS SOUTHWESTERN MEDICAL CTR DALLAS",
+    "count": 524
+  },
+  {
+    "org_name": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+    "count": 517
+  },
+  {
+    "org_name": "MICHIGAN STATE UNIVERSITY",
+    "count": 505
+  },
+  {
+    "org_name": "UNIVERSITY OF TEXAS, MEDICAL BRANCH AT GALVESTON",
+    "count": 499
+  },
+  {
+    "org_name": "RECTOR & VISITORS OF THE UNIVERSITY OF VIRGINIA",
+    "count": 498
+  },
+  {
+    "org_name": "UNIVERSITY OF CALIFORNIA, IRVINE",
+    "count": 444
+  },
+  {
+    "org_name": "UNIVERSITY OF MARYLAND BALTIMORE PROFESSIONAL SCHOOLS",
+    "count": 438
+  },
+  {
+    "org_name": "UNIVERSITY OF ARIZONA",
+    "count": 411
+  },
+  {
+    "org_name": "TEXAS WORKFORCE COMMISSION",
+    "count": 407
+  },
+  {
+    "org_name": "DANA-FARBER CANCER INSTITUTE",
+    "count": 406
+  },
+  {
+    "org_name": "MN ST DEPARTMENT OF HEALTH",
+    "count": 359
+  },
+  {
+    "org_name": "PURDUE UNIVERSITY",
+    "count": 343
+  },
+  {
+    "org_name": "UNIVERSITY OF MARYLAND",
+    "count": 340
+  },
+  {
+    "org_name": "UNIVERSITY OF ARKANSAS SYSTEM",
+    "count": 329
+  },
+  {
+    "org_name": "OH ST DEPARTMENT OF PUBLIC HEALTH",
+    "count": 318
+  },
+  {
+    "org_name": "UNIVERSITY OF KANSAS MEDICAL CENTER RESEARCH INSTITUTE",
+    "count": 316
+  },
+  {
+    "org_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+    "count": 314
+  },
+  {
+    "org_name": "FAMILY HEALTH INTERNATIONAL",
+    "count": 310
+  },
+  {
+    "org_name": "TUFTS UNIVERSITY",
+    "count": 307
+  },
+  {
+    "org_name": "FRED HUTCHINSON CANCER CENTER",
+    "count": 301
+  },
+  {
+    "org_name": "VIRGINIA COMMONWEALTH UNIVERSITY",
+    "count": 300
+  },
+  {
+    "org_name": "MEDICAL UNIVERSITY OF SOUTH CAROLINA THE",
+    "count": 288
+  },
+  {
+    "org_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+    "count": 280
+  },
+  {
+    "org_name": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+    "count": 277
+  },
+  {
+    "org_name": "CHILDREN`S HOSPITAL MEDICAL CENTER",
+    "count": 276
+  },
+  {
+    "org_name": "SCRIPPS RESEARCH INSTITUTE",
+    "count": 274
+  },
+  {
+    "org_name": "ARKANSAS DEPARTMENT OF HEALTH",
+    "count": 271
+  },
+  {
+    "org_name": "CWRU-CLEVELAND CLINIC LERNER COLLEGE",
+    "count": 263
+  },
+  {
+    "org_name": "MEDICAL COLLEGE OF WISCONSIN, INC",
+    "count": 255
+  },
+  {
+    "org_name": "DEPARTAMENTO DE DESARROLLO ECONOMICO Y COMERCIO",
+    "count": 255
+  },
+  {
+    "org_name": "GEORGE WASHINGTON UNIVERSITY",
+    "count": 253
+  },
+  {
+    "org_name": "TX DEPT OF STATE HEALTH SERVICES",
+    "count": 246
+  },
+  {
+    "org_name": "UNIVERSITY OF MISSOURI SYSTEM",
+    "count": 241
+  },
+  {
+    "org_name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+    "count": 238
+  },
+  {
+    "org_name": "PUBLIC HEALTH AND HUMAN SERVICES, MONTANA DEPARTMENT OF",
+    "count": 229
+  },
+  {
+    "org_name": "HUMAN SERVICES, GEORGIA DEPARTMENT OF",
+    "count": 228
+  },
+  {
+    "org_name": "UNIVERSITY OF CINCINNATI",
+    "count": 220
+  },
+  {
+    "org_name": "SAN DIEGO STATE UNIVERSITY FOUNDATION",
+    "count": 219
+  },
+  {
+    "org_name": "WASHINGTON STATE UNIVERSITY",
+    "count": 215
+  },
+  {
+    "org_name": "HEALTH SERVICES, WISCONSIN DEPARTMENT OF",
+    "count": 210
+  },
+  {
+    "org_name": "UNIVERSITY OF ILLINOIS BOARD OF TRUSTEES",
+    "count": 209
+  },
+  {
+    "org_name": "PA ST DEPARTMENT OF PUBLIC WELFARE",
+    "count": 208
+  },
+  {
+    "org_name": "UNIVERSITY OF OREGON",
+    "count": 206
+  },
+  {
+    "org_name": "MS ST DEPARTMENT OF HEALTH",
+    "count": 206
+  },
+  {
+    "org_name": "MN ST DEPARTMENT OF HUMAN SERVICES",
+    "count": 206
+  },
+  {
+    "org_name": "FLORIDA STATE UNIVERSITY",
+    "count": 205
+  },
+  {
+    "org_name": "Research Foundation For Mental Hygiene, Inc.",
+    "count": 202
+  },
+  {
+    "org_name": "CHILDREN'S HOSPITAL OF PHILADELPHIA",
+    "count": 202
+  },
+  {
+    "org_name": "Trustees Of Boston University",
+    "count": 200
+  },
+  {
+    "org_name": "HEALTH & HUMAN SVC COMMN TX",
+    "count": 197
+  },
+  {
+    "org_name": "ROCKEFELLER UNIVERSITY",
+    "count": 193
+  },
+  {
+    "org_name": "CEDARS-SINAI MEDICAL CENTER",
+    "count": 190
+  },
+  {
+    "org_name": "DEPARTMENT OF HUMAN SERVICES COLORADO",
+    "count": 185
+  },
+  {
+    "org_name": "DREXEL UNIVERSITY",
+    "count": 182
+  },
+  {
+    "org_name": "VA ST DEPARTMENT OF HEALTH",
+    "count": 180
+  },
+  {
+    "org_name": "SAVE THE CHILDREN FEDERATION",
+    "count": 179
+  },
+  {
+    "org_name": "DARTMOUTH COLLEGE",
+    "count": 178
+  },
+  {
+    "org_name": "California Dept of Public Health",
+    "count": 178
+  },
+  {
+    "org_name": "FLORIDA INTERNATIONAL UNIVERSITY",
+    "count": 176
+  },
+  {
+    "org_name": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
+    "count": 174
+  },
+  {
+    "org_name": "UNIVERSITY OF GEORGIA RESEARCH FOUNDATION, INC",
+    "count": 173
+  },
+  {
+    "org_name": "UNIVERSITY OF CALIFORNIA",
+    "count": 173
+  }
+]
