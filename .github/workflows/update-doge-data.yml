@@ -19,6 +19,7 @@ jobs:
         python doge-data-download.py grants
         python doge-data-download.py contracts
         python doge-data-download.py leases
+        python doge-data-download.py payments
         cd ..
 
     - name: Commit and push if there are changes

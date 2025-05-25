@@ -4,11 +4,13 @@
 let grantsData = null;
 let contractsData = null;
 let leasesData = null;
+let paymentsData = null;
 
 // DataTable instances
 let grantsTable = null;
 let contractsTable = null;
 let leasesTable = null;
+let paymentsTable = null;
 
 // Chart instances
 let grantsRecipientsChart = null;
@@ -17,6 +19,8 @@ let contractsVendorsChart = null;
 let contractsAgenciesChart = null;
 let leasesLocationsChart = null;
 let leasesAgenciesChart = null;
+let paymentsOrganizationsChart = null;
+let paymentsAgenciesChart = null;
 
 // Utility functions
 const formatCurrency = (value) => {
@@ -438,21 +442,204 @@ const loadLeasesData = async () => {
     }
 };
 
+const loadPaymentsData = async () => {
+    // Check if data is already loaded
+    if (paymentsData) {
+        updatePaymentsStats();
+        return;
+    }
+    
+    try {
+        // Show loading indicator
+        document.getElementById('payments-loading').style.display = 'block';
+        document.getElementById('payments-error').style.display = 'none';
+        
+        // Fetch payments data
+        const response = await fetch('data/doge_payments_data.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        
+        // Parse JSON data
+        const data = await response.json();
+        
+        // Store the data
+        paymentsData = data;
+        
+        // Update UI with payments data
+        updatePaymentsStats();
+        
+        // Create charts
+        createPaymentsCharts();
+        
+        // Create DataTable
+        createPaymentsTable();
+        
+        // Update overview stats
+        updateOverviewStats();
+        
+        // Hide loading indicator
+        document.getElementById('payments-loading').style.display = 'none';
+    } catch (error) {
+        console.error('Error loading payments data:', error);
+        document.getElementById('payments-loading').style.display = 'none';
+        alert('Failed to load payments data. Please try again later.');
+    }
+}
+
+// Update payments stats
+function updatePaymentsStats() {
+    if (!paymentsData) return;
+    
+    const totalPayments = paymentsData.length;
+    const totalValue = paymentsData.reduce((sum, item) => sum + (item.payment_amt || 0), 0);
+    
+    document.getElementById('payments-count').textContent = formatNumber(totalPayments);
+    document.getElementById('payments-total-value').textContent = formatCurrency(totalValue);
+}
+
+// Create charts for payments data
+function createPaymentsCharts() {
+    if (!paymentsData) return;
+    
+    // Get top organizations by payment amount
+    const topOrganizations = getTopValueItems(paymentsData, 'org_name', 'payment_amt');
+    
+    // Get top agencies by payment amount
+    const topAgencies = getTopValueItems(paymentsData, 'agency_name', 'payment_amt');
+    
+    // Create organization chart
+    const orgChartCtx = document.getElementById('payments-organizations-chart');
+    if (paymentsOrganizationsChart) {
+        paymentsOrganizationsChart.destroy();
+    }
+    paymentsOrganizationsChart = createBarChart(
+        orgChartCtx, 
+        topOrganizations, 
+        'Total Payment Amount', 
+        'rgba(255, 193, 7, 0.7)'
+    );
+    
+    // Create agency chart
+    const agencyChartCtx = document.getElementById('payments-agencies-chart');
+    if (paymentsAgenciesChart) {
+        paymentsAgenciesChart.destroy();
+    }
+    paymentsAgenciesChart = createBarChart(
+        agencyChartCtx, 
+        topAgencies, 
+        'Total Payment Amount', 
+        'rgba(255, 193, 7, 0.7)'
+    );
+}
+
+// Create DataTable for payments
+function createPaymentsTable() {
+    if (!paymentsData) return;
+    
+    // Destroy existing table if it exists
+    if (paymentsTable) {
+        paymentsTable.destroy();
+    }
+    
+    // Create new DataTable
+    paymentsTable = $('#payments-table').DataTable({
+        data: paymentsData,
+        columns: [
+            { 
+                data: 'payment_date',
+                title: 'Date',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'payment_amt',
+                title: 'Amount',
+                render: function(data) {
+                    return formatCurrency(data || 0);
+                }
+            },
+            { 
+                data: 'org_name',
+                title: 'Organization',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'agency_name',
+                title: 'Agency',
+                render: function(data) {
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'recipient_justification',
+                title: 'Recipient Justification',
+                render: function(data, type, row) {
+                    if (type === 'display') {
+                        if (!data) return 'N/A';
+                        
+                        // Create expandable description
+                        return `
+                            <div class="description-cell">
+                                <div class="description-preview">${data.length > 100 ? data.substring(0, 100) + '...' : data}</div>
+                                ${data.length > 100 ? '<button class="btn btn-sm btn-link show-full-description">Show more</button>' : ''}
+                                <div class="full-description" style="display: none;">${data}</div>
+                            </div>
+                        `;
+                    }
+                    return data || 'N/A';
+                }
+            },
+            { 
+                data: 'agency_lead_justification',
+                title: 'Agency Justification',
+                render: function(data, type, row) {
+                    if (type === 'display') {
+                        if (!data) return 'N/A';
+                        
+                        // Create expandable description
+                        return `
+                            <div class="description-cell">
+                                <div class="description-preview">${data.length > 100 ? data.substring(0, 100) + '...' : data}</div>
+                                ${data.length > 100 ? '<button class="btn btn-sm btn-link show-full-description">Show more</button>' : ''}
+                                <div class="full-description" style="display: none;">${data}</div>
+                            </div>
+                        `;
+                    }
+                    return data || 'N/A';
+                }
+            }
+        ],
+        order: [[1, 'desc']], // Sort by payment amount by default
+        pageLength: 10,
+        lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        responsive: true,
+        initComplete: function() {
+            // Apply description expander after table is created
+            setTimeout(function() {
+                enhanceExistingDescriptions && enhanceExistingDescriptions();
+            }, 100);
+        }
+    });
+}
+
 // Update overview summary stats
 const updateOverviewStats = () => {
+    const loadedDatasets = [];
     let totalSavings = 0;
     let totalItems = 0;
     const agencies = new Set();
-    const loadedDatasets = [];
     
     // Update grants stats in overview
     if (grantsData) {
         loadedDatasets.push('Grants');
-        const grantsValue = grantsData.reduce((sum, item) => sum + item.value, 0);
         const grantsSavings = grantsData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('grants-overview-count').textContent = formatNumber(grantsData.length);
-        document.getElementById('grants-overview-value').textContent = formatCurrency(grantsValue);
+        document.getElementById('grants-overview-value').textContent = formatCurrency(grantsData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('grants-overview-savings').textContent = formatCurrency(grantsSavings);
         document.getElementById('grants-stats-section').style.display = 'block';
         
@@ -466,11 +653,10 @@ const updateOverviewStats = () => {
     // Update contracts stats in overview
     if (contractsData) {
         loadedDatasets.push('Contracts');
-        const contractsValue = contractsData.reduce((sum, item) => sum + item.value, 0);
         const contractsSavings = contractsData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('contracts-overview-count').textContent = formatNumber(contractsData.length);
-        document.getElementById('contracts-overview-value').textContent = formatCurrency(contractsValue);
+        document.getElementById('contracts-overview-value').textContent = formatCurrency(contractsData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('contracts-overview-savings').textContent = formatCurrency(contractsSavings);
         document.getElementById('contracts-stats-section').style.display = 'block';
         
@@ -484,11 +670,10 @@ const updateOverviewStats = () => {
     // Update leases stats in overview
     if (leasesData) {
         loadedDatasets.push('Leases');
-        const leasesValue = leasesData.reduce((sum, item) => sum + item.value, 0);
         const leasesSavings = leasesData.reduce((sum, item) => sum + item.savings, 0);
         
         document.getElementById('leases-overview-count').textContent = formatNumber(leasesData.length);
-        document.getElementById('leases-overview-value').textContent = formatCurrency(leasesValue);
+        document.getElementById('leases-overview-value').textContent = formatCurrency(leasesData.reduce((sum, item) => sum + item.value, 0));
         document.getElementById('leases-overview-savings').textContent = formatCurrency(leasesSavings);
         document.getElementById('leases-stats-section').style.display = 'block';
         
@@ -497,6 +682,28 @@ const updateOverviewStats = () => {
         leasesData.forEach(item => agencies.add(item.agency));
     } else {
         document.getElementById('leases-stats-section').style.display = 'none';
+    }
+    
+    // Update payments stats in overview
+    if (paymentsData) {
+        loadedDatasets.push('Payments');
+        const paymentsValue = paymentsData.reduce((sum, item) => sum + (item.payment_amt || 0), 0);
+        
+        document.getElementById('payments-overview-count').textContent = formatNumber(paymentsData.length);
+        document.getElementById('payments-overview-value').textContent = formatCurrency(paymentsValue);
+        
+        // Count unique agencies in payments data
+        const paymentAgencies = new Set();
+        paymentsData.forEach(item => item.agency_name && paymentAgencies.add(item.agency_name));
+        document.getElementById('payments-overview-agencies').textContent = formatNumber(paymentAgencies.size);
+        
+        document.getElementById('payments-stats-section').style.display = 'block';
+        
+        // No savings in payments data, but add to total items
+        totalItems += paymentsData.length;
+        paymentsData.forEach(item => item.agency_name && agencies.add(item.agency_name));
+    } else {
+        document.getElementById('payments-stats-section').style.display = 'none';
     }
     
     // Update overall stats
@@ -510,7 +717,7 @@ const updateOverviewStats = () => {
         datasetsLoadedInfo.textContent = 'No datasets loaded yet';
         datasetsLoadedInfo.parentElement.className = 'alert alert-warning';
     } else {
-        datasetsLoadedInfo.textContent = `Datasets loaded: ${loadedDatasets.join(', ')} (${loadedDatasets.length} of 3)`;
+        datasetsLoadedInfo.textContent = `Datasets loaded: ${loadedDatasets.join(', ')} (${loadedDatasets.length} of 4)`;
         datasetsLoadedInfo.parentElement.className = 'alert alert-success';
     }
 };
@@ -538,10 +745,16 @@ document.addEventListener('DOMContentLoaded', () => {
         showSection('leases-section');
     });
     
+    document.getElementById('payments-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        showSection('payments-section');
+    });
+    
     // Load data buttons
     document.getElementById('grants-load-btn').addEventListener('click', loadGrantsData);
     document.getElementById('contracts-load-btn').addEventListener('click', loadContractsData);
     document.getElementById('leases-load-btn').addEventListener('click', loadLeasesData);
+    document.getElementById('payments-load-btn').addEventListener('click', loadPaymentsData);
     
     // Quick access buttons from overview
     document.getElementById('view-grants-btn').addEventListener('click', () => {
@@ -559,6 +772,11 @@ document.addEventListener('DOMContentLoaded', () => {
         loadLeasesData();
     });
     
+    document.getElementById('view-payments-btn').addEventListener('click', () => {
+        showSection('payments-section');
+        loadPaymentsData();
+    });
+    
     // Initialize with overview section
     showSection('overview-section');
     
@@ -571,5 +789,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('grants-stats-section').style.display = 'none';
     document.getElementById('contracts-stats-section').style.display = 'none';
     document.getElementById('leases-stats-section').style.display = 'none';
+    document.getElementById('payments-stats-section').style.display = 'none';
     document.getElementById('datasets-loaded-info').textContent = 'No datasets loaded yet';
 });
