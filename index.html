@@ -574,23 +574,20 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card mb-4">
-                        <div class="card-header bg-light">
-                            <h3 class="text-warning">Payments Report</h3>
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h2 class="text-warning">Payments Report</h2>
+                            <div>
+                                <button id="payments-load-btn" class="btn btn-warning">Load Payments Data</button>
+                            </div>
                         </div>
                         <div class="card-body">
-                            <div class="row mb-4">
-                                <div class="col-md-6">
-                                    <p>This section provides data on payments made by government agencies to various organizations.</p>
-                                    <button id="payments-load-btn" class="btn btn-primary mb-3">Load Payments Data</button>
-                                    <div id="payments-loading" class="text-center my-5 d-none">
-                                        <div class="spinner-border text-warning" role="status">
-                                            <span class="visually-hidden">Loading...</span>
-                                        </div>
-                                        <p class="mt-2">Loading payments data...</p>
-                                    </div>
-                                    <div id="payments-error" class="alert alert-danger" style="display: none;">Error loading payments data.</div>
+                            <div id="payments-loading" class="text-center my-5 d-none">
+                                <div class="spinner-border text-warning" role="status">
+                                    <span class="visually-hidden">Loading...</span>
                                 </div>
+                                <p class="mt-2">Loading payments data...</p>
                             </div>
+                            <div id="payments-error" class="alert alert-danger" style="display: none;">Error loading payments data.</div>
 
                             <div id="payments-content" class="d-none">
                                 <div class="row mb-4">
