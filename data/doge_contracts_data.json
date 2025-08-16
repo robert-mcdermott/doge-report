@@ -1,12 +1,639 @@
 [
   {
+    "piid": "47PH1124F0006",
+    "agency": "General Services Administration",
+    "vendor": "VERDEK, LLC",
+    "value": 53460,
+    "description": "VEHICLE BATTERIES: CHARGEPOINT COMMERCIAL NETWORK CLOUD PLANS SERVICES FOR LOCATIONS TX0247ZZ, OK0101ZZ, AR00063RK, TX0547LT, TX0344LI, TX0365DL AND TX0227AU",
+    "fpds_status": "Expired",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PH1124F0006&modNumber=PA0004&idvAgencyID=&idvPIID=47QMCA22A000Y&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 42900
+  },
+  {
+    "piid": "47PH0924F0018",
+    "agency": "Administrative Office of the U.S. Courts",
+    "vendor": "AMSTAR, INC.",
+    "value": 32799.16,
+    "description": "REMOVE AND REPLACE CARPET, 1ST FLOOR COURTROOM, APPROXIMATELY 1660 SQUARE FEET, ELDON B MAHON US BANKRUPTCY COURTHOUSE, 510 WEST 10TH STREET, FORT WORTH, TX 76102",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PH0924F0018&modNumber=PS0003&idvAgencyID=&idvPIID=47PH0819D0035&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 15370.52
+  },
+  {
+    "piid": "75N95023P00201",
+    "agency": "Department of Health and Human Services",
+    "vendor": "3D SYSTEMS, INC.",
+    "value": 69000,
+    "description": "ELECTRONIC AND PRECISION EQUIPMENT PREVENTATIVE MAINTENANCE AND SERVICE AGREEMENT: 3D SYSTEMS PROJECT 6000",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95023P00201&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 23000
+  },
+  {
+    "piid": "9531CB25F0100",
+    "agency": "Consumer Financial Protection Bureau",
+    "vendor": "BLUE RIDGE DOCUMENT SHREDDING, INC.",
+    "value": 37440,
+    "description": "ON-SITE SHREDDING SERVICES",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=955F&PIID=9531CB25F0100&modNumber=P00004&idvAgencyID=&idvPIID=GS03F0023V&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 22920
+  },
+  {
+    "piid": "2032H821F00117",
+    "agency": "Department of Treasury",
+    "vendor": "PCG ENTERPRISES INC",
+    "value": 486395.84,
+    "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: WAGE & INVESTMENT TOLL-FREE CUSTOMER EXPERIENCE SURVEY",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H821F00117&modNumber=P00013&idvAgencyID=&idvPIID=2032H821A00003&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 20353.45
+  },
+  {
+    "piid": "75N91024P00555",
+    "agency": "Department of Health and Human Services",
+    "vendor": "DNANEXUS, INC.",
+    "value": 667500,
+    "description": "COMPUTER RELATED SERVICES: DNANEXUS PLATFORM AS A SERVICE FOR A CLOUD-BASED DATA ANALYSIS AND MANAGEMENT PLATFORM TO SUPPORT THE CONFLUENCE PROJECT",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91024P00555&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 20000
+  },
+  {
+    "piid": "9531CB25F0118",
+    "agency": "Consumer Financial Protection Bureau",
+    "vendor": "EXPERIAN INFORMATION SOLUTIONS, INC.",
+    "value": 26322.21,
+    "description": "CREDIT BUREAUS: MAKING ENDS MEET - CREDIT PANEL DATA FOR PREVIOUS SURVEY RESPONDENTS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=955F&PIID=9531CB25F0118&modNumber=P00002&idvAgencyID=&idvPIID=9531CB25D0001&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 15097.13
+  },
+  {
+    "piid": "2023H225P00016",
+    "agency": "Department of Treasury",
+    "vendor": "NORTH EAST SYSTEMS GROUP, INC.",
+    "value": 17145,
+    "description": "COMMERCIAL AND INDUSTRIAL MACHINERY AND EQUIPMENT MAINTENANCE: 15 LEKTREIVERS MEDIA RETRIEVER CAROUSELS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2023H225P00016&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 12858.75
+  },
+  {
+    "piid": "75N95024P00592",
+    "agency": "Department of Health and Human Services",
+    "vendor": "THE JOHNS HOPKINS UNIVERSITY",
+    "value": 675000,
+    "description": "REFERENCE LABORATORY TESTING: CUSTOM RADIOSYNTHESIS OF POSITRON EMISSION TOMAGRAPHY LIGANDS AND USE OF POSITRON EMISSION TOMAGRAPHY FACILITY",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95024P00592&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 20000
+  },
+  {
+    "piid": "2033H622F00104",
+    "agency": "Department of Treasury",
+    "vendor": "BAHFED CORP",
+    "value": 54498.24,
+    "description": "SOFTWARE: ALL MY PAPERS LICENSE AND MAINTENANCE",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=2033H622F00104&modNumber=P00003&idvAgencyID=&idvPIID=NNG15SD09B&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 19818.56
+  },
+  {
+    "piid": "HQ042321P0007",
+    "agency": "Department of Defense",
+    "vendor": "DAGOSTINO, MARTIN",
+    "value": 265200,
+    "description": "ERGONOMIC CONSULTING SERVICES",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=HQ042321P0007&modNumber=P00007&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 10400
+  },
+  {
+    "piid": "50310222F0135",
+    "agency": "Securities and Exchange Commission",
+    "vendor": "FCN, INC.",
+    "value": 90309,
+    "description": "SOFTWARE AS A SERVICE: INTERNATIONAL BUSINESS MACHINES I2 ANALYST'S NOTEBOOK",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=5000&PIID=50310222F0135&modNumber=P00004&idvAgencyID=&idvPIID=50310221G0006&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 6110.6
+  },
+  {
+    "piid": "70CMSW24P00000019",
+    "agency": "Department of Homeland Security",
+    "vendor": "GRACELAND COLLEGE CENTER FOR PROFESSIONAL DEVELOPMENT AND LIFELONG LEARNING, INC",
+    "value": 13500,
+    "description": "GROUP TRAINING SERVICES",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7012&PIID=70CMSW24P00000019&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 5900
+  },
+  {
+    "piid": "140D0424F0983",
+    "agency": "Department of the Interior",
+    "vendor": "COLLABORENT LLC",
+    "value": 6949.68,
+    "description": "HUMAN RESOURCES CONSULTING SERVICES: FISH AND WILDLIFE SERVICE, INTERNATIONAL AFFAIRS PROGRAM, DIVISION OF MANAGEMENT AUTHORITY",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0983&modNumber=P00002&idvAgencyID=&idvPIID=140D0421D0002&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 5782.71
+  },
+  {
+    "piid": "140P8323P0073",
+    "agency": "Department of the Interior",
+    "vendor": "WILLAMETTE CULTURAL RESOURCES ASSOCIATES, LTD.",
+    "value": 135379.2,
+    "description": "RESEARCH AND DEVELOPMENT IN THE SOCIAL SCIENCES AND HUMANITIES: COMPLETE NATIONAL REGISTER OF HISTORIC PLACES NOMINATION PACKAGE FOR SAN JUAN ISLAND NATIONAL HISTORICAL PARK",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1443&PIID=140P8323P0073&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 4682
+  },
+  {
+    "piid": "FA251821F0023",
+    "agency": "Department of Defense",
+    "vendor": "GARTNER, INC.",
+    "value": 807526,
+    "description": "LIBRARIES AND ARCHIVES: GARTNER HUMAN RESOURCES LICENSES",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA251821F0023&modNumber=P00008&idvAgencyID=&idvPIID=03310321D0001&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 2957
+  },
+  {
+    "piid": "2023H225P00015",
+    "agency": "Department of Treasury",
+    "vendor": "NORTH EAST SYSTEMS GROUP, INC.",
+    "value": 3600,
+    "description": "COMMERCIAL AND INDUSTRIAL MACHINERY AND EQUIPMENT MAINTENANCE: 3 LEKTREIVERS MEDIA RETRIEVER CAROUSELS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2023H225P00015&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 2100
+  },
+  {
+    "piid": "9531CB25P0022",
+    "agency": "Consumer Financial Protection Bureau",
+    "vendor": "EFFECTIVE EDGE WORLDWIDE LLC",
+    "value": 16470,
+    "description": "VIRTUAL EFFECTIVE EDGE TRAINING COURSES",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=955F&PIID=9531CB25P0022&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/15/2025",
+    "savings": 16470
+  },
+  {
+    "piid": "Unavailable",
+    "agency": "USAID",
+    "vendor": "Unavailable",
+    "value": 70069537,
+    "description": "Unavailable for legal reasons",
+    "fpds_status": "Unavailable",
+    "fpds_link": "https://fpds.gov",
+    "deleted_date": "8/15/2025",
+    "savings": 30879357.43
+  },
+  {
+    "piid": "Unavailable",
+    "agency": "USAID",
+    "vendor": "Unavailable",
+    "value": 37782625.73,
+    "description": "Unavailable for legal reasons",
+    "fpds_status": "Unavailable",
+    "fpds_link": "https://fpds.gov",
+    "deleted_date": "8/15/2025",
+    "savings": 27228655.13
+  },
+  {
+    "piid": "20341523F00014",
+    "agency": "Department of Treasury",
+    "vendor": "FEDERAL RESOURCES CORPORATION",
+    "value": 6400753.9,
+    "description": "SOFTWARE: EXTENDED DETECTION AND RESPONSE",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=20341523F00014&modNumber=P00004&idvAgencyID=&idvPIID=NNG15SC61B&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 3399834.89
+  },
+  {
+    "piid": "1145PC23F0134",
+    "agency": "Peace Corps",
+    "vendor": "CREST SECURITY ASSURANCE LLC",
+    "value": 4488610.31,
+    "description": "COMPUTER SYSTEMS DESIGN SERVICES: INDEPENDENT VERIFICATION AND VALIDATION, SECURITY CONTROL ASSESSMENTS FOR 14 FEDERAL INFORMATION SECURITY MODERNIZATION ACT INFORMATION SYSTEMS, PEACE CORPS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1145&PIID=1145PC23F0134&modNumber=P00004&idvAgencyID=&idvPIID=47QTCB22D0221&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 2579348.8
+  },
+  {
+    "piid": "75N93022F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "UTAH STATE UNIVERSITY",
+    "value": 2990241,
+    "description": "HEALTH BASIC RESEARCH: PRECLINICAL MODELS OF INFECTIOUS DISEASES, HIGH THROUGHPUT EVALUATION OF THERAPEUTICS IN SMALL ANIMAL MODELS OF CORONAVIRUS INFECTION",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93022F00001&modNumber=P00004&idvAgencyID=&idvPIID=HHSN272201700041I&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1837866
+  },
+  {
+    "piid": "19AQMM23F1669",
+    "agency": "Department of State",
+    "vendor": "MEC ENERGY SERVICES LLC",
+    "value": 2440647.86,
+    "description": "POLICY PROGRAM ADVISORS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1900&PIID=19AQMM23F1669&modNumber=P00007&idvAgencyID=&idvPIID=19AQMM23D0050&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1693857.11
+  },
+  {
+    "piid": "70SBUR23F00000232",
+    "agency": "Department of Homeland Security",
+    "vendor": "FEDWRITERS, INC.",
+    "value": 2268588,
+    "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: STRUCTURED ON-THE-JOB TRAINING PROJECT AND ADJUDICATIVE EFFICIENCY PROGRAM FOR SERVICE CENTER OPERATIONS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7003&PIID=70SBUR23F00000232&modNumber=P00009&idvAgencyID=&idvPIID=GS00F217GA&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1224114.94
+  },
+  {
+    "piid": "2043FY24F00007",
+    "agency": "Department of Treasury",
+    "vendor": "LAWVER & ASSOCIATES, INC.",
+    "value": 1500010.8,
+    "description": "WORD PROCESSING AND DOCUMENT FORMATTING SERVICES FOR THE INTERNAL REVENUE SERVICE, SMALL BUSINESS/SELF-EMPLOYED, HUMAN CAPITAL OFFICE EXAMINATION TRAINING",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2043FY24F00007&modNumber=P00003&idvAgencyID=&idvPIID=GS02F0161W&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1200010.8
+  },
+  {
+    "piid": "75N91024F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "KAISER FOUNDATION HOSPITALS",
+    "value": 18793026,
+    "description": "ALL OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES/DATA COLLECTION: CONNECT FOR CANCER PREVENTION",
+    "fpds_status": "CHANGE ORDER",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91024F00001&modNumber=P00001&idvAgencyID=&idvPIID=75N91018D00021&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1097305
+  },
+  {
+    "piid": "75N91024F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "WESTAT, INC.",
+    "value": 33547777,
+    "description": "HEALTH BASIC RESEARCH: INFECTIONS AND IMMUNOEPIDEMIOLOGY BRANCH & INTEGRATIVE TUMOR EPIDEMIOLOGY BRANCH SUPPORT SERVICES",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91024F00001&modNumber=P00002&idvAgencyID=&idvPIID=75N91022D00006&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 1062000
+  },
+  {
+    "piid": "273FCC23F0110",
+    "agency": "Federal Communications Commission",
+    "vendor": "WIDEPOINT INTEGRATED SOLUTIONS CORP.",
+    "value": 3224300.8,
+    "description": "WIRELESS TELECOMMUNICATIONS CARRIERS: WIRELESS MOBILITY SOLUTIONS",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2700&PIID=273FCC23F0110&modNumber=P00008&idvAgencyID=&idvPIID=47QTCA23D000Q&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 723562.06
+  },
+  {
+    "piid": "75N91024F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "UNIVERSITY OF CHICAGO",
+    "value": 8941884,
+    "description": "ALL OTHER PROFESSIONAL, SCIENTIFIC, AND TECHNICAL SERVICES/DATA COLLECTION: CONNECT FOR CANCER PREVENTION",
+    "fpds_status": "CHANGE ORDER",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91024F00001&modNumber=P00002&idvAgencyID=&idvPIID=75N91018D00023&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 700332
+  },
+  {
+    "piid": "75N91022C00014",
+    "agency": "Department of Health and Human Services",
+    "vendor": "TECHNICAL RESOURCES INTERNATIONAL, INC.",
+    "value": 112550865,
+    "description": "HEALTH RESEARCH AND DEVELOPMENT: DRUG DEVELOPMENT SUPPORT, CANCER THERAPY EVALUATION PROGRAM",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91022C00014&modNumber=P00006&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 667824
+  },
+  {
+    "piid": "75F40123F19006",
+    "agency": "Department of Health and Human Services",
+    "vendor": "DELOITTE CONSULTING LLP",
+    "value": 11863932.36,
+    "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: BUDGET EXECUTION AND CONTROL SUPPORT, FOOD AND DRUG ADMINISTRATION",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7524&PIID=75F40123F19006&modNumber=P00008&idvAgencyID=&idvPIID=75F40121A00003&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 600742.51
+  },
+  {
+    "piid": "693JJ622C000010",
+    "agency": "Department of Transportation",
+    "vendor": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORPORATION",
+    "value": 1300000,
+    "description": "BASIC RESEARCH: DEVELOPMENT OF DUAL FUEL HYDROGEN GAS LOCOMOTIVE ENGINE IN COOPERATION WITH ORIGINAL EQUIPMENT MANUFACTURER, KNOCK-INDEX INVESTIGATION AND EMISSIONS SIMULATIONS FOR VARIOUS BLENDS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6930&PIID=693JJ622C000010&modNumber=P00007&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 500000
+  },
+  {
+    "piid": "75N91023F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "WESTAT, INC.",
+    "value": 19800500,
+    "description": "HEALTH BASIC RESEARCH: INTERDISCIPLINARY STUDIES OF OCCUPATIONAL AND ENVIRONMENTAL CANCER SUPPORT SERVICES, OCCUPATIONAL AND ENVIRONMENTAL EPIDEMIOLOGY BRANCH",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91023F00001&modNumber=P00005&idvAgencyID=&idvPIID=75N91022D00006&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 493225
+  },
+  {
+    "piid": "75N92024F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "FEDPOINT SYSTEMS LLC",
+    "value": 2135843,
+    "description": "OTHER COMPUTER RELATED SERVICES: ENTERPRISE RISK MANAGEMENT PROGRAM, NATIONAL HEART, LUNG, AND BLOOD INSTITUTE",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N92024F00001&modNumber=P00003&idvAgencyID=&idvPIID=75N92024A00011&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 400831.32
+  },
+  {
+    "piid": "2033H624F00006",
+    "agency": "Department of Treasury",
+    "vendor": "NATIONAL ASSOCIATES, INC.",
+    "value": 8865113.4,
+    "description": "TEMPORARY HELP: PERSONNEL ASSISTANT II, HUMAN RESOURCES OPERATIONS DIVISION",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=2033H624F00006&modNumber=P00006&idvAgencyID=&idvPIID=2033H623A00006&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 307413.37
+  },
+  {
+    "piid": "75N99224F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "CAREER MANAGEMENT INTERNATIONAL INC",
+    "value": 1219200,
+    "description": "PROFESSIONAL AND MANAGEMENT DEVELOPMENT TRAINING",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N99224F00001&modNumber=P00003&idvAgencyID=&idvPIID=75N99224D00006&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 295500
+  },
+  {
+    "piid": "75N91023F00001",
+    "agency": "Department of Health and Human Services",
+    "vendor": "SOCIAL & SCIENTIFIC SYSTEMS, INC.",
+    "value": 5121958,
+    "description": "HEALTH BASIC RESEARCH: EPIDEMIOLOGY AND DOSIMETRY STUDIES OF RADIATION RELATED CANCERS, RADIATION EPIDEMIOLOGY BRANCH",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91023F00001&modNumber=P00004&idvAgencyID=&idvPIID=75N91022D00005&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 280000
+  },
+  {
+    "piid": "75N91022F00003",
+    "agency": "Department of Health and Human Services",
+    "vendor": "INFORMATION MANAGEMENT SERVICES, INC.",
+    "value": 5364749,
+    "description": "DATA MANAGEMENT FOR CANCER DIAGNOSIS PROGRAM ACTIVITIES",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91022F00003&modNumber=P00005&idvAgencyID=&idvPIID=75N91021D00017&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 279611
+  },
+  {
+    "piid": "75N91022C00023",
+    "agency": "Department of Health and Human Services",
+    "vendor": "FLYWHEEL EXCHANGE, LLC",
+    "value": 1998738,
+    "description": "HEALTH EXPERIMENTAL DEVELOPMENT: FEDERATED DATA PLATFORM FOR DEVELOPING UNBIASED BREAST IMAGING ARTIFICIAL INTELLIGENCE",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91022C00023&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 222082
+  },
+  {
+    "piid": "2033H624F00159",
+    "agency": "Department of Treasury",
+    "vendor": "ARCHITECHTURE SOLUTIONS, LLC",
+    "value": 291189,
+    "description": "SOFTWARE: CLOUD GURU SUBSCRIPTION",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=2033H624F00159&modNumber=P00002&idvAgencyID=&idvPIID=NNG15SD42B&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 253655
+  },
+  {
+    "piid": "75N91023F00004",
+    "agency": "Department of Health and Human Services",
+    "vendor": "WESTAT, INC.",
+    "value": 21474975,
+    "description": "HEALTH BASIC RESEARCH: CLINICAL, GENETIC, AND EPIDEMIOLOGICAL SUPPORT SERVICES",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91023F00004&modNumber=P00006&idvAgencyID=&idvPIID=75N91022D00006&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 226000
+  },
+  {
+    "piid": "50310221F0179",
+    "agency": "Securities and Exchange Commission",
+    "vendor": "SAVVEE CONSULTING INC.",
+    "value": 18182542.02,
+    "description": "ELECTRONIC FORM FILING SYSTEM, SELF-REGULATORY ORGANIZATION RULE TRACKING SYSTEM, AND EXTERNAL APPLICATION USER ADMINISTRATION MODERNIZATION SUPPORT",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=5000&PIID=50310221F0179&modNumber=P00012&idvAgencyID=&idvPIID=50310219D0013&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 214245.75
+  },
+  {
+    "piid": "19AQMM23F3395",
+    "agency": "Department of State",
+    "vendor": "SAXMAN ONE, LLC",
+    "value": 785000,
+    "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: STAFFING",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1900&PIID=19AQMM23F3395&modNumber=P00014&idvAgencyID=&idvPIID=19AQMM23D0009&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 210445.83
+  },
+  {
+    "piid": "20341524F00026",
+    "agency": "Department of Treasury",
+    "vendor": "COLOSSAL CONTRACTING, LLC",
+    "value": 71653.92,
+    "description": "SOFTWARE: NETAPP ONTAP",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=20341524F00026&modNumber=P00001&idvAgencyID=&idvPIID=NNG15SD72B&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 47769.28
+  },
+  {
+    "piid": "89303024FAU400022",
+    "agency": "Department of Energy",
+    "vendor": "DANIEL J. EDELMAN, INC.",
+    "value": 270240,
+    "description": "PUBLIC RELATIONS AGENCIES: PROMOTION AND COMMUNICATION SUPPORT SERVICES FOR THE INSIDER THREAT PROGRAM",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303024FAU400022&modNumber=P00002&idvAgencyID=&idvPIID=47QRAA23D005B&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 44620
+  },
+  {
+    "piid": "75H70724P00136",
+    "agency": "Department of Health and Human Services",
+    "vendor": "UPTODATE, INC",
+    "value": 328902,
+    "description": "EVIDENCED BASED CLINICAL APPLICATION SOFTWARE, ALBUQUERQUE AREA INDIAN HEALTH SERVICE",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7527&PIID=75H70724P00136&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 38597.25
+  },
+  {
+    "piid": "20341522F00040",
+    "agency": "Department of Treasury",
+    "vendor": "FCN, INC.",
+    "value": 119724.1,
+    "description": "SOFTWARE: AUTHENTIC8-SILO",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=20341522F00040&modNumber=P00003&idvAgencyID=&idvPIID=NNG15SC71B&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 34150
+  },
+  {
+    "piid": "31310023F0095",
+    "agency": "Nuclear Regulatory Commission",
+    "vendor": "ENGINEERING MECHANICS CORPORATION OF COLUMBUS",
+    "value": 918564,
+    "description": "TECHNICAL CONSULTING SERVICES: FLAW ANALYSIS TOOL DEVELOPMENT SUPPORT",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3100&PIID=31310023F0095&modNumber=P00004&idvAgencyID=&idvPIID=31310020D0003&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 32396
+  },
+  {
+    "piid": "2033H624F00048",
+    "agency": "Department of Treasury",
+    "vendor": "LRP PUBLICATIONS, INC.",
+    "value": 183699,
+    "description": "OTHER COMPUTER RELATED SERVICES: CYBERFEDS SUBSCRIPTIONS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=2033H624F00048&modNumber=P00003&idvAgencyID=&idvPIID=47QTCA20D002P&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 11979
+  },
+  {
+    "piid": "47PB0022C0029",
+    "agency": "General Services Administration",
+    "vendor": "FOXTROT CONSTRUCTION INC",
+    "value": 904487.37,
+    "description": "OFFICE BUILDING CONSTRUCTION/MAINTENANCE: VARIABLE REFRIGERANT FLOW REPAIRS FOR THE DERBY LINE 91 LAND POINT OF ENTRY FACILITY",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PB0022C0029&modNumber=PS0016&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 7570.07
+  },
+  {
+    "piid": "2033H624F00049",
+    "agency": "Department of Treasury",
+    "vendor": "LRP PUBLICATIONS, INC.",
+    "value": 57236,
+    "description": "OTHER COMPUTER RELATED SERVICES: CYBERFEDS SUBSCRIPTIONS",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=2033H624F00049&modNumber=P00003&idvAgencyID=&idvPIID=47QTCA20D002P&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 2631
+  },
+  {
+    "piid": "N6883625F8M5P",
+    "agency": "Department of Defense",
+    "vendor": "LEIDOS, INC.",
+    "value": 2352.53,
+    "description": "COMPUTER SYSTEMS DESIGN SERVICES: SERVICE, MAPPING, INTEGRATION, AND TRANSPORT, NAVY AND MARINE CORPS INTRANET",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=N6883625F8M5P&modNumber=P00001&idvAgencyID=&idvPIID=N0003920D0054&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 2352.53
+  },
+  {
+    "piid": "2043FY24P00233",
+    "agency": "Department of Treasury",
+    "vendor": "BLUE SOLUTIONS",
+    "value": 4876.82,
+    "description": "JANITORIAL SERVICES: MAINTAIN AIR FRESHENERS IN ALL RESTROOMS FOR ODOR CONTROL, FURNISH ALL LABOR, EQUIPMENT, AND MATERIALS, PERFORM ALL OPERATIONS IN CONNECTION WITH THE PROJECT",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2043FY24P00233&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 2250.84
+  },
+  {
+    "piid": "36C10D23F0008",
+    "agency": "Department of Veterans Affairs",
+    "vendor": "DELOITTE CONSULTING LLP",
+    "value": 65831309.06,
+    "description": "CONSULTING AND AUDITING OF HUMAN CAPITAL THROUGH THE USE OF AI",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3600&PIID=36C10D23F0008&modNumber=P00011&idvAgencyID=&idvPIID=47QRAA18D001P&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 35166542.71
+  },
+  {
+    "piid": "2032H821F00231",
+    "agency": "Department of Treasury",
+    "vendor": "EXCELLA, INC.",
+    "value": 99283323.14,
+    "description": "COMPUTER SYSTEMS DESIGN SERVICES: AGILE TRANSFORMATION AND IMPLEMENTATION, PROVIDE AD HOC PROJECT AND ORGANIZATIONAL TRANSFORMATION STRATEGIES SUPPORT",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H821F00231&modNumber=P00021&idvAgencyID=&idvPIID=75N98120D00227&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 3784469.83
+  },
+  {
+    "piid": "693KA925F00053",
+    "agency": "Department of Transportation",
+    "vendor": "EVANS INCORPORATED",
+    "value": 9906036.48,
+    "description": "ENGINEERING SERVICES: AIR TRAFFIC SYSTEMS SUPPORT TO AIR TRAFFIC ENGINEERING AND PROGRAM SUPPORT II",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6920&PIID=693KA925F00053&modNumber=P00007&idvAgencyID=&idvPIID=693KA925D00002&contractType=AWARD",
+    "deleted_date": "8/14/2025",
+    "savings": 2858255.8
+  },
+  {
     "piid": "75N91022F00001",
     "agency": "Department of Health and Human Services",
     "vendor": "CTIS, INC.",
     "value": 109076265,
     "description": "CANCER THERAPY EVALUATION PROGRAM INFORMATICS & COMPUTER SUPPORT",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91022F00001&modNumber=P00008&idvAgencyID=&idvPIID=HHSN316201200124W&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91022F00001&modNumber=P00006&idvAgencyID=&idvPIID=HHSN316201200124W&contractType=AWARD",
     "deleted_date": "8/13/2025",
     "savings": 12586371
   },
@@ -28,7 +655,7 @@
     "value": 48865083,
     "description": "APPLIED RESEARCH: DEVELOP SMALL SYNTHETIC CHEMICAL MOLECULES AS BROADLY ACTIVE ANTIVIRAL FOR THE TREATMENT OF VIRAL INFECTIONS",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93020C00054&modNumber=P00013&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93020C00054&modNumber=P00012&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "8/13/2025",
     "savings": 10277576
   },
@@ -72,7 +699,7 @@
     "value": 93111026,
     "description": "CUSTOM COMPUTER PROGRAMMING SERVICES: ENHANCE THE FUNCTION AND CONTINUE OPERATIONS AND MAINTENANCE OF THE ACCOUNTABLE CARE ORGANIZATION MANAGEMENT SYSTEM, CENTERS FOR MEDICARE AND MEDICAID SERVICES",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC24F0108&modNumber=P00004&idvAgencyID=&idvPIID=GS35F372DA&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC24F0108&modNumber=P00003&idvAgencyID=&idvPIID=GS35F372DA&contractType=AWARD",
     "deleted_date": "8/13/2025",
     "savings": 2239912.23
   },
@@ -149,7 +776,7 @@
     "value": 9667279.44,
     "description": "CUSTOM COMPUTER PROGRAMMING SERVICES: SHAREPOINT",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9507&PIID=9523ZY23F0011&modNumber=P00006&idvAgencyID=&idvPIID=9523ZY23A0001&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9507&PIID=9523ZY23F0011&modNumber=P00005&idvAgencyID=&idvPIID=9523ZY23A0001&contractType=AWARD",
     "deleted_date": "8/13/2025",
     "savings": 1110835.68
   },
@@ -204,7 +831,7 @@
     "value": 8396517,
     "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: OPERATION & SUPPORT OF THE CTEP PROTOCOL AND INFORMATION OFFICE, CANCER THERAPY EVALUATION PROGRAM",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91021C00007&modNumber=P00009&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91021C00007&modNumber=P00008&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "8/13/2025",
     "savings": 536054
   },
@@ -242,17 +869,6 @@
     "savings": 10000
   },
   {
-    "piid": "70RSAT24FR0000082",
-    "agency": "Department of Homeland Security",
-    "vendor": "TERACORE, INC",
-    "value": 12016153.67,
-    "description": "DATA MANAGEMENT SUPPORT SERVICES",
-    "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7001&PIID=70RSAT24FR0000082&modNumber=P00001&idvAgencyID=&idvPIID=47QTCH18D0062&contractType=AWARD",
-    "deleted_date": "8/12/2025",
-    "savings": 11948319.49
-  },
-  {
     "piid": "N0018924FZ097",
     "agency": "Department of Defense",
     "vendor": "DELOITTE & TOUCHE LLP",
@@ -281,7 +897,7 @@
     "value": 3450656,
     "description": "HEALTH BASIC RESEARCH: ESTABLISH A SMALL ANIMAL MODEL OF NIPAH VIRUS INFECTION TO ASSESS MEDICAL COUNTERMEASURES EFFICACY",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93024F00001&modNumber=P00003&idvAgencyID=&idvPIID=HHSN272201700040I&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93024F00001&modNumber=P00002&idvAgencyID=&idvPIID=HHSN272201700040I&contractType=AWARD",
     "deleted_date": "8/12/2025",
     "savings": 1705293
   },
@@ -303,7 +919,7 @@
     "value": 39741408,
     "description": "WAREHOUSING AND STORAGE: STORAGE AND DISTRIBUTION OF CLINICAL AGENTS",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91023C00002&modNumber=P00007&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91023C00002&modNumber=P00006&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "8/12/2025",
     "savings": 1618870
   },
@@ -314,7 +930,7 @@
     "value": 28309303,
     "description": "HEALTH APPLIED RESEARCH: HEALTH CARE PAYMENT LEARNING AND ACTION NETWORK, CENTERS FOR MEDICARE AND MEDICAID SERVICE INNOVATION CENTER",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC21F0001&modNumber=P00011&idvAgencyID=&idvPIID=75FCMC19D0085&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC21F0001&modNumber=P00010&idvAgencyID=&idvPIID=75FCMC19D0085&contractType=AWARD",
     "deleted_date": "8/12/2025",
     "savings": 1618427
   },
@@ -454,7 +1070,7 @@
     "piid": "Multiple PIIDs - ACES",
     "agency": "Department of Air Force",
     "vendor": "Multiple Vendors - Aircraft Maintenance Enterprise Solution (ACES)",
-    "value": 14000000000,
+    "value": 3927000000,
     "description": "Aircraft Maintenance Enterprise Solution (ACES) is a Multiple Award Contract (MAC) Indefinite Delivery Indefinite Quantity (IDIQ) with six (6) contractors with separate contract numbers and a shared ceiling. This is a descope of a grand total of $3.9B. This ceiling is decreased to align with the foregoing initiatives to improve contract efficiencies across the federal government.",
     "fpds_status": "NOT FOUND IN FPDS",
     "fpds_link": "",
@@ -908,7 +1524,7 @@
     "value": 35062931.82,
     "description": "COMPUTER SYSTEMS DESIGN SERVICES: PROVIDE SECURITY OVERSIGHT, MONITOR DATA ANALYSIS AND GOVERNANCE COMPLIANCE, AFFORDABLE CARE ACT STATE OVERSIGHT AND COMPLIANCE PROGRAM, CENTER FOR MEDICARE AND MEDICATE SERVICES",
     "fpds_status": "ADDITIONAL WORK (NEW AGREEMENT, JUSTIFICATION REQUIRED)",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22F0046&modNumber=P00013&idvAgencyID=&idvPIID=75N98120D00065&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22F0046&modNumber=P00012&idvAgencyID=&idvPIID=75N98120D00065&contractType=AWARD",
     "deleted_date": "8/8/2025",
     "savings": 200012.78
   },
@@ -1304,7 +1920,7 @@
     "value": 2350020.75,
     "description": "SOFTWARE: ECASE LICENSES AND SUPPLEMENTARY SUPPORT, INTERAGENCY SUSPENSION AND DEBARMENT COMMITTEE, LEAD AGENCY COORDINATION REQUEST SYST",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0040&modNumber=P00006&idvAgencyID=&idvPIID=47QSWA18D008F&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0040&modNumber=P00004&idvAgencyID=&idvPIID=47QSWA18D008F&contractType=AWARD",
     "deleted_date": "8/7/2025",
     "savings": 236080.25
   },
@@ -3245,17 +3861,6 @@
     "savings": 27166.72
   },
   {
-    "piid": "1282A721C0049",
-    "agency": "Department of Agriculture",
-    "vendor": "BARTOLETTI, MIKE DDS",
-    "value": 400000,
-    "description": "DENTAL SERVICES",
-    "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=12C2&PIID=1282A721C0049&modNumber=P00005&idvAgencyID=&idvPIID=&contractType=AWARD",
-    "deleted_date": "8/6/2025",
-    "savings": 108640
-  },
-  {
     "piid": "12314425C0023",
     "agency": "Department of Agriculture",
     "vendor": "KONIAG PROFESSIONAL SERVICES, LLC",
@@ -4477,17 +5082,6 @@
     "savings": 0
   },
   {
-    "piid": "1282A721C0042",
-    "agency": "Department of Agriculture",
-    "vendor": "COMMUNITY ACTION PARTNERSHIP OF WESTERN NEBRASKA",
-    "value": 365307,
-    "description": "Dental Services",
-    "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=12C2&PIID=1282A721C0042&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
-    "deleted_date": "8/6/2025",
-    "savings": 122961.61
-  },
-  {
     "piid": "1282A722C0045",
     "agency": "Department of Agriculture",
     "vendor": "DENTAL POWER INTERNATIONAL, INC.",
@@ -4530,28 +5124,6 @@
     "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=12C2&PIID=1282A721C0110&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "8/6/2025",
     "savings": 128614
-  },
-  {
-    "piid": "1282A721C0118",
-    "agency": "Department of Agriculture",
-    "vendor": "SMITH JASON R DMD FAMILY DENTISTRY",
-    "value": 383240,
-    "description": "Dental Services",
-    "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=12C2&PIID=1282A721C0118&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
-    "deleted_date": "8/6/2025",
-    "savings": 79702
-  },
-  {
-    "piid": "1282A722C0047",
-    "agency": "Department of Agriculture",
-    "vendor": "DENTAL POWER INTERNATIONAL, INC.",
-    "value": 125512.5,
-    "description": "Dental Services",
-    "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=12C2&PIID=1282A722C0047&modNumber=P00005&idvAgencyID=&idvPIID=&contractType=AWARD",
-    "deleted_date": "8/6/2025",
-    "savings": 71796.09
   },
   {
     "piid": "1282A723C0049",
@@ -5868,8 +6440,8 @@
     "vendor": "Booz Allen Hamilton",
     "value": 506072722,
     "description": "Analysis, Testing, and Development for Future Vertical Lift Cross Functional Team and Program Executive Office Aviation",
-    "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA807523F0037&modNumber=P00035&idvAgencyID=&idvPIID=FA807518D0004&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA807523F0037&modNumber=P00036&idvAgencyID=&idvPIID=FA807518D0004&contractType=AWARD",
     "deleted_date": "8/4/2025",
     "savings": 430000000
   },
@@ -5902,7 +6474,7 @@
     "value": 2460159.9,
     "description": "ADMINISTRATIVE MANAGEMENT AND GENERAL MANAGEMENT CONSULTING SERVICES: MICROSOFT 365 BUSINESS PROCESS AUTOMATION, PROJECT MANAGEMENT OFFICE, INTERNAL REVENUE SERVICE",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=205AE924F00030&modNumber=P00003&idvAgencyID=&idvPIID=2032H822A00002&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=205AE924F00030&modNumber=P00002&idvAgencyID=&idvPIID=2032H822A00002&contractType=AWARD",
     "deleted_date": "8/4/2025",
     "savings": 43366.63
   },
@@ -5913,7 +6485,7 @@
     "value": 5400452.61,
     "description": "CORPORATION FINANCE WORKLOAD TRACKING SYSTEM",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=5000&PIID=50310224F0084&modNumber=P00002&idvAgencyID=&idvPIID=50310220D0013&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=5000&PIID=50310224F0084&modNumber=P00001&idvAgencyID=&idvPIID=50310220D0013&contractType=AWARD",
     "deleted_date": "8/4/2025",
     "savings": 631325.72
   },
@@ -7255,7 +7827,7 @@
     "value": 8020738,
     "description": "CUSTOM COMPUTER PROGRAMMING SERVICES: DIVISION OF CLEARING AND RISK & DIVISION OF MARKET OVERSIGHT",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9507&PIID=9523ZY24F0037&modNumber=P00004&idvAgencyID=&idvPIID=GS35F694GA&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9507&PIID=9523ZY24F0037&modNumber=P00003&idvAgencyID=&idvPIID=GS35F694GA&contractType=AWARD",
     "deleted_date": "7/28/2025",
     "savings": 4812738.21
   },
@@ -7266,7 +7838,7 @@
     "value": 116401371.65,
     "description": "COMPUTER SYSTEMS DESIGN SERVICES: CENTERS FOR MEDICARE AND MEDICAID INNOVATION TECHNOLOGY SOLUTIONS",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC23F0029&modNumber=P00010&idvAgencyID=&idvPIID=47QTCB21D0259&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC23F0029&modNumber=P00009&idvAgencyID=&idvPIID=47QTCB21D0259&contractType=AWARD",
     "deleted_date": "7/28/2025",
     "savings": 4443135.33
   },
@@ -7783,7 +8355,7 @@
     "value": 1352941463,
     "description": "COMPUTER SYSTEMS DESIGN SERVICES: INTELLIGENCE AND CYBER OPERATIONS NETWORK",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QFCA24F0032&modNumber=P00024&idvAgencyID=&idvPIID=47QTCK18D0031&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QFCA24F0032&modNumber=P00022&idvAgencyID=&idvPIID=47QTCK18D0031&contractType=AWARD",
     "deleted_date": "7/24/2025",
     "savings": 75000000
   },
@@ -8058,7 +8630,7 @@
     "value": 37223931.21,
     "description": "CLOUD ONBOARDING, MIGRATION, ENGINEERING AND TRAINING, HOSTING OPERATIONS AND END-USER SUPPORT",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22F0062&modNumber=P00015&idvAgencyID=&idvPIID=47QTCA21D00C5&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22F0062&modNumber=P00014&idvAgencyID=&idvPIID=47QTCA21D00C5&contractType=AWARD",
     "deleted_date": "7/23/2025",
     "savings": 6951241.16
   },
@@ -8421,7 +8993,7 @@
     "value": 950094283,
     "description": "PROVIDE CLOUD-BASED INFRASTRUCTURE FROM COMMERCIAL CLOUD SERVICE PROVIDERS SUCH AS MICROSOFT AZURE GOVERNMENT AND AMAZON WEB SERVICES, AS WELL AS SOFTWARE, HARDWARE, TOOLS, PROF...",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC25FJ022&modNumber=P00002&idvAgencyID=&idvPIID=47QTCK18D0003&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC25FJ022&modNumber=P00001&idvAgencyID=&idvPIID=47QTCK18D0003&contractType=AWARD",
     "deleted_date": "7/22/2025",
     "savings": 71300149
   },
@@ -8531,7 +9103,7 @@
     "value": 57005931.07,
     "description": "Cadet Operational Management Planning and Admission Support System",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA700024F0027&modNumber=P00005&idvAgencyID=&idvPIID=47QTCK18D0029&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA700024F0027&modNumber=P00006&idvAgencyID=&idvPIID=47QTCK18D0029&contractType=AWARD",
     "deleted_date": "7/21/2025",
     "savings": 1971000
   },
@@ -8608,7 +9180,7 @@
     "value": 276653619,
     "description": "Critical Minerals and Materials Research and Development",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA807524F0016&modNumber=P00034&idvAgencyID=&idvPIID=FA807518D0009&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=FA807524F0016&modNumber=P00035&idvAgencyID=&idvPIID=FA807518D0009&contractType=AWARD",
     "deleted_date": "7/21/2025",
     "savings": 23000000
   },
@@ -8839,7 +9411,7 @@
     "value": 470538893.27,
     "description": "COMPUTER SYSTEM DESIGN SERVICES: HOSTING, OPERATIONS & MAINTENANCE OF THE HEALTHCARE INTEGRATED GENERAL LEDGER ACCOUNTING SYSTEM",
     "fpds_status": "ADDITIONAL WORK (NEW AGREEMENT, JUSTIFICATION REQUIRED)",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC23F0156&modNumber=P00009&idvAgencyID=&idvPIID=47QTCK18D0003&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC23F0156&modNumber=P00008&idvAgencyID=&idvPIID=47QTCK18D0003&contractType=AWARD",
     "deleted_date": "7/21/2025",
     "savings": 5163652.95
   },
@@ -9026,7 +9598,7 @@
     "value": 320965,
     "description": "ENVIRONMENTAL CONSULTING SERVICES: REAL TIME MASS SPECTROMETRY INSTRUMENTATION GUIDANCE DEVELOPMENT",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HERH24F0270&modNumber=P00003&idvAgencyID=&idvPIID=68HERD21A0005&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HERH24F0270&modNumber=P00002&idvAgencyID=&idvPIID=68HERD21A0005&contractType=AWARD",
     "deleted_date": "7/18/2025",
     "savings": 97184
   },
@@ -9279,7 +9851,7 @@
     "value": 62746968.85,
     "description": "SOFTWARE: ORACLE ENTERPRISE LICENSE AGREEMENT",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC24F0078&modNumber=P00006&idvAgencyID=&idvPIID=NNG15SC33B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC24F0078&modNumber=P00005&idvAgencyID=&idvPIID=NNG15SC33B&contractType=AWARD",
     "deleted_date": "7/17/2025",
     "savings": 2354967.01
   },
@@ -10455,8 +11027,8 @@
     "vendor": "Serco Inc.",
     "value": 5464164.8,
     "description": "ESAT SEMD (Superfund and Emergency Management Division) Program Support Region 4",
-    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0421F0021&modNumber=P00025&idvAgencyID=&idvPIID=68HE0121D0003&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0421F0021&modNumber=P00026&idvAgencyID=&idvPIID=68HE0121D0003&contractType=AWARD",
     "deleted_date": "7/14/2025",
     "savings": 1010082.76
   },
@@ -10499,8 +11071,8 @@
     "vendor": "AGILE DECISION SCIENCES, LLC",
     "value": 5890065,
     "description": "Information Management Center Services V",
-    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0523F0029&modNumber=P00011&idvAgencyID=&idvPIID=68HERD23D0003&contractType=AWARD",
+    "fpds_status": "FUNDING ONLY ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0523F0029&modNumber=P00012&idvAgencyID=&idvPIID=68HERD23D0003&contractType=AWARD",
     "deleted_date": "7/14/2025",
     "savings": 895546.08
   },
@@ -10874,7 +11446,7 @@
     "value": 3513962.24,
     "description": "DATAGOV TECHNICAL SUPPORT SERVICES",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0063&modNumber=P00002&idvAgencyID=&idvPIID=47QTCA23D008G&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0063&modNumber=P00001&idvAgencyID=&idvPIID=47QTCA23D008G&contractType=AWARD",
     "deleted_date": "7/11/2025",
     "savings": 1001749.44
   },
@@ -11787,7 +12359,7 @@
     "value": 224939.55,
     "description": "CYBER SECURITY CROWDSTRIKE SOFTWARE TO MANAGE ENDPOINT SECURITY SOLUTION, TO SUPPORT THE SECURITY FRAMEWORK, AND CONTINUOUS MONITORING REQUIREMENTS FOR THE TACTICAL LAW ENFORCEMENT OPERATIONAL NETWORK PROJECT",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H524F00597&modNumber=P00005&idvAgencyID=&idvPIID=NNG15SC71B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H524F00597&modNumber=P00004&idvAgencyID=&idvPIID=NNG15SC71B&contractType=AWARD",
     "deleted_date": "7/9/2025",
     "savings": 133265.98
   },
@@ -12612,7 +13184,7 @@
     "value": 116505303.59,
     "description": "Manufacturing Execution System Services",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2041&PIID=2031ZB21F00015&modNumber=P00019&idvAgencyID=&idvPIID=47QTCK18D0029&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2041&PIID=2031ZB21F00015&modNumber=P00018&idvAgencyID=&idvPIID=47QTCK18D0029&contractType=AWARD",
     "deleted_date": "7/7/2025",
     "savings": 755763.15
   },
@@ -14064,7 +14636,7 @@
     "value": 70395021.05,
     "description": "SECURITY AND COMPLIANCE COMPUTER SUPPORT SERVICES: INFORMATION MANAGEMENT AND ASSURANCE PROGRAM",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0727&modNumber=P00008&idvAgencyID=&idvPIID=47QTCA20D00E4&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0727&modNumber=P00007&idvAgencyID=&idvPIID=47QTCA20D00E4&contractType=AWARD",
     "deleted_date": "7/2/2025",
     "savings": 57068452.7
   },
@@ -14141,7 +14713,7 @@
     "value": 4631098.86,
     "description": "MICROSTRATEGY SOFTWARE PRODUCTS/SERVICES",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2700&PIID=273FCC23F0145&modNumber=P00008&idvAgencyID=&idvPIID=NNG15SD26B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2700&PIID=273FCC23F0145&modNumber=P00007&idvAgencyID=&idvPIID=NNG15SD26B&contractType=AWARD",
     "deleted_date": "7/2/2025",
     "savings": 1528404.44
   },
@@ -14371,8 +14943,8 @@
     "vendor": "VALIANT SOLUTIONS, LLC",
     "value": 18898081.96,
     "description": "SECURITY SUPPORT SERVICES FOR THE OFFICE OF THE CHIEF INFORMATION SECURITY OFFICER.",
-    "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4773&PIID=47HAA023F0119&modNumber=PS0009&idvAgencyID=&idvPIID=GS35F290AA&contractType=AWARD",
+    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4773&PIID=47HAA023F0119&modNumber=PS0010&idvAgencyID=&idvPIID=GS35F290AA&contractType=AWARD",
     "deleted_date": "7/2/2025",
     "savings": 6035739.84
   },
@@ -14801,7 +15373,7 @@
     "value": 160648643.38,
     "description": "APPLICATION DEVELOPMENT: DELIVER VIABLE DIGITAL SOLUTIONS IN SUPPORT OF FARM PRODUCTION AND CONSERVATION'S STRATEGIC MISSION AND OBJECTIVES, SUPPORT THE VISION FOR EACH CONSERVATION LINE OF BUSINESS",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1205&PIID=12314422F0387&modNumber=P00015&idvAgencyID=&idvPIID=12314420A0071&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1205&PIID=12314422F0387&modNumber=P00013&idvAgencyID=&idvPIID=12314420A0071&contractType=AWARD",
     "deleted_date": "7/1/2025",
     "savings": 2102620.45
   },
@@ -15131,7 +15703,7 @@
     "value": 66801,
     "description": "MOBILE DEVIDE MANAGMENT ENTRUST TECHNICAL ACCOUNT MANAGER SOFTWARE",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1501&PIID=15JPPS25F00000027&modNumber=P00002&idvAgencyID=&idvPIID=NNG15SC82B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1501&PIID=15JPPS25F00000027&modNumber=P00001&idvAgencyID=&idvPIID=NNG15SC82B&contractType=AWARD",
     "deleted_date": "6/30/2025",
     "savings": 66800.89
   },
@@ -17100,7 +17672,7 @@
     "value": 93736520,
     "description": "HEALTH RESEARCH AND DEVELOPMENT: CLINICAL TRIALS AND INFORMATION MANAGEMENT SUPPORT",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91021C00009&modNumber=P00012&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N91021C00009&modNumber=P00011&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "6/25/2025",
     "savings": 5309629
   },
@@ -17430,7 +18002,7 @@
     "value": 1886413639,
     "description": "IT SYSTEM DESIGN AND MODERNIZATION -  MAVERICK PROJECT.  DESCOPE $120,000,000.00 MEMORANDUM RADICAL TRANSPARENCY ABOUT WASTEFUL",
     "fpds_status": "CHANGE ORDER",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QFCA24F0020&modNumber=P00022&idvAgencyID=&idvPIID=47QTCK18D0060&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QFCA24F0020&modNumber=P00020&idvAgencyID=&idvPIID=47QTCK18D0060&contractType=AWARD",
     "deleted_date": "6/24/2025",
     "savings": 120000000
   },
@@ -21588,7 +22160,7 @@
     "value": 3526772.6,
     "description": "LOGIN.GOV SOFTWARE DEVELOPMENT SERVICES",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0064&modNumber=P00004&idvAgencyID=&idvPIID=47QPCA21A0008&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0064&modNumber=P00003&idvAgencyID=&idvPIID=47QPCA21A0008&contractType=AWARD",
     "deleted_date": "6/10/2025",
     "savings": 2055715
   },
@@ -21599,7 +22171,7 @@
     "value": 5285204,
     "description": "LOGIN.GOV DATA ANALYTICS SUPPORT",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0053&modNumber=P00003&idvAgencyID=&idvPIID=47QPCA21A0009&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0053&modNumber=P00002&idvAgencyID=&idvPIID=47QPCA21A0009&contractType=AWARD",
     "deleted_date": "6/10/2025",
     "savings": 600471.29
   },
@@ -21709,7 +22281,7 @@
     "value": 16174978,
     "description": "Energy.gov web team provides support to keep the website up and running, secure, and responsive",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303024FIM000152&modNumber=P00016&idvAgencyID=&idvPIID=89303019AIM000005&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303024FIM000152&modNumber=P00015&idvAgencyID=&idvPIID=89303019AIM000005&contractType=AWARD",
     "deleted_date": "6/9/2025",
     "savings": 3300082.82
   },
@@ -24393,7 +24965,7 @@
     "value": 624724,
     "description": "CLOUD-BASED ENTERPRISE DESKTOP FAX SERVICE",
     "fpds_status": "TRANSFER ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7300&PIID=73351024F0031&modNumber=ADMTRA&idvAgencyID=&idvPIID=NNG15SD74B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7300&PIID=73351024F0031&modNumber=P00001&idvAgencyID=&idvPIID=NNG15SD74B&contractType=AWARD",
     "deleted_date": "5/30/2025",
     "savings": 501724
   },
@@ -24558,7 +25130,7 @@
     "value": 63150929.32,
     "description": "FedRAMP Program Management & Technical ISSO support",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0015&modNumber=P00008&idvAgencyID=&idvPIID=GS35F0590W&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0015&modNumber=P00005&idvAgencyID=&idvPIID=GS35F0590W&contractType=AWARD",
     "deleted_date": "5/30/2025",
     "savings": 730583.33
   },
@@ -24602,7 +25174,7 @@
     "value": 10722980.57,
     "description": "Login.gov's Identity Verification Solution - Identity Resolution",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0031&modNumber=P00008&idvAgencyID=&idvPIID=47QPCA24A0011&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QPCA24F0031&modNumber=P00007&idvAgencyID=&idvPIID=47QPCA24A0011&contractType=AWARD",
     "deleted_date": "5/30/2025",
     "savings": 8342.3
   },
@@ -28342,7 +28914,7 @@
     "value": 11886123.91,
     "description": "COMPUTER SYSTEMS DESIGN SERVICES ZERO TRUST ARCHITECTURE SUPPORT SERVICES",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0425F0028&modNumber=P00001&idvAgencyID=&idvPIID=47QTCB22D0636&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0425F0028&modNumber=P00003&idvAgencyID=&idvPIID=47QTCB22D0636&contractType=AWARD",
     "deleted_date": "5/19/2025",
     "savings": 8266699
   },
@@ -32049,7 +32621,7 @@
     "value": 1359371.6,
     "description": "PROJECT MANAGMENT SERVICES",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30124F00011&modNumber=P00001&idvAgencyID=&idvPIID=75D30123D16080&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30124F00011&modNumber=P00002&idvAgencyID=&idvPIID=75D30123D16080&contractType=AWARD",
     "deleted_date": "5/13/2025",
     "savings": 924001
   },
@@ -33182,7 +33754,7 @@
     "value": 15000,
     "description": "DISTANCE LEARNING VIDEO, BUREAU OF OVERSEAS BUILDNGS OPERATIONS, OFFICE OF FINANCIAL MANAGEMENT",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1900&PIID=19AQMM24P0963&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1900&PIID=19AQMM24P0963&modNumber=P00003&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "5/12/2025",
     "savings": 0
   },
@@ -39924,8 +40496,8 @@
     "vendor": "Checkmk Gmbh\r\n UEI: MXDNWFAD7BW4",
     "value": 5700,
     "description": "SERVICES FOR MONITORING SOFTWARE FOR COMPUTER HARDWARE AND SOFTWARE.",
-    "fpds_status": "BASE AWARD",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1330&PIID=1305M325P0006&modNumber=0&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1330&PIID=1305M325P0006&modNumber=P25001&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "5/6/2025",
     "savings": 0
   },
@@ -41509,7 +42081,7 @@
     "value": 1622488.25,
     "description": "COMMUNICATIONS, OUTREACH, MATERIAL AND PRODUCT DEVELOPMENT, PROMOTION AND DIGITAL AND WEB COMMUNICATIONS SUPPORT",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N94024F00045&modNumber=P00005&idvAgencyID=&idvPIID=47QRAA21D002B&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N94024F00045&modNumber=P00007&idvAgencyID=&idvPIID=47QRAA21D002B&contractType=AWARD",
     "deleted_date": "5/5/2025",
     "savings": 857532.81
   },
@@ -43060,7 +43632,7 @@
     "value": 203567.52,
     "description": "FACILITATION, COLLABORATIVE PROBLEM-SOLVING SERVICES TO U.S. FISH AND WILDLIFE SERVICE",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0423F1241&modNumber=P00003&idvAgencyID=&idvPIID=140D0423D0077&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0423F1241&modNumber=P00004&idvAgencyID=&idvPIID=140D0423D0077&contractType=AWARD",
     "deleted_date": "5/1/2025",
     "savings": 0
   },
@@ -43379,7 +43951,7 @@
     "value": 307676524.27,
     "description": "ENTERPRISE CASE MANAGEMENT (ECM) SOLUTION INTEGRATION SERVICES",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H520F00200&modNumber=P00031&idvAgencyID=&idvPIID=47QTCK18D0004&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2050&PIID=2032H520F00200&modNumber=P00029&idvAgencyID=&idvPIID=47QTCK18D0004&contractType=AWARD",
     "deleted_date": "5/1/2025",
     "savings": 2209376.98
   },
@@ -43455,8 +44027,8 @@
     "vendor": "ICF INCORPORATED, L.L.C.",
     "value": 379599,
     "description": "IMPROVING RISK ASSESSMENT FOR ECONOMIC ANALYSIS",
-    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HERC24F0540&modNumber=P00001&idvAgencyID=&idvPIID=68HERC21D0016&contractType=AWARD",
+    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HERC24F0540&modNumber=P00002&idvAgencyID=&idvPIID=68HERC21D0016&contractType=AWARD",
     "deleted_date": "5/1/2025",
     "savings": 0
   },
@@ -45920,7 +46492,7 @@
     "value": 5185036,
     "description": "Federal Employee Viewpoint Survey services (FEVS)",
     "fpds_status": "TRANSFER ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2400&PIID=24322621F0013&modNumber=ADMTRA&idvAgencyID=&idvPIID=GS00F009DA&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2400&PIID=24322621F0013&modNumber=P00009&idvAgencyID=&idvPIID=GS00F009DA&contractType=AWARD",
     "deleted_date": "4/30/2025",
     "savings": 0
   },
@@ -48570,8 +49142,8 @@
     "vendor": "FOUR LLC",
     "value": 4674288,
     "description": "Govini Decision Science Platform (DSP) Subscription to Support Cyber and Supply Chain Risk Management",
-    "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB22F0022&modNumber=PS0006&idvAgencyID=&idvPIID=NNG15SC73B&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB22F0022&modNumber=PS0005&idvAgencyID=&idvPIID=NNG15SC73B&contractType=AWARD",
     "deleted_date": "4/28/2025",
     "savings": 775048
   },
@@ -48758,7 +49330,7 @@
     "value": 4400394,
     "description": "Data management activities for Governmentwide Acquisition Contracts",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB23C0002&modNumber=PSA898&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB23C0002&modNumber=PSA891&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/28/2025",
     "savings": 3291097
   },
@@ -48769,7 +49341,7 @@
     "value": 78375,
     "description": "Kantara Membership Services",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB24P0005&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4732&PIID=47QTCB24P0005&modNumber=PSA898&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/28/2025",
     "savings": 62700
   },
@@ -50176,7 +50748,7 @@
     "vendor": "DAWNBREAKER INC",
     "value": 555000,
     "description": "TECHNICAL ASSISTANCE IN COMMERCIALIZATION PLANNING SBIR STTR.",
-    "fpds_status": "BASE AWARD",
+    "fpds_status": "Expired",
     "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4900&PIID=49100423F0141&modNumber=0&idvAgencyID=&idvPIID=49100421A0006&contractType=AWARD",
     "deleted_date": "4/24/2025",
     "savings": 0
@@ -50386,7 +50958,7 @@
     "value": 1240647.15,
     "description": "PROVIDE INTEGRATED CONSULTING SERVICES, INTEGRATED BUSINESS SUPPORT SERVICES",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7013&PIID=70T02024F7500N019&modNumber=P00005&idvAgencyID=&idvPIID=70T04021A7672N001&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7013&PIID=70T02024F7500N019&modNumber=P00006&idvAgencyID=&idvPIID=70T04021A7672N001&contractType=AWARD",
     "deleted_date": "4/24/2025",
     "savings": 978003.09
   },
@@ -50870,7 +51442,7 @@
     "value": 2181595,
     "description": "Administrative and analytical support services for NCSES",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4900&PIID=49100423C0027&modNumber=P00011&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4900&PIID=49100423C0027&modNumber=P00009&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/24/2025",
     "savings": 1566784
   },
@@ -54071,7 +54643,7 @@
     "value": 6607920,
     "description": "DEVELOPMENT OF A NOVEL PLASMA PROTEIN BIOMARKER PANEL FOR A RADIATION/NUCLEAR TRIAGE BIODOSIMETRY DEVICE",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93024C00006&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N93024C00006&modNumber=P00003&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/18/2025",
     "savings": 2608360
   },
@@ -54653,8 +55225,8 @@
     "vendor": "Leidos, Inc",
     "value": 1200000000,
     "description": "Research Support Services (RSS)",
-    "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89243318CFE000003&modNumber=P00211&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89243318CFE000003&modNumber=P00212&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/17/2025",
     "savings": 215494
   },
@@ -54665,7 +55237,7 @@
     "value": 121993811,
     "description": "Mission Execution Support Services.",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89243323CFE000074&modNumber=P00088&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89243323CFE000074&modNumber=P00089&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/17/2025",
     "savings": 90131
   },
@@ -56886,8 +57458,8 @@
     "vendor": "KERES CONSULTING INC",
     "value": 12227417,
     "description": "NATIVE AMERICAN LANDS ENVIRONMENTAL PROGRAM SUPPORT",
-    "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=HQ003424F0174&modNumber=P00002&idvAgencyID=&idvPIID=GS00F154CA&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=HQ003424F0174&modNumber=P00003&idvAgencyID=&idvPIID=GS00F154CA&contractType=AWARD",
     "deleted_date": "4/14/2025",
     "savings": 8568408.53
   },
@@ -57645,8 +58217,8 @@
     "vendor": "LONG TERM STRATEGY GROUP, LLC",
     "value": 2023865,
     "description": "DELIVERABLE 3: ANNUAL COMPENDIUM",
-    "fpds_status": "BASE AWARD",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=HQ003424C0048&modNumber=0&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_status": "EXERCISE AN OPTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=HQ003424C0048&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/14/2025",
     "savings": 1739434.93
   },
@@ -57689,8 +58261,8 @@
     "vendor": "GARTNER, INC.",
     "value": 1207942,
     "description": "IT RESEARCH AND ADVISORY SERVICES:  CISOS EXECUTIVE TEAM LEADER, CISOS EXECUTIVE TEAM MEMBER ENTERPRISE IT LEADERSHIP TEAM LEADER, ENTERPRISE IT LEADERSHIP ADVISOR MEMBER",
-    "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=SP470124F0068&modNumber=P00002&idvAgencyID=&idvPIID=N6600119A0049&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=SP470124F0068&modNumber=P00003&idvAgencyID=&idvPIID=N6600119A0049&contractType=AWARD",
     "deleted_date": "4/14/2025",
     "savings": 204644
   },
@@ -64839,8 +65411,8 @@
     "vendor": "Independent Strategic Management Solutions, Inc.",
     "value": 4099206,
     "description": "Engineering QA Safety",
-    "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303922FEM400044&modNumber=P00016&idvAgencyID=&idvPIID=47QRAA21D0087&contractType=AWARD",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303922FEM400044&modNumber=P00017&idvAgencyID=&idvPIID=47QRAA21D0087&contractType=AWARD",
     "deleted_date": "4/1/2025",
     "savings": 931286
   },
@@ -65126,7 +65698,7 @@
     "value": 1595697,
     "description": "Independent engineering advisor with senior level experience",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303021CLP000008&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8900&PIID=89303021CLP000008&modNumber=P00005&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "4/1/2025",
     "savings": 1245697
   },
@@ -68074,7 +68646,7 @@
     "value": 499277,
     "description": "EDERAL CONSULTING GROUP (FCG) IN SUPPORT OF THE U.S OFFICE OF PERSONNEL MANAGEMENT (OPM), CENTER OF LEADERSHIP DEVELOPMENT (CLD)",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0807&modNumber=P00001&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0807&modNumber=P00003&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
     "deleted_date": "3/25/2025",
     "savings": 0
   },
@@ -68107,7 +68679,7 @@
     "value": 499750,
     "description": "FEDERAL CONSULTING GROUP (FCG) IN SUPPORT OF THE U.S OFFICE OF PERSONNEL MANAGEMENT (OPM), CENTER OF LEADERSHIP DEVELOPMENT (CLD) LEADERSHIP COURSES.",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0870&modNumber=P00001&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0870&modNumber=P00003&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
     "deleted_date": "3/25/2025",
     "savings": 0
   },
@@ -68195,7 +68767,7 @@
     "value": 1227042,
     "description": "Cost Documentation and Redaction under Region 4, Enforcement Support Services VI (ESS) - ARS Aleut Services.",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0423F0033&modNumber=P00003&idvAgencyID=&idvPIID=68HE0421D0001&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6800&PIID=68HE0423F0033&modNumber=P00005&idvAgencyID=&idvPIID=68HE0421D0001&contractType=AWARD",
     "deleted_date": "3/25/2025",
     "savings": 1087295
   },
@@ -68810,8 +69382,8 @@
     "vendor": "Stryder Corp.",
     "value": 328375,
     "description": "HANDSHAKE PREMIUM SUBSCRIPTION",
-    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1435&PIID=140M0123P0001&modNumber=P00005&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1435&PIID=140M0123P0001&modNumber=P00006&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "3/25/2025",
     "savings": 116875
   },
@@ -69174,7 +69746,7 @@
     "value": 16514713.26,
     "description": "BUDGET AND FINANCIAL SYSTEMS SUPPORT SERVICES",
     "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95023F00048&modNumber=P00004&idvAgencyID=&idvPIID=47QRAA18D001P&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95023F00048&modNumber=P00003&idvAgencyID=&idvPIID=47QRAA18D001P&contractType=AWARD",
     "deleted_date": "3/24/2025",
     "savings": 6893610
   },
@@ -69295,7 +69867,7 @@
     "value": 54893901.47,
     "description": "CDC READY RESPONDER TRAINING & COORDINATION SUPPORT",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30123F17100&modNumber=P00007&idvAgencyID=&idvPIID=75D30119A06642&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30123F17100&modNumber=P00008&idvAgencyID=&idvPIID=75D30119A06642&contractType=AWARD",
     "deleted_date": "3/24/2025",
     "savings": 46224016.35
   },
@@ -69823,7 +70395,7 @@
     "value": 2021729.2,
     "description": "NICHD Emergency Management/Continuity of Operations Program (EM/COOP) and Records Management",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N94023F00001&modNumber=P00005&idvAgencyID=&idvPIID=75N98022D00027&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N94023F00001&modNumber=P00004&idvAgencyID=&idvPIID=75N98022D00027&contractType=AWARD",
     "deleted_date": "3/24/2025",
     "savings": 275000
   },
@@ -70868,7 +71440,7 @@
     "value": 2127781.38,
     "description": "This order is for quantitative analysis support services to identify the causality of issues that result in undesired outcomes within the National Institute of Mental Health (NIMH) extramural programmatic IT applications that significantly hinders workflows associated with these processes. This includes findings and recommendations to NIMH for improvements, and the development of a comprehensive implementation plan. The objective is for NIMH to reduce duplicatand information between the NIH enterprise and the NIMH-developed systems it uses in support of its essential extramural research programs.",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95023F00001&modNumber=P00004&idvAgencyID=&idvPIID=HHSN316201200018W&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95023F00001&modNumber=P00003&idvAgencyID=&idvPIID=HHSN316201200018W&contractType=AWARD",
     "deleted_date": "3/24/2025",
     "savings": 75526.64
   },
@@ -71704,7 +72276,7 @@
     "value": 1972900,
     "description": "The contractor to provide services related to an integrated approach to conducting annual assessments of NASA\u2019s management controls, internal control over financial reporting, fraud risk management framework and payment integrity.",
     "fpds_status": "FUNDING ONLY ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8000&PIID=80HQTR24FA019&modNumber=P00012&idvAgencyID=&idvPIID=80HQTR24AA002&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8000&PIID=80HQTR24FA019&modNumber=P00013&idvAgencyID=&idvPIID=80HQTR24AA002&contractType=AWARD",
     "deleted_date": "3/20/2025",
     "savings": 639900
   },
@@ -71879,8 +72451,8 @@
     "vendor": "LEUMAS RESIDENTIAL LLC (not in OBI)",
     "value": 1701000,
     "description": "property management\r\n  services at the Heritage Apartments located at\r\n  1306 W Donald Street Suite 400, Waterloo, IA",
-    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8600&PIID=86614925F00007&modNumber=P00003&idvAgencyID=&idvPIID=86614822D00002&contractType=AWARD",
+    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=8600&PIID=86614925F00007&modNumber=P00004&idvAgencyID=&idvPIID=86614822D00002&contractType=AWARD",
     "deleted_date": "3/20/2025",
     "savings": 1701000
   },
@@ -74168,7 +74740,7 @@
     "value": 214560,
     "description": "CALL #46 FEDERAL CONSULTING GROUP (FCG) IN THE DELIVERY OF COACHING FOR THE NATIONAL PARK SERVICE (NPS)",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F1242&modNumber=P00002&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F1242&modNumber=P00004&idvAgencyID=&idvPIID=140D0424A0015&contractType=AWARD",
     "deleted_date": "3/14/2025",
     "savings": 2412
   },
@@ -75047,7 +75619,7 @@
     "vendor": "Porter Novelli",
     "value": 6321641,
     "description": "This contract is to plan, research, develop, execute and monitor communications activities for the CMS/OHEI. Key activities include but are not limited to: Assist with stakeholder communication activities that complement the agency\u2019s ongoing stakeholder outreach and education communications related to OHEI priorities. Research and develop a strategic approach and detailed description plan for reaching key audiences. Support the HIPAA Administrative Simplification outreach communications which ensure key information for all of the nation\u2019s covered entities to ensure compliance with statutory and regulatory requirements. Conduct large scale and pulse focused stakeholder surveys.",
-    "fpds_status": "SUPPLEMENTAL AGREEMENT FOR WORK WITHIN SCOPE",
+    "fpds_status": "Expired",
     "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22F0004&modNumber=P00006&idvAgencyID=&idvPIID=75FCMC18D0045&contractType=AWARD",
     "deleted_date": "3/12/2025",
     "savings": 285727
@@ -83397,7 +83969,7 @@
     "value": 562660,
     "description": "TUITION AND FEES",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=N0622A25F0032&modNumber=0&idvAgencyID=&idvPIID=N0014098G2434&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=9700&PIID=N0622A25F0032&modNumber=P00001&idvAgencyID=&idvPIID=N0014098G2434&contractType=AWARD",
     "deleted_date": "3/7/2025",
     "savings": 0
   },
@@ -85531,7 +86103,7 @@
     "value": 6711187.23,
     "description": "IHT CHANGE MANAGEMENT TRAINING COURSES",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3600&PIID=36C10X22N0165&modNumber=P00005&idvAgencyID=&idvPIID=36C10X20D0002&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3600&PIID=36C10X22N0165&modNumber=P00006&idvAgencyID=&idvPIID=36C10X20D0002&contractType=AWARD",
     "deleted_date": "3/5/2025",
     "savings": 2287644.38
   },
@@ -87291,7 +87863,7 @@
     "value": 13717413.4,
     "description": "IIS SUPPORT AND DATA MANAGEMENT",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30122C13560&modNumber=P00007&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7523&PIID=75D30122C13560&modNumber=P00009&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "3/5/2025",
     "savings": 5513069.4
   },
@@ -87411,7 +87983,7 @@
     "vendor": "THE INTERNATIONAL WILDERNESS LEADERSHIP FOUNDATION INC",
     "value": 17000,
     "description": "NR-NRSS-182 NAWPA FACILITATION FY25",
-    "fpds_status": "BASE AWARD",
+    "fpds_status": "Expired",
     "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1443&PIID=140P2124P0074&modNumber=0&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "3/5/2025",
     "savings": 0
@@ -87764,7 +88336,7 @@
     "value": 4826982.01,
     "description": "SUPPLY CHAIN SYSTEMS SUPPORT",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3600&PIID=36C10X24C0037&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=3600&PIID=36C10X24C0037&modNumber=P00002&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "3/5/2025",
     "savings": 74524.97
   },
@@ -115725,8 +116297,8 @@
     "vendor": "Partnership for Public Service Inc.",
     "value": 12900,
     "description": "Register attendee for the \"22-Leadership/Manager/Pre-supervisory Development\" leadership training course offered by the Partnership for Public Service.",
-    "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7004&PIID=70VT1524P00006&modNumber=0&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7004&PIID=70VT1524P00006&modNumber=P00001&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "2/28/2025",
     "savings": 0
   },
@@ -116561,8 +117133,8 @@
     "vendor": "Forrester Research, Inc.",
     "value": 1389771.3,
     "description": "Zero Trust Training and Consulting",
-    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0569&modNumber=P00003&idvAgencyID=&idvPIID=47QTCA18D001C&contractType=AWARD",
+    "fpds_status": "TERMINATED",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0424F0569&modNumber=P00004&idvAgencyID=&idvPIID=47QTCA18D001C&contractType=AWARD",
     "deleted_date": "2/27/2025",
     "savings": 656438.72
   },
@@ -116639,7 +117211,7 @@
     "value": 1088930,
     "description": "EXAMINING THE USE OF SNAP-ED PRIORITY INDICATORS AND TARGETED INTERVENTIONS - MOD TO CORRECT A TYPOGRAPHICAL ERROR",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0423F1080&modNumber=P00007&idvAgencyID=&idvPIID=GS00F009DA&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0423F1080&modNumber=P00009&idvAgencyID=&idvPIID=GS00F009DA&contractType=AWARD",
     "deleted_date": "2/27/2025",
     "savings": 0
   },
@@ -118069,7 +118641,7 @@
     "value": 2307255,
     "description": "Consulting to help achieve a clean audit",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7300&PIID=73351025F0015&modNumber=ADMTRA&idvAgencyID=&idvPIID=73351021A0003&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7300&PIID=73351025F0015&modNumber=P00001&idvAgencyID=&idvPIID=73351021A0003&contractType=AWARD",
     "deleted_date": "2/26/2025",
     "savings": 2307255
   },
@@ -120533,7 +121105,7 @@
     "value": 1344384,
     "description": "Scientific, Administrative, Operational Resources (SOAR): Participate in project teams and working groups to serve as subject matter expert and support or manage DEO initiatives and projects. Participate as an active team member providing recommendations and ideas to strengthen program initiatives and engagement strategies.",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95024F00104&modNumber=P00002&idvAgencyID=&idvPIID=75N95021D00010&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7529&PIID=75N95024F00104&modNumber=P00003&idvAgencyID=&idvPIID=75N95021D00010&contractType=AWARD",
     "deleted_date": "2/24/2025",
     "savings": 1187539.2
   },
@@ -120918,7 +121490,7 @@
     "value": 4945169,
     "description": "Provider Compliance Group Data Analysis (PCG DA)",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22C0006&modNumber=P00011&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7530&PIID=75FCMC22C0006&modNumber=P00012&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "2/24/2025",
     "savings": 0
   },
@@ -127551,7 +128123,7 @@
     "value": 3612194.69,
     "description": "ADMINISTRATIVE AND PROFESSIONAL SUPPORT",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1549&PIID=15F06723F0000734&modNumber=P00017&idvAgencyID=&idvPIID=15F06722A0000178&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1549&PIID=15F06723F0000734&modNumber=P00018&idvAgencyID=&idvPIID=15F06722A0000178&contractType=AWARD",
     "deleted_date": "2/14/2025",
     "savings": 2382147.57
   },
@@ -129035,8 +129607,8 @@
     "vendor": "S J BASHEN INC.",
     "value": 40000,
     "description": "EEO INVESTIGATIONS BPA CALL",
-    "fpds_status": "BASE AWARD",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=955F&PIID=9531CB25F0017&modNumber=0&idvAgencyID=&idvPIID=9531CB25A0006&contractType=AWARD",
+    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=955F&PIID=9531CB25F0017&modNumber=P00001&idvAgencyID=&idvPIID=9531CB25A0006&contractType=AWARD",
     "deleted_date": "2/14/2025",
     "savings": 40000
   },
@@ -129069,7 +129641,7 @@
     "value": 812512,
     "description": "TECHNICAL SERVICES CONTRACT FOR ASO, AEA AND ANE REGIONS",
     "fpds_status": "EXERCISE AN OPTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6920&PIID=693KA920F00179&modNumber=P00007&idvAgencyID=&idvPIID=DTFAWA10A00073&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=6920&PIID=693KA920F00179&modNumber=P00008&idvAgencyID=&idvPIID=DTFAWA10A00073&contractType=AWARD",
     "deleted_date": "2/14/2025",
     "savings": 37797.63
   },
@@ -129816,7 +130388,7 @@
     "vendor": "BLUE TECH INC.",
     "value": 49667,
     "description": "SECUREAUTH IDP LICENSE RENEWAL",
-    "fpds_status": "OTHER ADMINISTRATIVE ACTION",
+    "fpds_status": "Expired",
     "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=2036&PIID=20343024F00051&modNumber=P00001&idvAgencyID=&idvPIID=NNG15SD00B&contractType=AWARD",
     "deleted_date": "2/14/2025",
     "savings": 0
@@ -139079,7 +139651,7 @@
     "value": 10480947,
     "description": "RENT BILL MANAGEMENT OCCUPANCY AGREEMENT FINALIZATION SUPPORT",
     "fpds_status": "OTHER ADMINISTRATIVE ACTION",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PA0122F0019&modNumber=PA0007&idvAgencyID=&idvPIID=47QRAA19D007X&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PA0122F0019&modNumber=PA0006&idvAgencyID=&idvPIID=47QRAA19D007X&contractType=AWARD",
     "deleted_date": "2/10/2025",
     "savings": 4051940
   },
@@ -139992,7 +140564,7 @@
     "value": 5712309,
     "description": "Contract Support",
     "fpds_status": "Expired",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PA0122F0047&modNumber=PA0011&idvAgencyID=&idvPIID=GS10F233AA&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=4740&PIID=47PA0122F0047&modNumber=PA0010&idvAgencyID=&idvPIID=GS10F233AA&contractType=AWARD",
     "deleted_date": "2/7/2025",
     "savings": 2778135.05
   },
@@ -140245,7 +140817,7 @@
     "value": 179805,
     "description": "1-YEAR, FIRM-FIXED-PRICE (FFP) TYPE PURCHASE ORDER FOR COMPREHENSIVE INTERNAL COMMUNICATIONS ASSESSMENT SERVICES TO SUPPORT THE U.S. FOOD AND DRUG ADMINISTRATION (FDA), CENTER FOR DEVICES AND RADIOLOGICAL HEALTH (CDRH), OFFICE OF COMMUNICATION AND ED",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7524&PIID=75F40123P00432&modNumber=P00004&idvAgencyID=&idvPIID=&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=7524&PIID=75F40123P00432&modNumber=P00005&idvAgencyID=&idvPIID=&contractType=AWARD",
     "deleted_date": "2/7/2025",
     "savings": 0
   },
@@ -142401,7 +142973,7 @@
     "value": 579949,
     "description": "road map of options for FNS to consider in developing a plan to assess and monitor equity i",
     "fpds_status": "TERMINATED",
-    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0422F0941&modNumber=P00002&idvAgencyID=&idvPIID=GS10F0136X&contractType=AWARD",
+    "fpds_link": "https://www.fpds.gov/ezsearch/jsp/viewLinkController.jsp?agencyID=1406&PIID=140D0422F0941&modNumber=P00003&idvAgencyID=&idvPIID=GS10F0136X&contractType=AWARD",
     "deleted_date": "2/3/2025",
     "savings": 0
   },
